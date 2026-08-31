@@ -4,13 +4,14 @@
     <!-- Primary Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NimraDev | Fast & Secure Web Utilities</title>
-    <meta name="title" content="NimraDev | Fast & Secure Web Utilities">
-    <meta name="description" content="Simple, fast, and privacy-first web utilities by NimraDev. Explore PDFora for browser-based PDF tools and NimLearn for learning resources.">
-    <meta name="keywords" content="NimraDev, PDFora, PDF Tools, NimLearn, Online PDF Converter, Merge PDF, Compress PDF, Free Web Apps">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Nimra's Hub | HUB of Domain: nimradev.site</title>
+    <meta name="title" content="Nimra's Hub | HUB of Domain: nimradev.site">
+    <meta name="description" content="Official Hub of Domain: nimradev.site. Explore connected web applications including PDFora and NimLearn.">
+    <meta name="keywords" content="Nimra's Hub, nimradev.site, PDFora, NimLearn, Web Utilities, Developer Hub">
     <meta name="author" content="NimraDev">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    <meta name="theme-color" content="#090d16">
+    <meta name="theme-color" content="#ffffff">
     <link rel="canonical" href="https://nimradev.site/">
 
     <!-- Favicons -->
@@ -24,24 +25,26 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="manifest" href="/site.webmanifest">
 
-    <!-- Open Graph -->
+    <!-- Open Graph / Social Meta -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://nimradev.site/">
-    <meta property="og:site_name" content="NimraDev">
-    <meta property="og:title" content="NimraDev | Fast & Secure Web Utilities">
-    <meta property="og:description" content="Simple, fast, and privacy-first web utilities by NimraDev. Explore PDFora and NimLearn.">
+    <meta property="og:site_name" content="Nimra's Hub">
+    <meta property="og:title" content="Nimra's Hub | HUB of Domain: nimradev.site">
+    <meta property="og:description" content="Official Hub of Domain: nimradev.site. Explore connected web applications.">
     <meta property="og:image" content="https://nimradev.site/og-image.png">
+    <meta property="og:locale" content="en_US">
 
-    <!-- Twitter -->
+    <!-- Twitter Meta -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="NimraDev | Fast & Secure Web Utilities">
-    <meta name="twitter:description" content="Simple, fast, and privacy-first web utilities by NimraDev. Explore PDFora and NimLearn.">
+    <meta name="twitter:url" content="https://nimradev.site/">
+    <meta name="twitter:title" content="Nimra's Hub | HUB of Domain: nimradev.site">
+    <meta name="twitter:description" content="Official Hub of Domain: nimradev.site. Explore connected web applications.">
     <meta name="twitter:image" content="https://nimradev.site/og-image.png">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -50,7 +53,7 @@
             theme: {
                 extend: {
                     fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
                         mono: ['"JetBrains Mono"', 'monospace'],
                     }
                 }
@@ -58,7 +61,7 @@
         }
     </script>
 
-    <!-- Schema.org JSON-LD -->
+    <!-- Google Search Console Structured Data (JSON-LD) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -74,147 +77,389 @@
           "@type": "WebSite",
           "@id": "https://nimradev.site/#website",
           "url": "https://nimradev.site/",
-          "name": "NimraDev",
+          "name": "Nimra's Hub",
           "publisher": { "@id": "https://nimradev.site/#organization" }
         },
         {
           "@type": "ItemList",
+          "name": "Connected webapps with hub",
           "itemListElement": [
             {
               "@type": "SoftwareApplication",
               "position": 1,
               "name": "PDFora",
               "url": "https://pdfora.nimradev.site",
-              "applicationCategory": "ProductivityApplication",
-              "operatingSystem": "All modern browsers",
-              "offers": { "@type": "Offer", "price": "0" },
-              "description": "Browser-based PDF suite for merging, splitting, compressing, and editing documents securely."
+              "applicationCategory": "ProductivityApplication"
             },
             {
               "@type": "SoftwareApplication",
               "position": 2,
               "name": "NimLearn",
               "url": "https://nimlearn.nimradev.site",
-              "applicationCategory": "EducationalApplication",
-              "operatingSystem": "All modern browsers",
-              "offers": { "@type": "Offer", "price": "0" },
-              "description": "Interactive learning and developer resources."
+              "applicationCategory": "EducationalApplication"
+            },
+            {
+              "@type": "SoftwareApplication",
+              "position": 3,
+              "name": "NimraDev Labs",
+              "url": "https://nimradevlabs.vercel.app",
+              "applicationCategory": "DeveloperApplication"
             }
           ]
         }
       ]
     }
     </script>
+
+    <style>
+        /* Custom Mouse Follower Circle */
+        #cursor-dot {
+            width: 8px;
+            height: 8px;
+            background-color: #4f46e5;
+            border-radius: 50%;
+            position: fixed;
+            pointer-events: none;
+            z-index: 9999;
+            transform: translate(-50%, -50%);
+            transition: opacity 0.2s ease;
+        }
+
+        #cursor-circle {
+            width: 36px;
+            height: 36px;
+            border: 2px solid rgba(99, 102, 241, 0.45);
+            border-radius: 50%;
+            position: fixed;
+            pointer-events: none;
+            z-index: 9998;
+            transform: translate(-50%, -50%);
+            transition: width 0.2s ease, height 0.2s ease, border-color 0.2s ease;
+            background: rgba(99, 102, 241, 0.04);
+        }
+
+        /* Hover expansion on interactive elements */
+        body.hovering #cursor-circle {
+            width: 52px;
+            height: 52px;
+            border-color: rgba(79, 70, 229, 0.8);
+            background: rgba(99, 102, 241, 0.08);
+        }
+
+        /* Ambient light theme card styles */
+        .white-card {
+            background: #ffffff;
+            box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.05), 0 20px 25px -5px rgba(99, 102, 241, 0.04);
+            border: 1px solid #e2e8f0;
+        }
+
+        .white-card:hover {
+            border-color: #cbd5e1;
+            box-shadow: 0 15px 35px -5px rgba(0, 0, 0, 0.08), 0 25px 30px -5px rgba(99, 102, 241, 0.06);
+        }
+    </style>
 </head>
 
-<body class="bg-[#090d16] text-slate-200 min-h-screen flex flex-col justify-between selection:bg-indigo-600 selection:text-white antialiased">
+<body class="bg-[#fafcff] text-slate-800 min-h-screen flex flex-col justify-between selection:bg-indigo-500 selection:text-white font-sans antialiased overflow-x-hidden relative">
 
-    <!-- Simple, Clean Navbar -->
-    <header class="border-b border-slate-800/60 bg-[#090d16]/90 sticky top-0 z-40 backdrop-blur-sm">
-        <div class="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between">
-            <a href="/" class="flex items-center gap-2.5 group">
-                <div class="w-8 h-8 rounded-lg bg-indigo-600/10 border border-indigo-500/30 flex items-center justify-center font-mono font-bold text-xs text-indigo-400">
-                    &lt;/&gt;
-                </div>
-                <span class="font-bold text-base text-white tracking-tight">NimraDev</span>
+    <!-- Interactive Mouse Follower -->
+    <div id="cursor-dot"></div>
+    <div id="cursor-circle"></div>
+
+    <!-- Moving Stars Canvas (Tailored for White/Light Theme) -->
+    <canvas id="starsCanvas" class="fixed inset-0 pointer-events-none -z-10 w-full h-full"></canvas>
+
+    <!-- Top Header: ONLY Contact Button on the Top Corner -->
+    <header class="w-full py-6 px-6 sm:px-10 flex items-center justify-between relative z-20">
+        <!-- Logo -->
+        <a href="/" class="flex items-center gap-2.5 group" aria-label="NimraDev Home">
+            <div class="w-9 h-9 rounded-xl bg-indigo-50 border border-indigo-200 flex items-center justify-center font-mono font-bold text-xs text-indigo-600 shadow-sm group-hover:scale-105 transition-transform">
+                &lt;/&gt;
+            </div>
+            <span class="font-extrabold text-base tracking-tight text-slate-900">
+                NimraDev
+            </span>
+        </a>
+
+        <!-- Top Corner: ONLY Contact Button -->
+        <div>
+            <a href="/contact.html" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-semibold text-xs transition-all shadow-md shadow-indigo-600/20 hover:shadow-indigo-600/35 group">
+                <span>Contact</span>
+                <svg class="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                </svg>
             </a>
-
-            <nav class="flex items-center gap-6 text-xs sm:text-sm font-medium text-slate-400">
-                <a href="#apps" class="hover:text-white transition-colors">Apps</a>
-                <a href="/contact.html" class="hover:text-white transition-colors">Contact</a>
-                <a href="https://github.com/nimradeveloper812-collab" target="_blank" rel="noopener" class="hover:text-white transition-colors">GitHub</a>
-            </nav>
         </div>
     </header>
 
-    <!-- Main Content -->
-    <main class="max-w-4xl mx-auto px-6 py-16 sm:py-24 flex-1 w-full flex flex-col justify-center">
+    <!-- Main Content: Perfectly Centered -->
+    <main class="max-w-xl mx-auto px-6 py-8 sm:py-12 flex-1 w-full flex flex-col items-center justify-center text-center relative z-20">
 
-        <!-- Hero Section -->
-        <div class="text-center max-w-2xl mx-auto mb-14">
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-slate-400 text-xs font-medium mb-6">
-                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
-                <span>Simple &bull; Fast &bull; Free</span>
-            </div>
-            
-            <h1 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight mb-4">
-                Web tools built for daily productivity.
-            </h1>
-            
-            <p class="text-slate-400 text-base sm:text-lg leading-relaxed">
-                Clean, client-side digital utilities designed to get things done quickly without file uploads or accounts.
-            </p>
-        </div>
+        <!-- Center Heading: Nimra's Hub -->
+        <h1 class="text-4xl sm:text-5xl font-black text-slate-900 tracking-tight mb-2">
+            Nimra's Hub
+        </h1>
 
-        <!-- Clean Apps Grid (Only 2 Primary Cards) -->
-        <div id="apps" class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+        <!-- Format: HUB of Domain: nimradev.site -->
+        <p class="text-sm sm:text-base font-semibold text-indigo-600 tracking-wide mb-8">
+            HUB of Domain: <span class="text-slate-800 font-mono font-bold">nimradev.site</span>
+        </p>
+
+        <!-- Compact Average-Sized Card -->
+        <div class="white-card rounded-2xl p-6 sm:p-7 w-full text-left transition-all duration-300">
             
-            <!-- Card 1: PDFora -->
-            <div class="p-6 sm:p-8 rounded-2xl bg-slate-900/40 border border-slate-800 hover:border-indigo-500/40 transition-colors flex flex-col justify-between">
-                <div>
-                    <div class="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 mb-5 font-mono font-bold text-sm">
-                        PDF
-                    </div>
-                    <div class="flex items-center justify-between mb-2">
-                        <h2 class="text-xl font-bold text-white">PDFora</h2>
-                        <span class="text-[11px] px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 font-medium">Live</span>
-                    </div>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
-                        Complete browser-based PDF toolkit. Merge, split, compress, and edit documents privately inside your browser.
-                    </p>
-                </div>
-                <div>
-                    <a href="https://pdfora.nimradev.site" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center w-full py-2.5 px-4 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-semibold transition-colors">
-                        Launch PDFora &rarr;
-                    </a>
-                </div>
+            <!-- Card Header -->
+            <div class="flex items-center justify-between pb-4 mb-4 border-b border-slate-100">
+                <h2 class="text-sm sm:text-base font-bold text-slate-900">
+                    Connected webapps with hub
+                </h2>
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-emerald-50 text-emerald-600 border border-emerald-200">
+                    Active
+                </span>
             </div>
 
-            <!-- Card 2: NimLearn -->
-            <div class="p-6 sm:p-8 rounded-2xl bg-slate-900/40 border border-slate-800 hover:border-purple-500/40 transition-colors flex flex-col justify-between">
-                <div>
-                    <div class="w-10 h-10 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 mb-5 font-mono font-bold text-sm">
-                        &lt;&gt;
+            <!-- List with 1. 2. 3. Indexing -->
+            <div class="space-y-3">
+                
+                <!-- 1. PDFora -->
+                <a href="https://pdfora.nimradev.site" target="_blank" rel="noopener noreferrer" class="group flex items-center justify-between p-3 rounded-xl bg-slate-50 hover:bg-indigo-50/70 border border-slate-200/80 hover:border-indigo-200 transition-all">
+                    <div class="flex items-center gap-3">
+                        <span class="font-mono font-extrabold text-sm text-indigo-600 w-5">1.</span>
+                        <div>
+                            <div class="font-bold text-sm text-slate-900 group-hover:text-indigo-600 transition-colors flex items-center gap-1.5">
+                                PDFora
+                                <span class="text-[10px] px-1.5 py-0.2 rounded bg-indigo-100 text-indigo-700 font-medium">PDF Suite</span>
+                            </div>
+                            <p class="text-xs text-slate-500 mt-0.5">
+                                Free online PDF merger, converter, compressor & tools
+                            </p>
+                        </div>
                     </div>
-                    <div class="flex items-center justify-between mb-2">
-                        <h2 class="text-xl font-bold text-white">NimLearn</h2>
-                        <span class="text-[11px] px-2 py-0.5 rounded-full bg-purple-500/10 text-purple-400 border border-purple-500/20 font-medium">Learning</span>
+                    <div class="text-slate-400 group-hover:text-indigo-600 group-hover:translate-x-1 transition-all">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
                     </div>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
-                        Interactive learning platform featuring practical roadmaps, coding guides, and technical tutorials.
-                    </p>
-                </div>
-                <div>
-                    <a href="https://nimlearn.nimradev.site" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center w-full py-2.5 px-4 rounded-xl bg-purple-600 hover:bg-purple-500 text-white text-xs font-semibold transition-colors">
-                        Launch NimLearn &rarr;
-                    </a>
-                </div>
+                </a>
+
+                <!-- 2. NimLearn -->
+                <a href="https://nimlearn.nimradev.site" target="_blank" rel="noopener noreferrer" class="group flex items-center justify-between p-3 rounded-xl bg-slate-50 hover:bg-purple-50/70 border border-slate-200/80 hover:border-purple-200 transition-all">
+                    <div class="flex items-center gap-3">
+                        <span class="font-mono font-extrabold text-sm text-purple-600 w-5">2.</span>
+                        <div>
+                            <div class="font-bold text-sm text-slate-900 group-hover:text-purple-600 transition-colors flex items-center gap-1.5">
+                                NimLearn
+                                <span class="text-[10px] px-1.5 py-0.2 rounded bg-purple-100 text-purple-700 font-medium">Learning</span>
+                            </div>
+                            <p class="text-xs text-slate-500 mt-0.5">
+                                Interactive developer tutorials, guides & roadmaps
+                            </p>
+                        </div>
+                    </div>
+                    <div class="text-slate-400 group-hover:text-purple-600 group-hover:translate-x-1 transition-all">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </div>
+                </a>
+
+                <!-- 3. NimraDev Labs -->
+                <a href="https://nimradevlabs.vercel.app" target="_blank" rel="noopener noreferrer" class="group flex items-center justify-between p-3 rounded-xl bg-slate-50 hover:bg-amber-50/70 border border-slate-200/80 hover:border-amber-200 transition-all">
+                    <div class="flex items-center gap-3">
+                        <span class="font-mono font-extrabold text-sm text-amber-600 w-5">3.</span>
+                        <div>
+                            <div class="font-bold text-sm text-slate-900 group-hover:text-amber-600 transition-colors flex items-center gap-1.5">
+                                NimraDev Labs
+                                <span class="text-[10px] px-1.5 py-0.2 rounded bg-amber-100 text-amber-800 font-medium">Tools</span>
+                            </div>
+                            <p class="text-xs text-slate-500 mt-0.5">
+                                Experimental tools, utilities & upcoming innovations
+                            </p>
+                        </div>
+                    </div>
+                    <div class="text-slate-400 group-hover:text-amber-600 group-hover:translate-x-1 transition-all">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </div>
+                </a>
+
             </div>
 
-        </div>
-
-        <!-- Clean Privacy Note -->
-        <div class="p-5 rounded-xl bg-slate-900/20 border border-slate-800/60 text-center max-w-xl mx-auto">
-            <p class="text-xs text-slate-400">
-                🔒 <strong class="text-slate-300">Privacy First:</strong> Your documents never leave your browser. Zero cloud retention.
-            </p>
         </div>
 
     </main>
 
-    <!-- Clean, Simple Footer -->
-    <footer class="border-t border-slate-800/60 py-8 px-6 text-xs text-slate-500">
-        <div class="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+    <!-- Clean Footer -->
+    <footer class="py-6 px-6 border-t border-slate-200/80 text-center text-xs text-slate-500 relative z-20 bg-white/60 backdrop-blur-xs">
+        <div class="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
             <p>&copy; 2026 NimraDev. All rights reserved.</p>
-            <div class="flex items-center space-x-6">
-                <a href="/privacy-policy.html" class="hover:text-slate-400 transition-colors">Privacy</a>
-                <a href="/terms.html" class="hover:text-slate-400 transition-colors">Terms</a>
-                <a href="/contact.html" class="hover:text-slate-400 transition-colors">Contact</a>
-                <a href="/sitemap.xml" class="hover:text-slate-400 transition-colors">Sitemap</a>
-                <a href="/ads.txt" class="hover:text-slate-400 transition-colors">ads.txt</a>
+            <div class="flex items-center space-x-5">
+                <a href="/privacy-policy.html" class="hover:text-indigo-600 transition-colors">Privacy</a>
+                <a href="/terms.html" class="hover:text-indigo-600 transition-colors">Terms</a>
+                <a href="/contact.html" class="hover:text-indigo-600 transition-colors">Contact</a>
+                <a href="/sitemap.xml" class="hover:text-indigo-600 transition-colors">Sitemap</a>
+                <a href="/ads.txt" class="hover:text-indigo-600 transition-colors">ads.txt</a>
             </div>
         </div>
     </footer>
+
+    <!-- Scripts: Animated Stars & Mouse Follower -->
+    <script>
+        // --- 1. Mouse Follower Animation ---
+        const cursorDot = document.getElementById('cursor-dot');
+        const cursorCircle = document.getElementById('cursor-circle');
+
+        let mouseX = window.innerWidth / 2;
+        let mouseY = window.innerHeight / 2;
+        let circleX = mouseX;
+        let circleY = mouseY;
+
+        window.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+            cursorDot.style.left = `${mouseX}px`;
+            cursorDot.style.top = `${mouseY}px`;
+        });
+
+        // Smooth Lerp Animation for Circle
+        function animateCursor() {
+            circleX += (mouseX - circleX) * 0.15;
+            circleY += (mouseY - circleY) * 0.15;
+
+            cursorCircle.style.left = `${circleX}px`;
+            cursorCircle.style.top = `${circleY}px`;
+
+            requestAnimationFrame(animateCursor);
+        }
+        animateCursor();
+
+        // Hover effect on links and buttons
+        document.querySelectorAll('a, button').forEach(el => {
+            el.addEventListener('mouseenter', () => document.body.classList.add('hovering'));
+            el.addEventListener('mouseleave', () => document.body.classList.remove('hovering'));
+        });
+
+        // --- 2. Continuously Moving Stars Canvas (White Theme Suited) ---
+        const canvas = document.getElementById('starsCanvas');
+        const ctx = canvas.getContext('2d');
+
+        let width, height, stars = [];
+        const numStars = 65;
+
+        // Palette suitable for light/white theme (Soft Indigo, Violet, Cyan, Light Slate)
+        const starColors = [
+            'rgba(99, 102, 241, 0.45)',  // Indigo
+            'rgba(168, 85, 247, 0.40)',  // Purple
+            'rgba(59, 130, 246, 0.40)',  // Blue
+            'rgba(14, 165, 233, 0.35)',  // Sky
+            'rgba(148, 163, 184, 0.35)'  // Slate
+        ];
+
+        function resizeCanvas() {
+            width = canvas.width = window.innerWidth;
+            height = canvas.height = window.innerHeight;
+        }
+
+        class Star {
+            constructor() {
+                this.reset();
+            }
+
+            reset() {
+                this.x = Math.random() * width;
+                this.y = Math.random() * height;
+                this.radius = Math.random() * 2.2 + 0.8;
+                this.color = starColors[Math.floor(Math.random() * starColors.length)];
+                this.vx = (Math.random() - 0.5) * 0.45;
+                this.vy = (Math.random() - 0.5) * 0.45;
+                this.pulseSpeed = Math.random() * 0.02 + 0.01;
+                this.alpha = Math.random() * 0.5 + 0.2;
+                this.alphaDirection = 1;
+            }
+
+            update() {
+                this.x += this.vx;
+                this.y += this.vy;
+
+                // Screen Wrap
+                if (this.x < 0) this.x = width;
+                if (this.x > width) this.x = 0;
+                if (this.y < 0) this.y = height;
+                if (this.y > height) this.y = 0;
+
+                // Alpha Pulse
+                this.alpha += this.pulseSpeed * this.alphaDirection;
+                if (this.alpha > 0.7) this.alphaDirection = -1;
+                if (this.alpha < 0.15) this.alphaDirection = 1;
+            }
+
+            draw() {
+                ctx.save();
+                ctx.globalAlpha = this.alpha;
+                ctx.fillStyle = this.color;
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+                ctx.fill();
+
+                // Subtle Star Shimmer Cross
+                if (this.radius > 1.8) {
+                    ctx.strokeStyle = this.color;
+                    ctx.lineWidth = 0.5;
+                    ctx.beginPath();
+                    ctx.moveTo(this.x - this.radius * 2, this.y);
+                    ctx.lineTo(this.x + this.radius * 2, this.y);
+                    ctx.moveTo(this.x, this.y - this.radius * 2);
+                    ctx.lineTo(this.x, this.y + this.radius * 2);
+                    ctx.stroke();
+                }
+                ctx.restore();
+            }
+        }
+
+        function initStars() {
+            resizeCanvas();
+            stars = [];
+            for (let i = 0; i < numStars; i++) {
+                stars.push(new Star());
+            }
+        }
+
+        function animateStars() {
+            ctx.clearRect(0, 0, width, height);
+
+            // Connect nearby stars with subtle light lines
+            for (let i = 0; i < stars.length; i++) {
+                for (let j = i + 1; j < stars.length; j++) {
+                    const dx = stars[i].x - stars[j].x;
+                    const dy = stars[i].y - stars[j].y;
+                    const dist = Math.sqrt(dx * dx + dy * dy);
+
+                    if (dist < 110) {
+                        ctx.save();
+                        ctx.strokeStyle = 'rgba(99, 102, 241, 0.08)';
+                        ctx.lineWidth = 1 - dist / 110;
+                        ctx.beginPath();
+                        ctx.moveTo(stars[i].x, stars[i].y);
+                        ctx.lineTo(stars[j].x, stars[j].y);
+                        ctx.stroke();
+                        ctx.restore();
+                    }
+                }
+            }
+
+            stars.forEach(star => {
+                star.update();
+                star.draw();
+            });
+
+            requestAnimationFrame(animateStars);
+        }
+
+        window.addEventListener('resize', resizeCanvas);
+        initStars();
+        animateStars();
+    </script>
 
 </body>
 </html>

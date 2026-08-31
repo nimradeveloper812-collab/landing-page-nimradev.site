@@ -1,105 +1,270 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
+    <!-- Primary Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Support | NimraDev Suite</title>
-    <meta name="description" content="Contact the NimraDev team for support, questions, feedback, or inquiries regarding our web applications and developer tools.">
+    <title>Contact Support | Nimra's Hub</title>
+    <meta name="description" content="Contact the NimraDev team for inquiries, support, or feedback regarding our web applications.">
     <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#ffffff">
     <link rel="canonical" href="https://nimradev.site/contact.html">
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-    <link rel="apple-touch-icon" href="/favicon.svg">
-    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <style>
-        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        #cursor-dot {
+            width: 8px;
+            height: 8px;
+            background-color: #4f46e5;
+            border-radius: 50%;
+            position: fixed;
+            pointer-events: none;
+            z-index: 9999;
+            transform: translate(-50%, -50%);
+        }
+
+        #cursor-circle {
+            width: 36px;
+            height: 36px;
+            border: 2px solid rgba(99, 102, 241, 0.45);
+            border-radius: 50%;
+            position: fixed;
+            pointer-events: none;
+            z-index: 9998;
+            transform: translate(-50%, -50%);
+            transition: width 0.2s ease, height 0.2s ease, border-color 0.2s ease;
+            background: rgba(99, 102, 241, 0.04);
+        }
+
+        body.hovering #cursor-circle {
+            width: 50px;
+            height: 50px;
+            border-color: rgba(79, 70, 229, 0.8);
+        }
+
+        .white-card {
+            background: #ffffff;
+            box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.05), 0 20px 25px -5px rgba(99, 102, 241, 0.04);
+            border: 1px solid #e2e8f0;
+        }
     </style>
 </head>
-<body class="bg-gray-950 text-slate-200 min-h-screen flex flex-col justify-between selection:bg-indigo-500 selection:text-white">
+
+<body class="bg-[#fafcff] text-slate-800 min-h-screen flex flex-col justify-between selection:bg-indigo-500 selection:text-white font-sans antialiased overflow-x-hidden relative">
+
+    <!-- Mouse Follower -->
+    <div id="cursor-dot"></div>
+    <div id="cursor-circle"></div>
+
+    <!-- Moving Stars Canvas -->
+    <canvas id="starsCanvas" class="fixed inset-0 pointer-events-none -z-10 w-full h-full"></canvas>
 
     <!-- Header -->
-    <header class="py-6 px-6 border-b border-slate-800/80 backdrop-blur-md sticky top-0 z-50 bg-gray-950/80">
-        <div class="max-w-5xl mx-auto flex items-center justify-between">
-            <a href="/" class="flex items-center gap-3 group">
-                <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-indigo-600 via-indigo-500 to-purple-500 p-0.5 shadow-md group-hover:scale-105 transition-transform">
-                    <div class="w-full h-full bg-gray-950 rounded-[9px] flex items-center justify-center font-mono font-black text-xs text-indigo-400">
-                        &lt;/&gt;
-                    </div>
-                </div>
-                <div class="flex items-center gap-2">
-                    <span class="text-xl font-extrabold text-white">NimraDev</span>
-                    <span class="text-[10px] uppercase tracking-widest px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 font-semibold">
-                        Support
-                    </span>
-                </div>
-            </a>
-            <a href="/" class="text-sm font-semibold text-indigo-400 hover:text-indigo-300 transition-colors">
-                &larr; Back to Home
-            </a>
-        </div>
+    <header class="w-full py-6 px-6 sm:px-10 flex items-center justify-between relative z-20">
+        <a href="/" class="flex items-center gap-2.5 group">
+            <div class="w-9 h-9 rounded-xl bg-indigo-50 border border-indigo-200 flex items-center justify-center font-mono font-bold text-xs text-indigo-600 shadow-sm group-hover:scale-105 transition-transform">
+                &lt;/&gt;
+            </div>
+            <span class="font-extrabold text-base tracking-tight text-slate-900">
+                NimraDev
+            </span>
+        </a>
+
+        <a href="/" class="text-xs font-semibold text-indigo-600 hover:text-indigo-800 transition-colors">
+            &larr; Back to Hub
+        </a>
     </header>
 
     <!-- Main Content -->
-    <main class="max-w-3xl mx-auto px-6 py-12 flex-1 w-full">
-        <div class="text-center mb-10">
-            <h1 class="text-3xl sm:text-4xl font-extrabold text-white mb-3">Get in Touch</h1>
-            <p class="text-slate-400 text-sm sm:text-base max-w-md mx-auto">
-                Have a question, suggestion, or bug report regarding NimraDev tools? We'd love to hear from you.
+    <main class="max-w-lg mx-auto px-6 py-8 flex-1 w-full flex flex-col justify-center relative z-20">
+        
+        <div class="text-center mb-8">
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-2">
+                Get in Touch
+            </h1>
+            <p class="text-xs sm:text-sm text-slate-500">
+                Send a direct email to the NimraDev team via Resend.
             </p>
         </div>
 
-        <div class="p-8 sm:p-10 rounded-3xl bg-slate-900/60 border border-slate-800 shadow-xl backdrop-blur-md">
-            <form onsubmit="event.preventDefault(); document.getElementById('successMsg').classList.remove('hidden'); this.reset();" class="space-y-6">
+        <div class="white-card rounded-2xl p-6 sm:p-8">
+            <form id="contactForm" class="space-y-4">
                 <div>
-                    <label for="name" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Your Name</label>
-                    <input type="text" id="name" required class="w-full px-4 py-3 rounded-xl bg-gray-950 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors" placeholder="e.g. Sarah Khan">
+                    <label for="name" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Your Name</label>
+                    <input type="text" id="name" required class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 text-sm focus:outline-none focus:border-indigo-500 focus:bg-white transition-colors" placeholder="e.g. Nimra">
                 </div>
 
                 <div>
-                    <label for="email" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Email Address</label>
-                    <input type="email" id="email" required class="w-full px-4 py-3 rounded-xl bg-gray-950 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors" placeholder="name@example.com">
+                    <label for="email" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Your Email</label>
+                    <input type="email" id="email" required class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 text-sm focus:outline-none focus:border-indigo-500 focus:bg-white transition-colors" placeholder="name@example.com">
                 </div>
 
                 <div>
-                    <label for="subject" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Subject / Inquiry</label>
-                    <select id="subject" class="w-full px-4 py-3 rounded-xl bg-gray-950 border border-slate-800 text-white focus:outline-none focus:border-indigo-500 transition-colors">
-                        <option>General Inquiry</option>
-                        <option>PDFora Tool Feedback</option>
-                        <option>NimLearn Question</option>
-                        <option>Feature Request</option>
-                        <option>Bug Report</option>
-                    </select>
+                    <label for="subject" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Subject</label>
+                    <input type="text" id="subject" required class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 text-sm focus:outline-none focus:border-indigo-500 focus:bg-white transition-colors" placeholder="e.g. Feedback regarding PDFora">
                 </div>
 
                 <div>
-                    <label for="message" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Message</label>
-                    <textarea id="message" rows="5" required class="w-full px-4 py-3 rounded-xl bg-gray-950 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors resize-none" placeholder="Write your message here..."></textarea>
+                    <label for="message" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Message</label>
+                    <textarea id="message" rows="4" required class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 text-sm focus:outline-none focus:border-indigo-500 focus:bg-white transition-colors resize-none" placeholder="Write your message here..."></textarea>
                 </div>
 
-                <button type="submit" class="w-full py-3.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-sm transition-all shadow-lg shadow-indigo-600/30">
-                    Send Message
+                <button type="submit" id="submitBtn" class="w-full py-3 px-4 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-xs transition-all shadow-md shadow-indigo-600/20 flex items-center justify-center gap-2">
+                    <span id="btnText">Send Email</span>
+                    <span id="spinner" class="hidden w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></span>
                 </button>
 
-                <div id="successMsg" class="hidden p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-sm text-center">
-                    Thank you! Your message has been sent successfully. We'll be in touch soon.
-                </div>
+                <!-- Feedback alerts -->
+                <div id="statusAlert" class="hidden p-3.5 rounded-xl text-xs font-medium text-center"></div>
             </form>
         </div>
+
     </main>
 
     <!-- Footer -->
-    <footer class="py-8 px-6 border-t border-slate-800/80 text-center text-xs text-slate-500">
-        <div class="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-            <p>&copy; 2026 NimraDev. All rights reserved.</p>
-            <div class="flex items-center space-x-6">
-                <a href="/privacy-policy.html" class="hover:text-slate-400 transition-colors">Privacy Policy</a>
-                <a href="/terms.html" class="hover:text-slate-400 transition-colors">Terms of Service</a>
-                <a href="/contact.html" class="text-slate-400 font-semibold">Contact</a>
-            </div>
-        </div>
+    <footer class="py-6 px-6 border-t border-slate-200/80 text-center text-xs text-slate-500 relative z-20 bg-white/60">
+        <p>&copy; 2026 NimraDev. All rights reserved.</p>
     </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Cursor
+        const cursorDot = document.getElementById('cursor-dot');
+        const cursorCircle = document.getElementById('cursor-circle');
+        let mouseX = window.innerWidth / 2, mouseY = window.innerHeight / 2;
+        let circleX = mouseX, circleY = mouseY;
+
+        window.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX; mouseY = e.clientY;
+            cursorDot.style.left = `${mouseX}px`;
+            cursorDot.style.top = `${mouseY}px`;
+        });
+
+        function animateCursor() {
+            circleX += (mouseX - circleX) * 0.15;
+            circleY += (mouseY - circleY) * 0.15;
+            cursorCircle.style.left = `${circleX}px`;
+            cursorCircle.style.top = `${circleY}px`;
+            requestAnimationFrame(animateCursor);
+        }
+        animateCursor();
+
+        document.querySelectorAll('a, button, input, textarea').forEach(el => {
+            el.addEventListener('mouseenter', () => document.body.classList.add('hovering'));
+            el.addEventListener('mouseleave', () => document.body.classList.remove('hovering'));
+        });
+
+        // Stars Canvas
+        const canvas = document.getElementById('starsCanvas');
+        const ctx = canvas.getContext('2d');
+        let width, height, stars = [];
+
+        function resizeCanvas() {
+            width = canvas.width = window.innerWidth;
+            height = canvas.height = window.innerHeight;
+        }
+
+        class Star {
+            constructor() { this.reset(); }
+            reset() {
+                this.x = Math.random() * width;
+                this.y = Math.random() * height;
+                this.radius = Math.random() * 2 + 0.8;
+                this.color = 'rgba(99, 102, 241, 0.4)';
+                this.vx = (Math.random() - 0.5) * 0.4;
+                this.vy = (Math.random() - 0.5) * 0.4;
+                this.alpha = Math.random() * 0.5 + 0.2;
+            }
+            update() {
+                this.x += this.vx; this.y += this.vy;
+                if (this.x < 0) this.x = width; if (this.x > width) this.x = 0;
+                if (this.y < 0) this.y = height; if (this.y > height) this.y = 0;
+            }
+            draw() {
+                ctx.fillStyle = this.color;
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+
+        function initStars() {
+            resizeCanvas();
+            stars = [];
+            for (let i = 0; i < 50; i++) stars.push(new Star());
+        }
+
+        function animateStars() {
+            ctx.clearRect(0, 0, width, height);
+            stars.forEach(s => { s.update(); s.draw(); });
+            requestAnimationFrame(animateStars);
+        }
+        window.addEventListener('resize', resizeCanvas);
+        initStars();
+        animateStars();
+
+        // Resend Form Submission
+        const contactForm = document.getElementById('contactForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const btnText = document.getElementById('btnText');
+        const spinner = document.getElementById('spinner');
+        const statusAlert = document.getElementById('statusAlert');
+
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            btnText.textContent = 'Sending...';
+            spinner.classList.remove('hidden');
+            submitBtn.disabled = true;
+            statusAlert.className = 'hidden';
+
+            const payload = {
+                name: document.getElementById('name').value.trim(),
+                email: document.getElementById('email').value.trim(),
+                subject: document.getElementById('subject').value.trim(),
+                message: document.getElementById('message').value.trim()
+            };
+
+            try {
+                const res = await fetch('/api/contact', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                const result = await res.json();
+
+                if (res.ok) {
+                    statusAlert.className = 'p-3.5 rounded-xl text-xs font-medium text-center bg-emerald-50 text-emerald-700 border border-emerald-200';
+                    statusAlert.textContent = '✨ Message sent successfully! Thank you for reaching out.';
+                    contactForm.reset();
+                } else {
+                    throw new Error(result.error || 'Failed to send message.');
+                }
+            } catch (err) {
+                statusAlert.className = 'p-3.5 rounded-xl text-xs font-medium text-center bg-rose-50 text-rose-700 border border-rose-200';
+                statusAlert.textContent = err.message || 'Error sending message. Please try again.';
+            } finally {
+                btnText.textContent = 'Send Email';
+                spinner.classList.add('hidden');
+                submitBtn.disabled = false;
+                statusAlert.classList.remove('hidden');
+            }
+        });
+    </script>
 
 </body>
 </html>
