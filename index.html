@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NimraDev Apps & Tools | Hub</title>
+    <meta name="description" content="Explore online productivity and learning tools by NimraDev.">
+    <!-- Tailwind CSS for modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="min-h-screen bg-slate-950 text-slate-100 flex flex-col justify-between selection:bg-indigo-500 selection:text-white">
+
+    <!-- Background Glow Effect -->
+    <div class="fixed inset-0 overflow-hidden pointer-events-none -z-10">
+        <div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[600px] h-[350px] bg-indigo-600/20 blur-[120px] rounded-full"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="py-6 px-6 border-b border-slate-800/80 backdrop-blur-sm sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <span class="text-2xl font-extrabold bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+                    NimraDev
+                </span>
+                <span class="text-xs uppercase tracking-widest px-2 py-0.5 rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 font-semibold">
+                    Portal
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-5xl mx-auto px-6 py-16 flex-1 flex flex-col items-center justify-center text-center">
+        <!-- Hero Section -->
+        <div class="max-w-2xl mx-auto mb-12">
+            <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-white mb-4">
+                Explore Our Web Apps & Tools
+            </h1>
+            <p class="text-slate-400 text-lg sm:text-xl leading-relaxed">
+                Fast, secure, and easy-to-use digital tools designed to make your daily tasks effortless.
+            </p>
+        </div>
+
+        <!-- Apps Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-3xl text-left">
+            
+            <!-- Card 1: PDFora -->
+            <a href="https://pdfora.nimradev.site" target="_blank" rel="noopener noreferrer"
+               class="group p-8 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-indigo-500/50 hover:bg-slate-900 transition-all duration-300 shadow-lg hover:shadow-indigo-500/10 flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 text-2xl mb-5 group-hover:scale-110 transition-transform">
+                        📄
+                    </div>
+                    <h2 class="text-2xl font-bold text-white group-hover:text-indigo-400 transition-colors flex items-center gap-2">
+                        PDFora
+                        <span class="text-xs px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">Live</span>
+                    </h2>
+                    <p class="text-slate-400 mt-2 text-sm leading-relaxed">
+                        Complete online PDF workspace. Convert, merge, split, compress, and edit PDF files right in your browser securely.
+                    </p>
+                </div>
+                <div class="mt-6 flex items-center text-indigo-400 font-semibold text-sm group-hover:translate-x-1 transition-transform">
+                    Launch PDFora &rarr;
+                </div>
+            </a>
+
+            <!-- Card 2: NimLearn -->
+            <a href="https://nimlearn.nimradev.site" target="_blank" rel="noopener noreferrer"
+               class="group p-8 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-purple-500/50 hover:bg-slate-900 transition-all duration-300 shadow-lg hover:shadow-purple-500/10 flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 text-2xl mb-5 group-hover:scale-110 transition-transform">
+                        🎓
+                    </div>
+                    <h2 class="text-2xl font-bold text-white group-hover:text-purple-400 transition-colors flex items-center gap-2">
+                        NimLearn
+                        <span class="text-xs px-2 py-0.5 rounded-full bg-purple-500/10 text-purple-400 border border-purple-500/20">Learning</span>
+                    </h2>
+                    <p class="text-slate-400 mt-2 text-sm leading-relaxed">
+                        Interactive learning platform and educational resources built to boost skills and technical knowledge.
+                    </p>
+                </div>
+                <div class="mt-6 flex items-center text-purple-400 font-semibold text-sm group-hover:translate-x-1 transition-transform">
+                    Launch NimLearn &rarr;
+                </div>
+            </a>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-8 px-6 border-t border-slate-800/80 text-center text-xs text-slate-500">
+        <div class="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>&copy; 2026 NimraDev. All rights reserved.</p>
+            <div class="flex items-center space-x-6">
+                <a href="https://pdfora.nimradev.site/privacy-policy" class="hover:text-slate-400 transition-colors">Privacy Policy</a>
+                <a href="https://pdfora.nimradev.site/terms-of-service" class="hover:text-slate-400 transition-colors">Terms of Service</a>
+                <a href="https://pdfora.nimradev.site/contact" class="hover:text-slate-400 transition-colors">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
