@@ -102,7 +102,7 @@
               "@type": "SoftwareApplication",
               "position": 3,
               "name": "NimraDev Labs",
-              "url": "https://nimradevlabs.vercel.app",
+              "url": "https://nimradevlabs.nimradev.site",
               "applicationCategory": "DeveloperApplication"
             }
           ]
@@ -138,7 +138,6 @@
             background: rgba(99, 102, 241, 0.04);
         }
 
-        /* Hover expansion on interactive elements */
         body.hovering #cursor-circle {
             width: 52px;
             height: 52px;
@@ -146,7 +145,6 @@
             background: rgba(99, 102, 241, 0.08);
         }
 
-        /* Ambient light theme card styles */
         .white-card {
             background: #ffffff;
             box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.05), 0 20px 25px -5px rgba(99, 102, 241, 0.04);
@@ -166,7 +164,7 @@
     <div id="cursor-dot"></div>
     <div id="cursor-circle"></div>
 
-    <!-- Moving Stars Canvas (Tailored for White/Light Theme) -->
+    <!-- Moving Stars Canvas -->
     <canvas id="starsCanvas" class="fixed inset-0 pointer-events-none -z-10 w-full h-full"></canvas>
 
     <!-- Top Header: ONLY Contact Button on the Top Corner -->
@@ -263,8 +261,8 @@
                     </div>
                 </a>
 
-                <!-- 3. NimraDev Labs -->
-                <a href="https://nimradevlabs.vercel.app" target="_blank" rel="noopener noreferrer" class="group flex items-center justify-between p-3 rounded-xl bg-slate-50 hover:bg-amber-50/70 border border-slate-200/80 hover:border-amber-200 transition-all">
+                <!-- 3. NimraDev Labs (Opens nimradevlabs.nimradev.site) -->
+                <a href="https://nimradevlabs.nimradev.site" target="_blank" rel="noopener noreferrer" class="group flex items-center justify-between p-3 rounded-xl bg-slate-50 hover:bg-amber-50/70 border border-slate-200/80 hover:border-amber-200 transition-all">
                     <div class="flex items-center gap-3">
                         <span class="font-mono font-extrabold text-sm text-amber-600 w-5">3.</span>
                         <div>
@@ -290,16 +288,14 @@
 
     </main>
 
-    <!-- Clean Footer -->
+    <!-- Clean Footer (Removed sitemap and ads.txt buttons) -->
     <footer class="py-6 px-6 border-t border-slate-200/80 text-center text-xs text-slate-500 relative z-20 bg-white/60 backdrop-blur-xs">
         <div class="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
             <p>&copy; 2026 NimraDev. All rights reserved.</p>
             <div class="flex items-center space-x-5">
-                <a href="/privacy-policy.html" class="hover:text-indigo-600 transition-colors">Privacy</a>
-                <a href="/terms.html" class="hover:text-indigo-600 transition-colors">Terms</a>
+                <a href="/privacy-policy.html" class="hover:text-indigo-600 transition-colors">Privacy Policy</a>
+                <a href="/terms.html" class="hover:text-indigo-600 transition-colors">Terms of Service</a>
                 <a href="/contact.html" class="hover:text-indigo-600 transition-colors">Contact</a>
-                <a href="/sitemap.xml" class="hover:text-indigo-600 transition-colors">Sitemap</a>
-                <a href="/ads.txt" class="hover:text-indigo-600 transition-colors">ads.txt</a>
             </div>
         </div>
     </footer>
@@ -322,7 +318,6 @@
             cursorDot.style.top = `${mouseY}px`;
         });
 
-        // Smooth Lerp Animation for Circle
         function animateCursor() {
             circleX += (mouseX - circleX) * 0.15;
             circleY += (mouseY - circleY) * 0.15;
@@ -334,26 +329,24 @@
         }
         animateCursor();
 
-        // Hover effect on links and buttons
         document.querySelectorAll('a, button').forEach(el => {
             el.addEventListener('mouseenter', () => document.body.classList.add('hovering'));
             el.addEventListener('mouseleave', () => document.body.classList.remove('hovering'));
         });
 
-        // --- 2. Continuously Moving Stars Canvas (White Theme Suited) ---
+        // --- 2. Moving Stars Canvas ---
         const canvas = document.getElementById('starsCanvas');
         const ctx = canvas.getContext('2d');
 
         let width, height, stars = [];
         const numStars = 65;
 
-        // Palette suitable for light/white theme (Soft Indigo, Violet, Cyan, Light Slate)
         const starColors = [
-            'rgba(99, 102, 241, 0.45)',  // Indigo
-            'rgba(168, 85, 247, 0.40)',  // Purple
-            'rgba(59, 130, 246, 0.40)',  // Blue
-            'rgba(14, 165, 233, 0.35)',  // Sky
-            'rgba(148, 163, 184, 0.35)'  // Slate
+            'rgba(99, 102, 241, 0.45)',
+            'rgba(168, 85, 247, 0.40)',
+            'rgba(59, 130, 246, 0.40)',
+            'rgba(14, 165, 233, 0.35)',
+            'rgba(148, 163, 184, 0.35)'
         ];
 
         function resizeCanvas() {
@@ -382,13 +375,11 @@
                 this.x += this.vx;
                 this.y += this.vy;
 
-                // Screen Wrap
                 if (this.x < 0) this.x = width;
                 if (this.x > width) this.x = 0;
                 if (this.y < 0) this.y = height;
                 if (this.y > height) this.y = 0;
 
-                // Alpha Pulse
                 this.alpha += this.pulseSpeed * this.alphaDirection;
                 if (this.alpha > 0.7) this.alphaDirection = -1;
                 if (this.alpha < 0.15) this.alphaDirection = 1;
@@ -402,7 +393,6 @@
                 ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
                 ctx.fill();
 
-                // Subtle Star Shimmer Cross
                 if (this.radius > 1.8) {
                     ctx.strokeStyle = this.color;
                     ctx.lineWidth = 0.5;
@@ -428,7 +418,6 @@
         function animateStars() {
             ctx.clearRect(0, 0, width, height);
 
-            // Connect nearby stars with subtle light lines
             for (let i = 0; i < stars.length; i++) {
                 for (let j = i + 1; j < stars.length; j++) {
                     const dx = stars[i].x - stars[j].x;
