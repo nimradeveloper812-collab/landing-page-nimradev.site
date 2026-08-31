@@ -14,10 +14,16 @@
     <meta name="theme-color" content="#030712">
     <link rel="canonical" href="https://nimradev.site/">
 
-    <!-- Favicon / Logo -->
+    <!-- Google Search & Browser Favicons (Compliant with Google Search Guidelines) -->
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-    <link rel="alternate icon" href="/favicon.svg">
-    <link rel="apple-touch-icon" href="/favicon.svg">
+    <link rel="manifest" href="/site.webmanifest">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -25,7 +31,9 @@
     <meta property="og:site_name" content="NimraDev Suite">
     <meta property="og:title" content="NimraDev Suite | High-Performance Free Web Apps & Productivity Tools">
     <meta property="og:description" content="Access free, privacy-first web utilities by NimraDev including PDFora PDF Suite and NimLearn. 100% free with client-side security.">
-    <meta property="og:image" content="https://nimradev.site/favicon.svg">
+    <meta property="og:image" content="https://nimradev.site/og-image.png">
+    <meta property="og:image:width" content="512">
+    <meta property="og:image:height" content="512">
     <meta property="og:locale" content="en_US">
 
     <!-- Twitter / X -->
@@ -33,7 +41,7 @@
     <meta name="twitter:url" content="https://nimradev.site/">
     <meta name="twitter:title" content="NimraDev Suite | High-Performance Free Web Apps & Productivity Tools">
     <meta name="twitter:description" content="Access free, privacy-first web utilities by NimraDev including PDFora PDF Suite and NimLearn.">
-    <meta name="twitter:image" content="https://nimradev.site/favicon.svg">
+    <meta name="twitter:image" content="https://nimradev.site/og-image.png">
 
     <!-- Preconnect & Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -87,7 +95,13 @@
           "@id": "https://nimradev.site/#organization",
           "name": "NimraDev",
           "url": "https://nimradev.site/",
-          "logo": "https://nimradev.site/favicon.svg",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://nimradev.site/favicon-512x512.png",
+            "width": "512",
+            "height": "512"
+          },
+          "image": "https://nimradev.site/favicon-512x512.png",
           "description": "Provider of modern, privacy-oriented web applications and developer tools.",
           "sameAs": [
             "https://github.com/nimradeveloper812-collab"
