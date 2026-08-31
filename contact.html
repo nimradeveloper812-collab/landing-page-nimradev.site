@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Support | NimraDev Suite</title>
+    <meta name="description" content="Contact the NimraDev team for support, questions, feedback, or inquiries regarding our web applications and developer tools.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://nimradev.site/contact.html">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-950 text-slate-200 min-h-screen flex flex-col justify-between selection:bg-indigo-500 selection:text-white">
+
+    <!-- Header -->
+    <header class="py-6 px-6 border-b border-slate-800/80 backdrop-blur-md sticky top-0 z-50 bg-gray-950/80">
+        <div class="max-w-5xl mx-auto flex items-center justify-between">
+            <a href="/" class="flex items-center space-x-2">
+                <span class="text-2xl font-extrabold bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+                    NimraDev
+                </span>
+                <span class="text-xs uppercase tracking-widest px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 font-semibold">
+                    Support
+                </span>
+            </a>
+            <a href="/" class="text-sm font-semibold text-indigo-400 hover:text-indigo-300 transition-colors">
+                &larr; Back to Home
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-3xl mx-auto px-6 py-12 flex-1 w-full">
+        <div class="text-center mb-10">
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-white mb-3">Get in Touch</h1>
+            <p class="text-slate-400 text-sm sm:text-base max-w-md mx-auto">
+                Have a question, suggestion, or bug report regarding NimraDev tools? We'd love to hear from you.
+            </p>
+        </div>
+
+        <div class="p-8 sm:p-10 rounded-3xl bg-slate-900/60 border border-slate-800 shadow-xl backdrop-blur-md">
+            <form onsubmit="event.preventDefault(); document.getElementById('successMsg').classList.remove('hidden'); this.reset();" class="space-y-6">
+                <div>
+                    <label for="name" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Your Name</label>
+                    <input type="text" id="name" required class="w-full px-4 py-3 rounded-xl bg-gray-950 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors" placeholder="e.g. Sarah Khan">
+                </div>
+
+                <div>
+                    <label for="email" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Email Address</label>
+                    <input type="email" id="email" required class="w-full px-4 py-3 rounded-xl bg-gray-950 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors" placeholder="name@example.com">
+                </div>
+
+                <div>
+                    <label for="subject" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Subject / Inquiry</label>
+                    <select id="subject" class="w-full px-4 py-3 rounded-xl bg-gray-950 border border-slate-800 text-white focus:outline-none focus:border-indigo-500 transition-colors">
+                        <option>General Inquiry</option>
+                        <option>PDFora Tool Feedback</option>
+                        <option>NimLearn Question</option>
+                        <option>Feature Request</option>
+                        <option>Bug Report</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="message" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Message</label>
+                    <textarea id="message" rows="5" required class="w-full px-4 py-3 rounded-xl bg-gray-950 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors resize-none" placeholder="Write your message here..."></textarea>
+                </div>
+
+                <button type="submit" class="w-full py-3.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-sm transition-all shadow-lg shadow-indigo-600/30">
+                    Send Message
+                </button>
+
+                <div id="successMsg" class="hidden p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-sm text-center">
+                    Thank you! Your message has been sent successfully. We'll be in touch soon.
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-8 px-6 border-t border-slate-800/80 text-center text-xs text-slate-500">
+        <div class="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>&copy; 2026 NimraDev. All rights reserved.</p>
+            <div class="flex items-center space-x-6">
+                <a href="/privacy-policy.html" class="hover:text-slate-400 transition-colors">Privacy Policy</a>
+                <a href="/terms.html" class="hover:text-slate-400 transition-colors">Terms of Service</a>
+                <a href="/contact.html" class="text-slate-400 font-semibold">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
