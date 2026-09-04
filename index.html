@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Nimra's Hub | HUB of Domain: nimradev.site</title>
-    <meta name="title" content="Nimra's Hub | HUB of Domain: nimradev.site">
-    <meta name="description" content="Official Hub of Domain: nimradev.site. Explore connected web applications including PDFora and NimLearn.">
-    <meta name="keywords" content="Nimra's Hub, nimradev.site, PDFora, NimLearn, Web Utilities, Developer Hub">
-    <meta name="author" content="NimraDev">
+    <title>NimraDev Labs | Modern Web Applications & Software Hub</title>
+    <meta name="title" content="NimraDev Labs | Modern Web Applications & Software Hub">
+    <meta name="description" content="Central hub for NimraDev Labs. Discover high-performance, privacy-first web utilities, developer platforms, and our flagship PDF utility suite, PDFora.">
+    <meta name="keywords" content="NimraDev Labs, nimradev.site, PDFora, PDF tools, merge pdf, compress pdf, split pdf, privacy-first web apps, client-side tools, web utilities">
+    <meta name="author" content="NimraDev Labs">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    <meta name="theme-color" content="#ffffff">
+    <meta name="theme-color" content="#4f46e5">
     <link rel="canonical" href="https://nimradev.site/">
     <meta name="google-adsense-account" content="ca-pub-4933513982054789">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4933513982054789" crossorigin="anonymous"></script>
@@ -27,20 +27,20 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="manifest" href="/site.webmanifest">
 
-    <!-- Open Graph / Social Meta -->
+    <!-- Open Graph / Facebook Meta -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://nimradev.site/">
-    <meta property="og:site_name" content="Nimra's Hub">
-    <meta property="og:title" content="Nimra's Hub | HUB of Domain: nimradev.site">
-    <meta property="og:description" content="Official Hub of Domain: nimradev.site. Explore connected web applications.">
+    <meta property="og:site_name" content="NimraDev Labs">
+    <meta property="og:title" content="NimraDev Labs | Modern Web Applications & Software Hub">
+    <meta property="og:description" content="Central authority hub for NimraDev Labs. Explore client-side web utilities, developer tools, and our flagship platform PDFora.">
     <meta property="og:image" content="https://nimradev.site/og-image.png">
     <meta property="og:locale" content="en_US">
 
     <!-- Twitter Meta -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://nimradev.site/">
-    <meta name="twitter:title" content="Nimra's Hub | HUB of Domain: nimradev.site">
-    <meta name="twitter:description" content="Official Hub of Domain: nimradev.site. Explore connected web applications.">
+    <meta name="twitter:title" content="NimraDev Labs | Modern Web Applications & Software Hub">
+    <meta name="twitter:description" content="Central authority hub for NimraDev Labs. Explore client-side web utilities, developer tools, and our flagship platform PDFora.">
     <meta name="twitter:image" content="https://nimradev.site/og-image.png">
 
     <!-- Fonts -->
@@ -57,13 +57,24 @@
                     fontFamily: {
                         sans: ['"Plus Jakarta Sans"', 'sans-serif'],
                         mono: ['"JetBrains Mono"', 'monospace'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#eef2ff',
+                            100: '#e0e7ff',
+                            200: '#c7d2fe',
+                            500: '#6366f1',
+                            600: '#4f46e5',
+                            700: '#4338ca',
+                            900: '#312e81',
+                        }
                     }
                 }
             }
         }
     </script>
 
-    <!-- Google Search Console Structured Data (JSON-LD) -->
+    <!-- Structured Data (JSON-LD) for Search Console & AdSense Authority -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -71,41 +82,89 @@
         {
           "@type": "Organization",
           "@id": "https://nimradev.site/#organization",
-          "name": "NimraDev",
+          "name": "NimraDev Labs",
           "url": "https://nimradev.site/",
-          "logo": "https://nimradev.site/favicon-512x512.png"
+          "logo": "https://nimradev.site/favicon-512x512.png",
+          "sameAs": [
+            "https://pdfora.nimradev.site",
+            "https://nimlearn.nimradev.site",
+            "https://nimradevlabs.nimradev.site",
+            "https://punjab-university-gpa-cgpa-calculator.nimradev.site"
+          ],
+          "description": "NimraDev Labs designs and builds privacy-preserving, high-speed, client-side web applications and developer utilities."
         },
         {
           "@type": "WebSite",
           "@id": "https://nimradev.site/#website",
           "url": "https://nimradev.site/",
-          "name": "Nimra's Hub",
+          "name": "NimraDev Labs Hub",
+          "description": "Central authority hub and software directory for NimraDev Labs applications.",
           "publisher": { "@id": "https://nimradev.site/#organization" }
         },
         {
-          "@type": "ItemList",
-          "name": "Connected webapps with hub",
+          "@type": "BreadcrumbList",
+          "@id": "https://nimradev.site/#breadcrumb",
           "itemListElement": [
             {
-              "@type": "SoftwareApplication",
+              "@type": "ListItem",
               "position": 1,
-              "name": "PDFora",
-              "url": "https://pdfora.nimradev.site",
-              "applicationCategory": "ProductivityApplication"
+              "name": "Home",
+              "item": "https://nimradev.site/"
+            }
+          ]
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "PDFora",
+          "url": "https://pdfora.nimradev.site",
+          "applicationCategory": "ProductivityApplication",
+          "operatingSystem": "All modern web browsers",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "description": "Free, browser-based PDF utility suite for merging, compressing, splitting, and converting PDF documents locally with zero server file retention."
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "Punjab University GPA & CGPA Calculator",
+          "url": "https://punjab-university-gpa-cgpa-calculator.nimradev.site/",
+          "applicationCategory": "EducationalApplication",
+          "operatingSystem": "All modern web browsers",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "description": "Free semester GPA and cumulative CGPA calculator designed specifically for Punjab University (PU) students and grading standards."
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is NimraDev Labs?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "NimraDev Labs is an independent web architecture and software initiative dedicated to engineering high-performance, privacy-first web utilities and developer resources."
+              }
             },
             {
-              "@type": "SoftwareApplication",
-              "position": 2,
-              "name": "NimLearn",
-              "url": "https://nimlearn.nimradev.site",
-              "applicationCategory": "EducationalApplication"
+              "@type": "Question",
+              "name": "Are PDFora tools free to use?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, PDFora tools including Merge PDF, Compress PDF, Split PDF, and PDF converters are completely free to use without mandatory sign-ups or subscription paywalls."
+              }
             },
             {
-              "@type": "SoftwareApplication",
-              "position": 3,
-              "name": "NimraDev Labs",
-              "url": "https://nimradevlabs.nimradev.site",
-              "applicationCategory": "DeveloperApplication"
+              "@type": "Question",
+              "name": "How does client-side processing protect my privacy?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Our tools use WebAssembly and HTML5 APIs to process your files directly inside your browser's local memory. Files are never uploaded to remote servers, ensuring absolute data security."
+              }
             }
           ]
         }
@@ -114,7 +173,7 @@
     </script>
 
     <style>
-        /* Custom Mouse Follower Circle */
+        /* Custom Mouse Follower */
         #cursor-dot {
             width: 8px;
             height: 8px;
@@ -147,15 +206,17 @@
             background: rgba(99, 102, 241, 0.08);
         }
 
-        .white-card {
+        .hub-card {
             background: #ffffff;
-            box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.05), 0 20px 25px -5px rgba(99, 102, 241, 0.04);
+            box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.04), 0 20px 25px -5px rgba(99, 102, 241, 0.03);
             border: 1px solid #e2e8f0;
+            transition: all 0.25s ease-in-out;
         }
 
-        .white-card:hover {
+        .hub-card:hover {
             border-color: #cbd5e1;
-            box-shadow: 0 15px 35px -5px rgba(0, 0, 0, 0.08), 0 25px 30px -5px rgba(99, 102, 241, 0.06);
+            transform: translateY(-2px);
+            box-shadow: 0 15px 35px -5px rgba(0, 0, 0, 0.07), 0 25px 30px -5px rgba(99, 102, 241, 0.05);
         }
     </style>
 </head>
@@ -166,141 +227,676 @@
     <div id="cursor-dot"></div>
     <div id="cursor-circle"></div>
 
-    <!-- Moving Stars Canvas -->
+    <!-- Background Stars Canvas -->
     <canvas id="starsCanvas" class="fixed inset-0 pointer-events-none -z-10 w-full h-full"></canvas>
 
-    <!-- Top Header: ONLY Contact Button on the Top Corner -->
-    <header class="w-full py-6 px-6 sm:px-10 flex items-center justify-between relative z-20">
-        <!-- Logo -->
-        <a href="/" class="flex items-center gap-2.5 group" aria-label="NimraDev Home">
-            <img src="favicon.svg" alt="NimraDev Logo" class="w-9 h-9 rounded-xl shadow-sm group-hover:scale-105 transition-transform object-contain" />
-            <span class="font-extrabold text-base tracking-tight text-slate-900">
-                NimraDev
-            </span>
-        </a>
-
-        <!-- Top Corner: ONLY Contact Button -->
-        <div>
-            <a href="/contact.html" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-semibold text-xs transition-all shadow-md shadow-indigo-600/20 hover:shadow-indigo-600/35 group">
-                <span>Contact</span>
-                <svg class="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                </svg>
+    <!-- Header Navigation -->
+    <header class="w-full py-4 px-6 sm:px-10 border-b border-slate-200/80 bg-white/85 backdrop-blur-md sticky top-0 z-40 transition-all">
+        <div class="max-w-6xl mx-auto flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="/" class="flex items-center gap-3 group" aria-label="NimraDev Labs Home">
+                <img src="favicon.svg" alt="NimraDev Logo" class="w-9 h-9 rounded-xl shadow-xs group-hover:scale-105 transition-transform object-contain" />
+                <div class="flex flex-col text-left">
+                    <span class="font-extrabold text-base tracking-tight text-slate-900 leading-tight">NimraDev <span class="text-indigo-600">Labs</span></span>
+                    <span class="text-[10px] font-mono text-slate-500 tracking-wider">nimradev.site</span>
+                </div>
             </a>
+
+            <!-- Navigation Links -->
+            <nav class="hidden md:flex items-center space-x-6 text-xs font-semibold text-slate-600" aria-label="Primary Navigation">
+                <a href="#pdfora-suite" class="hover:text-indigo-600 transition-colors">PDFora Suite</a>
+                <a href="#ecosystem" class="hover:text-indigo-600 transition-colors">Platforms</a>
+                <a href="#security-tech" class="hover:text-indigo-600 transition-colors">Security Stack</a>
+                <a href="#insights-guides" class="hover:text-indigo-600 transition-colors">Guides</a>
+                <a href="/about.html" class="hover:text-indigo-600 transition-colors">About Us</a>
+                <a href="/contact.html" class="hover:text-indigo-600 transition-colors">Contact</a>
+            </nav>
+
+            <!-- Action Button -->
+            <div class="flex items-center gap-3">
+                <a href="https://pdfora.nimradev.site" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-semibold text-indigo-600 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200/70 transition-all">
+                    <span>Open PDFora</span>
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                </a>
+                <a href="/contact.html" class="inline-flex items-center gap-2 px-4 sm:px-5 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-semibold text-xs transition-all shadow-md shadow-indigo-600/20 hover:shadow-indigo-600/35 group">
+                    <span>Contact Desk</span>
+                    <svg class="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                </a>
+            </div>
         </div>
     </header>
 
-    <!-- Main Content: Perfectly Centered -->
-    <main class="max-w-xl mx-auto px-6 py-8 sm:py-12 flex-1 w-full flex flex-col items-center justify-center text-center relative z-20">
+    <!-- Main Content Container -->
+    <main class="w-full relative z-20 flex-1">
 
-        <!-- Center Heading: Nimra's Hub -->
-        <h1 class="text-4xl sm:text-5xl font-black text-slate-900 tracking-tight mb-2">
-            Nimra's Hub
-        </h1>
+        <!-- 1. Hero Section -->
+        <section id="hero" class="max-w-5xl mx-auto px-6 pt-12 pb-16 text-center">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-50 border border-indigo-200 text-indigo-700 text-xs font-semibold mb-6">
+                <span class="w-2 h-2 rounded-full bg-indigo-600 animate-pulse"></span>
+                Official Central Domain Hub &bull; nimradev.site
+            </div>
 
-        <!-- Format: HUB of Domain: nimradev.site -->
-        <p class="text-sm sm:text-base font-semibold text-indigo-600 tracking-wide mb-8">
-            HUB of Domain: <span class="text-slate-800 font-mono font-bold">nimradev.site</span>
-        </p>
+            <!-- Main Catchy H1 Heading -->
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.15] mb-6">
+                NimraDev Labs — Modern Web Applications & <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600">AI Software Hub</span>
+            </h1>
 
-        <!-- Compact Average-Sized Card -->
-        <div class="white-card rounded-2xl p-6 sm:p-7 w-full text-left transition-all duration-300">
-            
-            <!-- Card Header -->
-            <div class="flex items-center justify-between pb-4 mb-4 border-b border-slate-100">
-                <h2 class="text-sm sm:text-base font-bold text-slate-900">
-                    Connected webapps with hub
-                </h2>
-                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-emerald-50 text-emerald-600 border border-emerald-200">
-                    Active
+            <!-- Comprehensive Sub-Headline -->
+            <p class="text-base sm:text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed mb-8">
+                Welcome to the digital headquarters of <strong>NimraDev Labs</strong>. We engineer high-speed, secure, and privacy-first web utilities designed for instant browser execution. By leveraging modern client-side architectures, our platforms process files locally in your browser with zero remote data retention and maximum cryptographic safety.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-wrap items-center justify-center gap-3.5 mb-12">
+                <a href="#pdfora-suite" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-sm shadow-md shadow-indigo-600/25 transition-all">
+                    <span>Explore PDFora Utility Suite</span>
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </a>
+                <a href="#security-tech" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white hover:bg-slate-50 text-slate-700 font-bold text-sm border border-slate-200 shadow-xs transition-all">
+                    <span>Read Architecture Specs</span>
+                </a>
+            </div>
+
+            <!-- Value Proposition Badges -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-4xl mx-auto text-left">
+                <div class="p-3.5 rounded-xl bg-white/90 border border-slate-200 shadow-xs">
+                    <p class="text-[11px] uppercase tracking-wider font-bold text-indigo-600">Architecture</p>
+                    <p class="text-xs font-bold text-slate-900 mt-0.5">100% Client-Side</p>
+                    <p class="text-[11px] text-slate-500 mt-1">Processed in local RAM</p>
+                </div>
+                <div class="p-3.5 rounded-xl bg-white/90 border border-slate-200 shadow-xs">
+                    <p class="text-[11px] uppercase tracking-wider font-bold text-emerald-600">Privacy First</p>
+                    <p class="text-xs font-bold text-slate-900 mt-0.5">Zero Data Retention</p>
+                    <p class="text-[11px] text-slate-500 mt-1">Never saved on servers</p>
+                </div>
+                <div class="p-3.5 rounded-xl bg-white/90 border border-slate-200 shadow-xs">
+                    <p class="text-[11px] uppercase tracking-wider font-bold text-purple-600">Performance</p>
+                    <p class="text-xs font-bold text-slate-900 mt-0.5">WebAssembly Core</p>
+                    <p class="text-[11px] text-slate-500 mt-1">Near-native speed</p>
+                </div>
+                <div class="p-3.5 rounded-xl bg-white/90 border border-slate-200 shadow-xs">
+                    <p class="text-[11px] uppercase tracking-wider font-bold text-amber-600">Accessibility</p>
+                    <p class="text-xs font-bold text-slate-900 mt-0.5">Completely Free</p>
+                    <p class="text-[11px] text-slate-500 mt-1">No mandatory signups</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Connected Platforms Directory -->
+        <section id="ecosystem" class="max-w-5xl mx-auto px-6 py-10 border-t border-slate-200/80">
+            <div class="text-center mb-10">
+                <span class="text-xs font-bold uppercase tracking-wider text-indigo-600">Domain Architecture</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">Connected Web Applications & Services</h2>
+                <p class="text-sm text-slate-600 max-w-xl mx-auto mt-2">
+                    Direct access points to active web applications operating under the <strong>nimradev.site</strong> umbrella infrastructure.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- PDFora Card -->
+                <article class="hub-card rounded-2xl p-6 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-indigo-100 text-indigo-700">Flagship Suite</span>
+                            <span class="text-[11px] font-semibold text-emerald-600 flex items-center gap-1">
+                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> Live Online
+                            </span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">PDFora</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                            Complete online suite for document merging, high-compression optimization, page splitting, and format conversion executed locally in your browser.
+                        </p>
+                    </div>
+                    <div>
+                        <a href="https://pdfora.nimradev.site" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-between w-full px-4 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold transition-colors">
+                            <span>Launch pdfora.nimradev.site</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- NimLearn Card -->
+                <article class="hub-card rounded-2xl p-6 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-purple-100 text-purple-700">Developer Academy</span>
+                            <span class="text-[11px] font-semibold text-emerald-600 flex items-center gap-1">
+                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> Active
+                            </span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">NimLearn</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                            Educational repository featuring interactive software engineering guides, frontend frameworks, algorithms, and practical web tutorials.
+                        </p>
+                    </div>
+                    <div>
+                        <a href="https://nimlearn.nimradev.site" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-between w-full px-4 py-2.5 rounded-xl bg-purple-600 hover:bg-purple-700 text-white text-xs font-bold transition-colors">
+                            <span>Visit nimlearn.nimradev.site</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- NimraDev Labs Sandbox Card -->
+                <article class="hub-card rounded-2xl p-6 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-amber-100 text-amber-800">Experimental Hub</span>
+                            <span class="text-[11px] font-semibold text-amber-600 flex items-center gap-1">
+                                <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span> Active Labs
+                            </span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">NimraDev Labs</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                            Experimental sandbox exploring lightweight client-side AI algorithms, micro-utilities, productivity tools, and modern browser APIs.
+                        </p>
+                    </div>
+                    <div>
+                        <a href="https://nimradevlabs.nimradev.site/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-between w-full px-4 py-2.5 rounded-xl bg-amber-600 hover:bg-amber-700 text-white text-xs font-bold transition-colors">
+                            <span>Explore Labs Sandbox</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 4. Punjab University GPA / CGPA Calculator Card -->
+                <article class="hub-card rounded-2xl p-6 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-teal-100 text-teal-800">Academic Utility</span>
+                            <span class="text-[11px] font-semibold text-emerald-600 flex items-center gap-1">
+                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> Live Online
+                            </span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">PU GPA & CGPA Calculator</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                            Fast and accurate GPA and CGPA calculator tailored specifically for Punjab University (PU) semester criteria, credit hours, and grading formulas.
+                        </p>
+                    </div>
+                    <div>
+                        <a href="https://punjab-university-gpa-cgpa-calculator.nimradev.site/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-between w-full px-4 py-2.5 rounded-xl bg-teal-600 hover:bg-teal-700 text-white text-xs font-bold transition-colors">
+                            <span>Open PU Calculator</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- 3. Flagship Platform Showcase: PDFora -->
+        <section id="pdfora-suite" class="max-w-5xl mx-auto px-6 py-14 border-t border-slate-200/80">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-indigo-50 text-indigo-700 border border-indigo-200 mb-3">
+                    Flagship Productivity Platform
                 </span>
+                <!-- Required H2 -->
+                <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight mb-4">
+                    PDFora — Free Online PDF Tools & Utility Suite
+                </h2>
+                <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
+                    <strong>PDFora</strong> is our dedicated document engineering solution, built to free users from expensive subscription barriers and privacy-invasive file upload workflows. Whether you are assembling legal agreements, optimizing academic papers, or converting confidential business proposals, PDFora gives you desktop-grade utility inside your web browser.
+                </p>
             </div>
 
-            <!-- List with 1. 2. 3. Indexing -->
-            <div class="space-y-3">
-                
-                <!-- 1. PDFora -->
-                <a href="https://pdfora.nimradev.site" target="_blank" rel="noopener noreferrer" class="group flex items-center justify-between p-3 rounded-xl bg-slate-50 hover:bg-indigo-50/70 border border-slate-200/80 hover:border-indigo-200 transition-all">
-                    <div class="flex items-center gap-3">
-                        <span class="font-mono font-extrabold text-sm text-indigo-600 w-5">1.</span>
-                        <div>
-                            <div class="font-bold text-sm text-slate-900 group-hover:text-indigo-600 transition-colors flex items-center gap-1.5">
-                                PDFora
-                                <span class="text-[10px] px-1.5 py-0.2 rounded bg-indigo-100 text-indigo-700 font-medium">PDF Suite</span>
-                            </div>
-                            <p class="text-xs text-slate-500 mt-0.5">
-                                Free online PDF merger, converter, compressor & tools
-                            </p>
-                        </div>
-                    </div>
-                    <div class="text-slate-400 group-hover:text-indigo-600 group-hover:translate-x-1 transition-all">
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                        </svg>
-                    </div>
-                </a>
+            <!-- Sub-Tools Grid with Clean Semantic HTML and Direct Internal Links -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-12">
 
-                <!-- 2. NimLearn -->
-                <a href="https://nimlearn.nimradev.site" target="_blank" rel="noopener noreferrer" class="group flex items-center justify-between p-3 rounded-xl bg-slate-50 hover:bg-purple-50/70 border border-slate-200/80 hover:border-purple-200 transition-all">
-                    <div class="flex items-center gap-3">
-                        <span class="font-mono font-extrabold text-sm text-purple-600 w-5">2.</span>
-                        <div>
-                            <div class="font-bold text-sm text-slate-900 group-hover:text-purple-600 transition-colors flex items-center gap-1.5">
-                                NimLearn
-                                <span class="text-[10px] px-1.5 py-0.2 rounded bg-purple-100 text-purple-700 font-medium">Learning</span>
-                            </div>
-                            <p class="text-xs text-slate-500 mt-0.5">
-                                Interactive developer tutorials, guides & roadmaps
-                            </p>
-                        </div>
+                <!-- Sub-tool 1: Merge PDF -->
+                <div class="hub-card rounded-2xl p-5 border border-slate-200">
+                    <div class="w-10 h-10 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center font-bold text-sm mb-3">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2"></path></svg>
                     </div>
-                    <div class="text-slate-400 group-hover:text-purple-600 group-hover:translate-x-1 transition-all">
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                        </svg>
-                    </div>
-                </a>
+                    <h3 class="text-base font-bold text-slate-900 mb-1.5">
+                        <a href="https://pdfora.nimradev.site" target="_blank" rel="noopener noreferrer" class="hover:text-indigo-600 transition-colors">
+                            Merge PDF
+                        </a>
+                    </h3>
+                    <p class="text-xs text-slate-600 leading-relaxed mb-3">
+                        Combine multiple PDF files into one clean, ordered document. Easily drag-and-drop to reorder pages and eliminate redundant cover sheets.
+                    </p>
+                    <a href="https://pdfora.nimradev.site" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-indigo-600 hover:text-indigo-800 inline-flex items-center gap-1">
+                        Use Merge Tool &rarr;
+                    </a>
+                </div>
 
-                <!-- 3. NimraDev Labs (Opens https://nimradevlabs.nimradev.site/) -->
-                <a href="https://nimradevlabs.nimradev.site/" target="_blank" rel="noopener noreferrer" class="group flex items-center justify-between p-3 rounded-xl bg-slate-50 hover:bg-amber-50/70 border border-slate-200/80 hover:border-amber-200 transition-all">
-                    <div class="flex items-center gap-3">
-                        <span class="font-mono font-extrabold text-sm text-amber-600 w-5">3.</span>
-                        <div>
-                            <div class="font-bold text-sm text-slate-900 group-hover:text-amber-600 transition-colors flex items-center gap-1.5">
-                                NimraDev Labs
-                                <span class="text-[10px] px-1.5 py-0.2 rounded bg-amber-100 text-amber-800 font-medium">Tools</span>
-                            </div>
-                            <p class="text-xs text-slate-500 mt-0.5">
-                                Experimental tools, utilities & upcoming innovations
-                            </p>
-                        </div>
+                <!-- Sub-tool 2: Compress PDF -->
+                <div class="hub-card rounded-2xl p-5 border border-slate-200">
+                    <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center font-bold text-sm mb-3">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
                     </div>
-                    <div class="text-slate-400 group-hover:text-amber-600 group-hover:translate-x-1 transition-all">
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                        </svg>
+                    <h3 class="text-base font-bold text-slate-900 mb-1.5">
+                        <a href="https://pdfora.nimradev.site" target="_blank" rel="noopener noreferrer" class="hover:text-indigo-600 transition-colors">
+                            Compress PDF
+                        </a>
+                    </h3>
+                    <p class="text-xs text-slate-600 leading-relaxed mb-3">
+                        Significantly decrease PDF file weight without sacrificing legible typography or image clarity. Ideal for email dispatch and portal submissions.
+                    </p>
+                    <a href="https://pdfora.nimradev.site" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-indigo-600 hover:text-indigo-800 inline-flex items-center gap-1">
+                        Compress Documents &rarr;
+                    </a>
+                </div>
+
+                <!-- Sub-tool 3: Split PDF -->
+                <div class="hub-card rounded-2xl p-5 border border-slate-200">
+                    <div class="w-10 h-10 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center font-bold text-sm mb-3">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path></svg>
                     </div>
-                </a>
+                    <h3 class="text-base font-bold text-slate-900 mb-1.5">
+                        <a href="https://pdfora.nimradev.site" target="_blank" rel="noopener noreferrer" class="hover:text-indigo-600 transition-colors">
+                            Split PDF
+                        </a>
+                    </h3>
+                    <p class="text-xs text-slate-600 leading-relaxed mb-3">
+                        Extract specific page intervals or separate individual chapters from comprehensive manuals and reports into standalone PDF files.
+                    </p>
+                    <a href="https://pdfora.nimradev.site" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-indigo-600 hover:text-indigo-800 inline-flex items-center gap-1">
+                        Extract Pages &rarr;
+                    </a>
+                </div>
+
+                <!-- Sub-tool 4: PDF to Image -->
+                <div class="hub-card rounded-2xl p-5 border border-slate-200">
+                    <div class="w-10 h-10 rounded-xl bg-sky-50 text-sky-600 flex items-center justify-center font-bold text-sm mb-3">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="text-base font-bold text-slate-900 mb-1.5">
+                        <a href="https://pdfora.nimradev.site" target="_blank" rel="noopener noreferrer" class="hover:text-indigo-600 transition-colors">
+                            PDF to Image
+                        </a>
+                    </h3>
+                    <p class="text-xs text-slate-600 leading-relaxed mb-3">
+                        Rasterize vector PDF layouts into crisp high-resolution PNG, JPG, or modern WebP images with pixel-perfect fidelity.
+                    </p>
+                    <a href="https://pdfora.nimradev.site" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-indigo-600 hover:text-indigo-800 inline-flex items-center gap-1">
+                        Convert to Images &rarr;
+                    </a>
+                </div>
+
+                <!-- Sub-tool 5: Word to PDF -->
+                <div class="hub-card rounded-2xl p-5 border border-slate-200">
+                    <div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center font-bold text-sm mb-3">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                    </div>
+                    <h3 class="text-base font-bold text-slate-900 mb-1.5">
+                        <a href="https://pdfora.nimradev.site" target="_blank" rel="noopener noreferrer" class="hover:text-indigo-600 transition-colors">
+                            Word to PDF
+                        </a>
+                    </h3>
+                    <p class="text-xs text-slate-600 leading-relaxed mb-3">
+                        Transform Microsoft Word documents (.docx, .doc) into standardized, cross-platform PDF files while preserving formatting and fonts.
+                    </p>
+                    <a href="https://pdfora.nimradev.site" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-indigo-600 hover:text-indigo-800 inline-flex items-center gap-1">
+                        Convert Documents &rarr;
+                    </a>
+                </div>
+
+                <!-- Sub-tool 6: PDF Protect & Security -->
+                <div class="hub-card rounded-2xl p-5 border border-slate-200">
+                    <div class="w-10 h-10 rounded-xl bg-rose-50 text-rose-600 flex items-center justify-center font-bold text-sm mb-3">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                    </div>
+                    <h3 class="text-base font-bold text-slate-900 mb-1.5">
+                        <a href="https://pdfora.nimradev.site" target="_blank" rel="noopener noreferrer" class="hover:text-indigo-600 transition-colors">
+                            Protect & Encrypt PDF
+                        </a>
+                    </h3>
+                    <p class="text-xs text-slate-600 leading-relaxed mb-3">
+                        Enforce 128-bit and 256-bit AES encryption passwords to safeguard confidential financial records, agreements, and intellectual property.
+                    </p>
+                    <a href="https://pdfora.nimradev.site" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-indigo-600 hover:text-indigo-800 inline-flex items-center gap-1">
+                        Secure Files &rarr;
+                    </a>
+                </div>
 
             </div>
 
-        </div>
+            <!-- Additional Detail List on PDFora Capabilities -->
+            <div class="p-6 rounded-2xl bg-white border border-slate-200">
+                <h3 class="text-sm font-bold text-slate-900 mb-2">Key Highlights of the PDFora Processing Pipeline:</h3>
+                <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs text-slate-600">
+                    <li class="flex items-center gap-2">
+                        <svg class="w-4 h-4 text-indigo-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span>No file queue delays — tasks execute concurrently using Web Workers.</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <svg class="w-4 h-4 text-indigo-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span>Zero bandwidth consumption for large file uploads over slow networks.</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <svg class="w-4 h-4 text-indigo-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span>Full offline compatibility once web assets are cached by Service Workers.</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <svg class="w-4 h-4 text-indigo-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span>Universal compatibility across Chrome, Safari, Firefox, and Edge.</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 4. Security & Technology Stack Section -->
+        <section id="security-tech" class="max-w-5xl mx-auto px-6 py-14 border-t border-slate-200/80">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-xs font-bold uppercase tracking-wider text-indigo-600">Architectural Integrity</span>
+                <!-- Required H2 -->
+                <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight mt-1 mb-4">
+                    Built for Speed, Security, and Reliability
+                </h2>
+                <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
+                    At NimraDev Labs, architectural security is not an afterthought; it is our foundation. By replacing obsolete server-upload pipelines with modern browser capabilities, we guarantee enterprise-grade data protection without sacrificing computational performance.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                <!-- Block 1: Client-Side Processing -->
+                <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs">
+                    <h3 class="text-base font-bold text-slate-900 mb-2 flex items-center gap-2">
+                        <span class="w-2.5 h-2.5 rounded-full bg-indigo-600"></span>
+                        1. Client-Side Sandboxed Processing
+                    </h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Every tool deployed on <strong>nimradev.site</strong> operates strictly within the client’s browser sandbox. Your PDF files, corporate contracts, and image files are read into local JavaScript TypedArrays (such as <code class="font-mono text-indigo-600 bg-indigo-50 px-1 rounded">Uint8Array</code>) and processed via compiled WebAssembly binaries. At no point during compression, conversion, or merging are raw files transmitted over public networks to external servers.
+                    </p>
+                </div>
+
+                <!-- Block 2: Zero Data Retention -->
+                <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs">
+                    <h3 class="text-base font-bold text-slate-900 mb-2 flex items-center gap-2">
+                        <span class="w-2.5 h-2.5 rounded-full bg-emerald-600"></span>
+                        2. Absolute Zero Data Retention
+                    </h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Because file processing occurs locally on your machine, NimraDev Labs maintains zero storage infrastructure for user content. There are no temporary staging buckets, no database logs of file names, and no persistent server caches. Once you close your browser tab or clear the application window, all memory allocated for your documents is instantly garbage-collected by your browser's runtime.
+                    </p>
+                </div>
+
+                <!-- Block 3: Multithreaded Web Workers -->
+                <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs">
+                    <h3 class="text-base font-bold text-slate-900 mb-2 flex items-center gap-2">
+                        <span class="w-2.5 h-2.5 rounded-full bg-purple-600"></span>
+                        3. Web Workers & UI Thread Isolation
+                    </h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Intense computational tasks—such as rasterizing hundreds of pages or executing deep vector compression algorithms—can easily freeze standard web interfaces. Our engineers offload these workloads to dedicated background Web Workers. This ensures your browser remains completely responsive, fluid, and free of stutter while complex file manipulations complete in parallel threads.
+                    </p>
+                </div>
+
+                <!-- Block 4: Global CDN Distribution -->
+                <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs">
+                    <h3 class="text-base font-bold text-slate-900 mb-2 flex items-center gap-2">
+                        <span class="w-2.5 h-2.5 rounded-full bg-amber-600"></span>
+                        4. Modern Edge & CDN Delivery
+                    </h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Our static assets, styles, and WebAssembly packages are delivered globally via top-tier Content Delivery Networks. With edge caching across points of presence worldwide, users experience near-zero latency, rapid First Contentful Paint (FCP), and optimal Core Web Vitals scores regardless of their geographical location or device form factor.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 5. Educational / Blog Hub Teaser Section -->
+        <section id="insights-guides" class="max-w-5xl mx-auto px-6 py-14 border-t border-slate-200/80">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-xs font-bold uppercase tracking-wider text-indigo-600">Knowledge Base</span>
+                <!-- Required H2 -->
+                <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight mt-1 mb-4">
+                    Document Management Insights & Guides
+                </h2>
+                <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
+                    Explore authoritative tutorials, security best practices, and deep-dive technical explorations authored by the NimraDev Labs engineering team to help you optimize your digital workflows.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                <!-- Guide Article 1 -->
+                <article class="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-2 text-[11px] font-semibold text-slate-400 mb-3">
+                            <span class="text-indigo-600 bg-indigo-50 px-2 py-0.5 rounded-md font-bold">Optimization</span>
+                            <span>&bull;</span>
+                            <span>5 min read</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2 hover:text-indigo-600 transition-colors">
+                            How to Reduce PDF File Size Without Quality Loss
+                        </h3>
+                        <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                            Learn the underlying science of PDF compression. We explore the distinction between lossy and lossless image resampling, the stripping of unused metadata objects, font subsetting, and vector curve preservation. Discover practical guidelines for reducing bloated 50MB files down to sleek 2MB packages without introducing blurry typography or visual artifacts.
+                        </p>
+                    </div>
+                    <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+                        <span class="font-medium text-slate-500">Author: NimraDev Editorial</span>
+                        <a href="https://pdfora.nimradev.site" target="_blank" rel="noopener noreferrer" class="font-bold text-indigo-600 hover:text-indigo-800">
+                            Apply via PDFora &rarr;
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Guide Article 2 -->
+                <article class="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-2 text-[11px] font-semibold text-slate-400 mb-3">
+                            <span class="text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-md font-bold">Security</span>
+                            <span>&bull;</span>
+                            <span>7 min read</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2 hover:text-indigo-600 transition-colors">
+                            Securing Confidential PDFs for Business & Remote Work
+                        </h3>
+                        <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                            In an era of distributed teams, transmitting unencrypted contracts, employee records, and invoices presents substantial compliance risks. This guide details modern cryptographic standards, including 256-bit AES encryption, owner versus user password credentials, permission flags preventing unauthorized printing or editing, and redaction protocols.
+                        </p>
+                    </div>
+                    <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+                        <span class="font-medium text-slate-500">Author: Security Desk</span>
+                        <a href="https://pdfora.nimradev.site" target="_blank" rel="noopener noreferrer" class="font-bold text-indigo-600 hover:text-indigo-800">
+                            Learn Encryption &rarr;
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Guide Article 3 -->
+                <article class="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-2 text-[11px] font-semibold text-slate-400 mb-3">
+                            <span class="text-purple-600 bg-purple-50 px-2 py-0.5 rounded-md font-bold">Architecture</span>
+                            <span>&bull;</span>
+                            <span>6 min read</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2 hover:text-indigo-600 transition-colors">
+                            Client-Side vs Cloud Processing: Why Local Execution Matters
+                        </h3>
+                        <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                            Why entrust your proprietary documents to unknown cloud servers when client devices boast immense computational power? We compare traditional server-heavy workflows against client-side browser engines. Understand how local execution eradicates GDPR, CCPA, and data breach vulnerabilities while maintaining lightning-fast performance.
+                        </p>
+                    </div>
+                    <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+                        <span class="font-medium text-slate-500">Author: NimraDev Labs</span>
+                        <a href="/about.html" class="font-bold text-indigo-600 hover:text-indigo-800">
+                            Read About Tech &rarr;
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Guide Article 4 -->
+                <article class="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-2 text-[11px] font-semibold text-slate-400 mb-3">
+                            <span class="text-amber-600 bg-amber-50 px-2 py-0.5 rounded-md font-bold">Innovation</span>
+                            <span>&bull;</span>
+                            <span>4 min read</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2 hover:text-indigo-600 transition-colors">
+                            The Evolution of WebAssembly in Modern Browser Applications
+                        </h3>
+                        <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                            WebAssembly (Wasm) is redefining what web browsers can accomplish without plugins or native installations. Learn how low-level languages like C, C++, and Rust are compiled into binary bytecode that runs alongside JavaScript at near-native speeds, unlocking video rendering, complex math, and document compilation inside standard browsers.
+                        </p>
+                    </div>
+                    <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+                        <span class="font-medium text-slate-500">Author: Tech Insights</span>
+                        <a href="https://nimlearn.nimradev.site" target="_blank" rel="noopener noreferrer" class="font-bold text-indigo-600 hover:text-indigo-800">
+                            Explore Tutorials &rarr;
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- 6. About NimraDev Labs Section -->
+        <section id="about-us" class="max-w-5xl mx-auto px-6 py-14 border-t border-slate-200/80">
+            <div class="p-8 rounded-3xl bg-gradient-to-br from-white via-indigo-50/20 to-white border border-slate-200 shadow-sm">
+                <div class="max-w-3xl">
+                    <span class="text-xs font-bold uppercase tracking-wider text-indigo-600">Company & Vision</span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1 mb-4">
+                        About NimraDev Labs & Our Architectural Philosophy
+                    </h2>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                        <strong>NimraDev Labs</strong> is an independent digital laboratory focused on engineering accessible, privacy-centric web applications and developer tools. Operating primarily under the <strong>nimradev.site</strong> domain network, we believe that modern digital tools should be completely free, reliable, and respectful of fundamental user privacy rights.
+                    </p>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-6">
+                        Unlike conventional software services that monetize through invasive data mining or mandatory subscriptions, our solutions prioritize client-side execution. By running processes directly inside the user's hardware sandbox, we minimize infrastructure overhead while delivering absolute confidentiality for document processing, learning tools, and developer utilities.
+                    </p>
+                    <div class="flex flex-wrap gap-4 text-xs font-bold">
+                        <a href="/about.html" class="px-5 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white transition-all shadow-sm">
+                            Read Full Company Overview
+                        </a>
+                        <a href="/contact.html" class="px-5 py-2.5 rounded-xl bg-white hover:bg-slate-50 text-slate-700 border border-slate-200 transition-all">
+                            Inquire or Submit Feedback
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Frequently Asked Questions (FAQ) Section -->
+        <section id="faq" class="max-w-5xl mx-auto px-6 py-14 border-t border-slate-200/80">
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <span class="text-xs font-bold uppercase tracking-wider text-indigo-600">Common Inquiries</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1 mb-2">Frequently Asked Questions</h2>
+                <p class="text-xs sm:text-sm text-slate-600">Clear answers regarding our platforms, security standards, and document processing.</p>
+            </div>
+
+            <div class="max-w-3xl mx-auto space-y-4">
+                <details class="p-5 rounded-2xl bg-white border border-slate-200 group" open>
+                    <summary class="font-bold text-sm text-slate-900 cursor-pointer list-none flex items-center justify-between">
+                        <span>Are my documents stored or uploaded to any server?</span>
+                        <span class="text-indigo-600 font-bold group-open:rotate-180 transition-transform">&darr;</span>
+                    </summary>
+                    <p class="text-xs text-slate-600 leading-relaxed mt-3 pt-3 border-t border-slate-100">
+                        No. All tools under the PDFora and NimraDev Labs suite operate using client-side JavaScript and WebAssembly. Your files are processed entirely in your computer's local memory and are never uploaded to any remote server or third-party cloud.
+                    </p>
+                </details>
+
+                <details class="p-5 rounded-2xl bg-white border border-slate-200 group">
+                    <summary class="font-bold text-sm text-slate-900 cursor-pointer list-none flex items-center justify-between">
+                        <span>Are PDFora tools completely free?</span>
+                        <span class="text-indigo-600 font-bold group-open:rotate-180 transition-transform">&darr;</span>
+                    </summary>
+                    <p class="text-xs text-slate-600 leading-relaxed mt-3 pt-3 border-t border-slate-100">
+                        Yes. PDFora tools—including Merge PDF, Compress PDF, Split PDF, and PDF to Image converters—are 100% free with no hidden paywalls, page limitations, or mandatory account registrations.
+                    </p>
+                </details>
+
+                <details class="p-5 rounded-2xl bg-white border border-slate-200 group">
+                    <summary class="font-bold text-sm text-slate-900 cursor-pointer list-none flex items-center justify-between">
+                        <span>What browsers and operating systems are supported?</span>
+                        <span class="text-indigo-600 font-bold group-open:rotate-180 transition-transform">&darr;</span>
+                    </summary>
+                    <p class="text-xs text-slate-600 leading-relaxed mt-3 pt-3 border-t border-slate-100">
+                        Our applications support all modern, standards-compliant browsers including Google Chrome, Mozilla Firefox, Apple Safari, Microsoft Edge, and mobile browsers on iOS and Android.
+                    </p>
+                </details>
+
+                <details class="p-5 rounded-2xl bg-white border border-slate-200 group">
+                    <summary class="font-bold text-sm text-slate-900 cursor-pointer list-none flex items-center justify-between">
+                        <span>How do I contact the development team?</span>
+                        <span class="text-indigo-600 font-bold group-open:rotate-180 transition-transform">&darr;</span>
+                    </summary>
+                    <p class="text-xs text-slate-600 leading-relaxed mt-3 pt-3 border-t border-slate-100">
+                        You can reach out directly via our official <a href="/contact.html" class="text-indigo-600 font-semibold underline">Contact Support Portal</a> or by emailing our team for partnerships, bug reports, and technical questions.
+                    </p>
+                </details>
+            </div>
+        </section>
 
     </main>
 
-    <!-- Clean Footer (Removed sitemap and ads.txt buttons) -->
-    <footer class="py-6 px-6 border-t border-slate-200/80 text-center text-xs text-slate-500 relative z-20 bg-white/60 backdrop-blur-xs">
-        <div class="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
-            <p>&copy; 2026 NimraDev. All rights reserved.</p>
-            <div class="flex items-center space-x-5">
-                <a href="/privacy-policy.html" class="hover:text-indigo-600 transition-colors">Privacy Policy</a>
-                <a href="/terms.html" class="hover:text-indigo-600 transition-colors">Terms of Service</a>
-                <a href="/contact.html" class="hover:text-indigo-600 transition-colors">Contact</a>
+    <!-- 8. Footer & Compliance Section -->
+    <footer class="w-full border-t border-slate-200/80 bg-white/95 relative z-20 pt-12 pb-8 px-6 sm:px-10 text-slate-600">
+        <div class="max-w-6xl mx-auto">
+            
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-10 border-b border-slate-100">
+                
+                <!-- Brand & Mission Column -->
+                <div class="md:col-span-2">
+                    <a href="/" class="flex items-center gap-2.5 mb-3" aria-label="NimraDev Labs Home">
+                        <img src="favicon.svg" alt="NimraDev Logo" class="w-8 h-8 rounded-lg shadow-xs" />
+                        <span class="font-extrabold text-base tracking-tight text-slate-900">NimraDev <span class="text-indigo-600">Labs</span></span>
+                    </a>
+                    <p class="text-xs text-slate-500 leading-relaxed max-w-sm mb-4">
+                        The central authority hub and application network for NimraDev Labs. Engineering zero-retention, client-side web tools and developer resources designed for speed and security.
+                    </p>
+                    <div class="text-[11px] text-slate-400 font-mono">
+                        Domain: <span class="text-slate-700 font-semibold">nimradev.site</span> &bull; Status: Operational
+                    </div>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div>
+                    <h3 class="text-xs font-bold text-slate-900 uppercase tracking-wider mb-3">Platform Network</h3>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="https://pdfora.nimradev.site" target="_blank" rel="noopener noreferrer" class="hover:text-indigo-600 transition-colors">PDFora Suite</a></li>
+                        <li><a href="https://nimlearn.nimradev.site" target="_blank" rel="noopener noreferrer" class="hover:text-indigo-600 transition-colors">NimLearn Academy</a></li>
+                        <li><a href="https://nimradevlabs.nimradev.site/" target="_blank" rel="noopener noreferrer" class="hover:text-indigo-600 transition-colors">NimraDev Labs Sandbox</a></li>
+                        <li><a href="https://punjab-university-gpa-cgpa-calculator.nimradev.site/" target="_blank" rel="noopener noreferrer" class="hover:text-indigo-600 transition-colors">PU GPA & CGPA Calculator</a></li>
+                        <li><a href="#security-tech" class="hover:text-indigo-600 transition-colors">Security Architecture</a></li>
+                        <li><a href="#insights-guides" class="hover:text-indigo-600 transition-colors">Documentation & Guides</a></li>
+                    </ul>
+                </div>
+
+                <!-- Compliance & Legal Column -->
+                <div>
+                    <h3 class="text-xs font-bold text-slate-900 uppercase tracking-wider mb-3">Compliance & Governance</h3>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="/about.html" class="hover:text-indigo-600 transition-colors">About NimraDev Labs</a></li>
+                        <li><a href="/privacy-policy.html" class="hover:text-indigo-600 transition-colors">Privacy Policy</a></li>
+                        <li><a href="/terms.html" class="hover:text-indigo-600 transition-colors">Terms of Service</a></li>
+                        <li><a href="/contact.html" class="hover:text-indigo-600 transition-colors">Contact Support</a></li>
+                        <li><a href="/sitemap.xml" class="hover:text-indigo-600 transition-colors">XML Sitemap</a></li>
+                    </ul>
+                </div>
+
             </div>
+
+            <!-- Publisher Statement Required for AdSense & Google Compliance -->
+            <div class="py-6 border-b border-slate-100 text-center sm:text-left">
+                <p class="text-[11px] text-slate-500 leading-relaxed">
+                    <strong class="text-slate-700">Publisher Compliance Statement:</strong> NimraDev Labs (<span class="font-mono">nimradev.site</span>) operates under strict digital privacy protocols. All web applications and tools deployed under the nimradev.site ecosystem respect user privacy and execute client-side computations locally in accordance with global data protection standards (GDPR, CCPA). We do not harvest, store, or sell user files, documents, or personal data processed within our utilities.
+                </p>
+            </div>
+
+            <!-- Copyright and Attribution -->
+            <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-400">
+                <p>&copy; 2026 NimraDev Labs. All rights reserved.</p>
+                <div class="flex items-center space-x-4">
+                    <a href="/privacy-policy.html" class="hover:text-indigo-600 transition-colors">Privacy</a>
+                    <a href="/terms.html" class="hover:text-indigo-600 transition-colors">Terms</a>
+                    <a href="/about.html" class="hover:text-indigo-600 transition-colors">About</a>
+                    <a href="/contact.html" class="hover:text-indigo-600 transition-colors">Contact</a>
+                </div>
+            </div>
+
         </div>
     </footer>
 
-    <!-- Scripts: Animated Stars & Mouse Follower -->
+    <!-- Interactive Canvas & Mouse Follower JavaScript -->
     <script>
         // --- 1. Mouse Follower Animation ---
         const cursorDot = document.getElementById('cursor-dot');
@@ -314,141 +910,127 @@
         window.addEventListener('mousemove', (e) => {
             mouseX = e.clientX;
             mouseY = e.clientY;
-            cursorDot.style.left = `${mouseX}px`;
-            cursorDot.style.top = `${mouseY}px`;
+            if (cursorDot) {
+                cursorDot.style.left = `${mouseX}px`;
+                cursorDot.style.top = `${mouseY}px`;
+            }
         });
 
         function animateCursor() {
-            circleX += (mouseX - circleX) * 0.15;
-            circleY += (mouseY - circleY) * 0.15;
-
-            cursorCircle.style.left = `${circleX}px`;
-            cursorCircle.style.top = `${circleY}px`;
-
+            if (cursorCircle) {
+                circleX += (mouseX - circleX) * 0.15;
+                circleY += (mouseY - circleY) * 0.15;
+                cursorCircle.style.left = `${circleX}px`;
+                cursorCircle.style.top = `${circleY}px`;
+            }
             requestAnimationFrame(animateCursor);
         }
         animateCursor();
 
-        document.querySelectorAll('a, button').forEach(el => {
+        document.querySelectorAll('a, button, summary').forEach(el => {
             el.addEventListener('mouseenter', () => document.body.classList.add('hovering'));
             el.addEventListener('mouseleave', () => document.body.classList.remove('hovering'));
         });
 
-        // --- 2. Moving Stars Canvas ---
+        // --- 2. Moving Constellation / Stars Background ---
         const canvas = document.getElementById('starsCanvas');
-        const ctx = canvas.getContext('2d');
+        if (canvas) {
+            const ctx = canvas.getContext('2d');
+            let width, height, stars = [];
+            const numStars = 60;
 
-        let width, height, stars = [];
-        const numStars = 65;
+            const starColors = [
+                'rgba(79, 70, 229, 0.75)',
+                'rgba(99, 102, 241, 0.70)',
+                'rgba(124, 58, 237, 0.65)',
+                'rgba(148, 163, 184, 0.50)'
+            ];
 
-        const starColors = [
-            'rgba(67, 56, 202, 0.85)',
-            'rgba(79, 70, 229, 0.85)',
-            'rgba(109, 40, 217, 0.80)',
-            'rgba(30, 64, 175, 0.80)',
-            'rgba(51, 65, 85, 0.75)'
-        ];
-
-        function resizeCanvas() {
-            width = canvas.width = window.innerWidth;
-            height = canvas.height = window.innerHeight;
-        }
-
-        class Star {
-            constructor() {
-                this.reset();
+            function resizeCanvas() {
+                width = canvas.width = window.innerWidth;
+                height = canvas.height = window.innerHeight;
             }
 
-            reset() {
-                this.x = Math.random() * width;
-                this.y = Math.random() * height;
-                this.radius = Math.random() * 2.2 + 0.9;
-                this.color = starColors[Math.floor(Math.random() * starColors.length)];
-                this.vx = (Math.random() - 0.5) * 0.45;
-                this.vy = (Math.random() - 0.5) * 0.45;
-                this.pulseSpeed = Math.random() * 0.02 + 0.01;
-                this.alpha = Math.random() * 0.4 + 0.45;
-                this.alphaDirection = 1;
-            }
-
-            update() {
-                this.x += this.vx;
-                this.y += this.vy;
-
-                if (this.x < 0) this.x = width;
-                if (this.x > width) this.x = 0;
-                if (this.y < 0) this.y = height;
-                if (this.y > height) this.y = 0;
-
-                this.alpha += this.pulseSpeed * this.alphaDirection;
-                if (this.alpha > 0.9) this.alphaDirection = -1;
-                if (this.alpha < 0.35) this.alphaDirection = 1;
-            }
-
-            draw() {
-                ctx.save();
-                ctx.globalAlpha = this.alpha;
-                ctx.fillStyle = this.color;
-                ctx.beginPath();
-                ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-                ctx.fill();
-
-                if (this.radius > 1.8) {
-                    ctx.strokeStyle = this.color;
-                    ctx.lineWidth = 0.8;
-                    ctx.beginPath();
-                    ctx.moveTo(this.x - this.radius * 2, this.y);
-                    ctx.lineTo(this.x + this.radius * 2, this.y);
-                    ctx.moveTo(this.x, this.y - this.radius * 2);
-                    ctx.lineTo(this.x, this.y + this.radius * 2);
-                    ctx.stroke();
+            class Star {
+                constructor() {
+                    this.reset();
                 }
-                ctx.restore();
+                reset() {
+                    this.x = Math.random() * width;
+                    this.y = Math.random() * height;
+                    this.radius = Math.random() * 2.0 + 0.8;
+                    this.color = starColors[Math.floor(Math.random() * starColors.length)];
+                    this.vx = (Math.random() - 0.5) * 0.35;
+                    this.vy = (Math.random() - 0.5) * 0.35;
+                    this.pulseSpeed = Math.random() * 0.015 + 0.008;
+                    this.alpha = Math.random() * 0.35 + 0.35;
+                    this.alphaDirection = 1;
+                }
+                update() {
+                    this.x += this.vx;
+                    this.y += this.vy;
+                    if (this.x < 0) this.x = width;
+                    if (this.x > width) this.x = 0;
+                    if (this.y < 0) this.y = height;
+                    if (this.y > height) this.y = 0;
+
+                    this.alpha += this.pulseSpeed * this.alphaDirection;
+                    if (this.alpha > 0.85) this.alphaDirection = -1;
+                    if (this.alpha < 0.25) this.alphaDirection = 1;
+                }
+                draw() {
+                    ctx.save();
+                    ctx.globalAlpha = this.alpha;
+                    ctx.fillStyle = this.color;
+                    ctx.beginPath();
+                    ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+                    ctx.fill();
+                    ctx.restore();
+                }
             }
-        }
 
-        function initStars() {
-            resizeCanvas();
-            stars = [];
-            for (let i = 0; i < numStars; i++) {
-                stars.push(new Star());
+            function initStars() {
+                resizeCanvas();
+                stars = [];
+                for (let i = 0; i < numStars; i++) {
+                    stars.push(new Star());
+                }
             }
-        }
 
-        function animateStars() {
-            ctx.clearRect(0, 0, width, height);
+            function animateStars() {
+                ctx.clearRect(0, 0, width, height);
 
-            for (let i = 0; i < stars.length; i++) {
-                for (let j = i + 1; j < stars.length; j++) {
-                    const dx = stars[i].x - stars[j].x;
-                    const dy = stars[i].y - stars[j].y;
-                    const dist = Math.sqrt(dx * dx + dy * dy);
+                for (let i = 0; i < stars.length; i++) {
+                    for (let j = i + 1; j < stars.length; j++) {
+                        const dx = stars[i].x - stars[j].x;
+                        const dy = stars[i].y - stars[j].y;
+                        const dist = Math.sqrt(dx * dx + dy * dy);
 
-                    if (dist < 110) {
-                        ctx.save();
-                        ctx.strokeStyle = 'rgba(79, 70, 229, 0.18)';
-                        ctx.lineWidth = 1 - dist / 110;
-                        ctx.beginPath();
-                        ctx.moveTo(stars[i].x, stars[i].y);
-                        ctx.lineTo(stars[j].x, stars[j].y);
-                        ctx.stroke();
-                        ctx.restore();
+                        if (dist < 100) {
+                            ctx.save();
+                            ctx.strokeStyle = 'rgba(99, 102, 241, 0.12)';
+                            ctx.lineWidth = 1 - dist / 100;
+                            ctx.beginPath();
+                            ctx.moveTo(stars[i].x, stars[i].y);
+                            ctx.lineTo(stars[j].x, stars[j].y);
+                            ctx.stroke();
+                            ctx.restore();
+                        }
                     }
                 }
+
+                stars.forEach(star => {
+                    star.update();
+                    star.draw();
+                });
+
+                requestAnimationFrame(animateStars);
             }
 
-            stars.forEach(star => {
-                star.update();
-                star.draw();
-            });
-
-            requestAnimationFrame(animateStars);
+            window.addEventListener('resize', resizeCanvas);
+            initStars();
+            animateStars();
         }
-
-        window.addEventListener('resize', resizeCanvas);
-        initStars();
-        animateStars();
     </script>
-
 </body>
 </html>
