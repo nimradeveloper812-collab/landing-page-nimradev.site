@@ -1,4 +1,11 @@
-﻿User-agent: *
+User-agent: Mediapartners-Google
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: *
 Allow: /
 
 Sitemap: https://nimradev.site/sitemap.xml
+
