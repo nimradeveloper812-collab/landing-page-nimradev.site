@@ -1,11 +1,13 @@
 {
-  "name": "NimraDev Suite",
+  "name": "NimraDev Labs — Free Online Web Utilities & Tools",
   "short_name": "NimraDev",
-  "description": "High-Performance Free Web Apps & Developer Tools",
+  "description": "Free, privacy-first web utilities: PDFora PDF Suite, Punjab University GPA Calculator, and client-side developer platforms.",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
-  "background_color": "#030712",
-  "theme_color": "#030712",
+  "background_color": "#fafcff",
+  "theme_color": "#4f46e5",
+  "categories": ["utilities", "productivity", "education"],
   "icons": [
     {
       "src": "/favicon-48x48.png",

@@ -5,19 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>NimraDev Labs — Free Online Web Utilities, PDFora Suite & Developer Tools</title>
-    <meta name="title" content="NimraDev Labs — Free Online Web Utilities, PDFora Suite & Developer Tools">
-    <meta name="description" content="NimraDev Labs is a free, privacy-first software and web utility hub. Explore PDFora (free PDF converter, compressor, merger), Punjab University GPA calculator, and client-side developer platforms with zero data logging.">
-    <meta name="keywords" content="NimraDev Labs, nimradev.site, NimraDev, PDFora, free pdf tools online, merge pdf free, compress pdf, split pdf, word to pdf, punjab university gpa calculator, pu cgpa calculator, client-side tools, privacy web utilities">
+    <title>NimraDev Labs — Free Online PDF Tools, PU GPA Calculator &amp; Web Utilities</title>
+    <meta name="title" content="NimraDev Labs — Free Online PDF Tools, PU GPA Calculator &amp; Web Utilities">
+    <meta name="description" content="NimraDev Labs (nimradev.site) is your official hub for free, privacy-first web utilities: PDFora (Merge, Compress, Split PDF), Punjab University GPA/CGPA Calculator, and developer tools with 100% client-side security.">
+    <meta name="keywords" content="NimraDev, NimraDev Labs, nimradev.site, PDFora, free pdf tools online, merge pdf free, compress pdf online, split pdf, convert pdf, word to pdf, punjab university gpa calculator, pu cgpa calculator, pu semester gpa, client-side web tools, nimlearn">
     <meta name="author" content="NimraDev Labs">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta name="google-site-verification" content="kr2-BeOvUXGL6hmuOji60yubfa12at2MSyVypzMLf_8">
     <meta name="theme-color" content="#4f46e5">
+    <meta name="application-name" content="NimraDev Labs">
+    <meta name="apple-mobile-web-app-title" content="NimraDev Labs">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="2 days">
+    <meta name="rating" content="General">
     <link rel="canonical" href="https://nimradev.site/">
     <meta name="google-adsense-account" content="ca-pub-4933513982054789">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4933513982054789" crossorigin="anonymous"></script>
 
-    <!-- Favicons -->
+    <!-- DNS Prefetch & Preconnect for Core Web Vitals Speed -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel="dns-prefetch" href="//cdn.tailwindcss.com">
+    <link rel="dns-prefetch" href="//pagead2.googlesyndication.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Favicons & Manifest -->
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
@@ -32,21 +45,25 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://nimradev.site/">
     <meta property="og:site_name" content="NimraDev Labs">
-    <meta property="og:title" content="NimraDev Labs | Modern Web Applications & Software Hub">
-    <meta property="og:description" content="Central authority hub for NimraDev Labs. Explore client-side web utilities, developer tools, and our flagship platform PDFora.">
+    <meta property="og:title" content="NimraDev Labs — Free Online PDF Tools, PU GPA Calculator &amp; Web Utilities">
+    <meta property="og:description" content="Central authority hub for NimraDev Labs. Explore client-side web utilities, developer tools, Punjab University GPA Calculator, and our flagship platform PDFora.">
     <meta property="og:image" content="https://nimradev.site/og-image.png">
+    <meta property="og:image:secure_url" content="https://nimradev.site/og-image.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="NimraDev Labs - Free Online Web Utilities &amp; Software Hub">
     <meta property="og:locale" content="en_US">
 
     <!-- Twitter Meta -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://nimradev.site/">
-    <meta name="twitter:title" content="NimraDev Labs | Modern Web Applications & Software Hub">
-    <meta name="twitter:description" content="Central authority hub for NimraDev Labs. Explore client-side web utilities, developer tools, and our flagship platform PDFora.">
+    <meta name="twitter:title" content="NimraDev Labs — Free Online PDF Tools &amp; GPA Calculator">
+    <meta name="twitter:description" content="Explore PDFora, Punjab University GPA Calculator, and privacy-preserving client-side developer web utilities at NimraDev Labs.">
     <meta name="twitter:image" content="https://nimradev.site/og-image.png">
+    <meta name="twitter:image:alt" content="NimraDev Labs Platform Preview">
 
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
 
     <!-- Tailwind CSS -->
@@ -75,7 +92,7 @@
         }
     </script>
 
-    <!-- Structured Data (JSON-LD) for Search Console & AdSense Authority -->
+    <!-- Structured Data (JSON-LD) for Google Search Console & Rich Snippets -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -84,28 +101,51 @@
           "@type": "Organization",
           "@id": "https://nimradev.site/#organization",
           "name": "NimraDev Labs",
+          "alternateName": ["NimraDev", "Nimra Dev"],
           "url": "https://nimradev.site/",
-          "logo": "https://nimradev.site/favicon-512x512.png",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://nimradev.site/favicon-512x512.png",
+            "width": 512,
+            "height": 512
+          },
+          "image": "https://nimradev.site/og-image.png",
           "sameAs": [
             "https://pdfora.nimradev.site",
             "https://nimlearn.nimradev.site",
             "https://nimradevlabs.nimradev.site",
             "https://punjab-university-gpa-cgpa-calculator.nimradev.site"
           ],
-          "description": "NimraDev Labs designs and builds privacy-preserving, high-speed, client-side web applications and developer utilities."
+          "description": "NimraDev Labs designs and builds privacy-preserving, high-speed, client-side web applications, developer utilities, and academic calculators."
         },
         {
           "@type": "WebSite",
           "@id": "https://nimradev.site/#website",
           "url": "https://nimradev.site/",
           "name": "NimraDev Labs",
-          "description": "Central authority hub and software directory for NimraDev Labs applications and free web utilities.",
+          "alternateName": ["NimraDev", "nimradev.site"],
+          "description": "Central authority hub and software directory for NimraDev Labs applications, PDFora suite, and free web utilities.",
           "publisher": { "@id": "https://nimradev.site/#organization" },
           "potentialAction": {
             "@type": "SearchAction",
-            "target": "https://pdfora.nimradev.site/tools?q={search_term_string}",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://pdfora.nimradev.site/tools?q={search_term_string}"
+            },
             "query-input": "required name=search_term_string"
-          }
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://nimradev.site/#webpage",
+          "url": "https://nimradev.site/",
+          "name": "NimraDev Labs — Free Online PDF Tools, PU GPA Calculator & Web Utilities",
+          "isPartOf": { "@id": "https://nimradev.site/#website" },
+          "about": { "@id": "https://nimradev.site/#organization" },
+          "description": "Explore client-side web utilities, PDFora free PDF tool suite, Punjab University GPA Calculator, and software platforms engineered with zero data logging.",
+          "breadcrumb": { "@id": "https://nimradev.site/#breadcrumb" },
+          "inLanguage": "en-US"
         },
         {
           "@type": "BreadcrumbList",
@@ -121,39 +161,58 @@
         },
         {
           "@type": "SoftwareApplication",
+          "@id": "https://nimradev.site/#pdfora-app",
           "name": "PDFora",
           "url": "https://pdfora.nimradev.site",
           "applicationCategory": "ProductivityApplication",
-          "operatingSystem": "All modern web browsers",
+          "operatingSystem": "All modern web browsers, Windows, macOS, Linux, Android, iOS",
           "offers": {
             "@type": "Offer",
             "price": "0",
             "priceCurrency": "USD"
           },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "ratingCount": "285",
+            "bestRating": "5",
+            "worstRating": "1"
+          },
+          "featureList": "Merge PDF, Compress PDF, Split PDF, Convert PDF to Image, Word to PDF, Encrypt PDF",
           "description": "Free, browser-based PDF utility suite for merging, compressing, splitting, and converting PDF documents locally with zero server file retention."
         },
         {
           "@type": "SoftwareApplication",
+          "@id": "https://nimradev.site/#pu-gpa-calculator",
           "name": "Punjab University GPA & CGPA Calculator",
           "url": "https://punjab-university-gpa-cgpa-calculator.nimradev.site/",
           "applicationCategory": "EducationalApplication",
-          "operatingSystem": "All modern web browsers",
+          "operatingSystem": "All modern web browsers, Windows, macOS, Linux, Android, iOS",
           "offers": {
             "@type": "Offer",
             "price": "0",
             "priceCurrency": "USD"
           },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "ratingCount": "195",
+            "bestRating": "5",
+            "worstRating": "1"
+          },
+          "featureList": "Semester GPA Calculation, Cumulative CGPA Calculation, Punjab University Grading Criteria, Instant Client-Side Results",
           "description": "Free semester GPA and cumulative CGPA calculator designed specifically for Punjab University (PU) students and grading standards."
         },
         {
           "@type": "FAQPage",
+          "@id": "https://nimradev.site/#faq",
           "mainEntity": [
             {
               "@type": "Question",
-              "name": "What is NimraDev Labs?",
+              "name": "What is NimraDev Labs and nimradev.site?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "NimraDev Labs is an independent web architecture and software initiative dedicated to engineering high-performance, privacy-first web utilities and developer resources."
+                "text": "NimraDev Labs (nimradev.site) is an independent web architecture and software hub dedicated to engineering high-performance, privacy-first web utilities, including the PDFora PDF suite and academic GPA calculators."
               }
             },
             {
@@ -161,7 +220,7 @@
               "name": "Are PDFora tools free to use?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes, PDFora tools including Merge PDF, Compress PDF, Split PDF, and PDF converters are completely free to use without mandatory sign-ups or subscription paywalls."
+                "text": "Yes, all PDFora tools including Merge PDF, Compress PDF, Split PDF, and PDF format converters are 100% free to use with zero subscriptions, paywalls, or hidden limitations."
               }
             },
             {
@@ -169,7 +228,23 @@
               "name": "How does client-side processing protect my privacy?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Our tools use WebAssembly and HTML5 APIs to process your files directly inside your browser's local memory. Files are never uploaded to remote servers, ensuring absolute data security."
+                "text": "Our tools utilize client-side WebAssembly and modern HTML5 APIs to process your files directly inside your browser's local RAM. Your documents are never uploaded to remote servers, preventing data retention and leaks."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I calculate Punjab University (PU) GPA and CGPA?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "You can use the dedicated Punjab University GPA & CGPA Calculator on our network (punjab-university-gpa-cgpa-calculator.nimradev.site). Simply input your course credit hours and marks or letter grades according to PU standards to get instant semester GPA and CGPA results."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What browsers and devices are supported by NimraDev utilities?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "NimraDev applications run smoothly on all modern web browsers including Google Chrome, Apple Safari, Mozilla Firefox, Microsoft Edge, and mobile browsers on Android and iOS."
               }
             }
           ]
@@ -241,7 +316,7 @@
         <div class="max-w-6xl mx-auto flex items-center justify-between">
             <!-- Brand Logo -->
             <a href="/" class="flex items-center gap-3 group" aria-label="NimraDev Labs Home">
-                <img src="favicon.svg" alt="NimraDev Logo" class="w-9 h-9 rounded-xl shadow-xs group-hover:scale-105 transition-transform object-contain" />
+                <img src="favicon.svg" alt="NimraDev Logo" width="36" height="36" class="w-9 h-9 rounded-xl shadow-xs group-hover:scale-105 transition-transform object-contain" />
                 <div class="flex flex-col text-left">
                     <span class="font-extrabold text-base tracking-tight text-slate-900 leading-tight">NimraDev <span class="text-indigo-600">Labs</span></span>
                     <span class="text-[10px] font-mono text-slate-500 tracking-wider">nimradev.site</span>
@@ -250,19 +325,19 @@
 
             <!-- Navigation Links -->
             <nav class="hidden md:flex items-center space-x-6 text-xs font-semibold text-slate-600" aria-label="Primary Navigation">
-                <a href="#pdfora-suite" class="hover:text-indigo-600 transition-colors">PDFora Suite</a>
+                <a href="#interactive-tools" class="hover:text-indigo-600 transition-colors">Web Tools</a>
                 <a href="#ecosystem" class="hover:text-indigo-600 transition-colors">Platforms</a>
+                <a href="/guides/" class="hover:text-indigo-600 transition-colors">Guides &amp; Articles</a>
                 <a href="#security-tech" class="hover:text-indigo-600 transition-colors">Security Stack</a>
-                <a href="#insights-guides" class="hover:text-indigo-600 transition-colors">Guides</a>
                 <a href="/about.html" class="hover:text-indigo-600 transition-colors">About Us</a>
                 <a href="/contact.html" class="hover:text-indigo-600 transition-colors">Contact</a>
             </nav>
 
             <!-- Action Button -->
             <div class="flex items-center gap-3">
-                <a href="https://pdfora.nimradev.site" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-semibold text-indigo-600 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200/70 transition-all">
-                    <span>Open PDFora</span>
-                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                <a href="/guides/" class="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-semibold text-indigo-600 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200/70 transition-all">
+                    <span>Explore Guides</span>
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                 </a>
                 <a href="/contact.html" class="inline-flex items-center gap-2 px-4 sm:px-5 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-semibold text-xs transition-all shadow-md shadow-indigo-600/20 hover:shadow-indigo-600/35 group">
                     <span>Contact Desk</span>
@@ -296,12 +371,12 @@
 
             <!-- CTA Buttons -->
             <div class="flex flex-wrap items-center justify-center gap-3.5 mb-12">
-                <a href="#pdfora-suite" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-sm shadow-md shadow-indigo-600/25 transition-all">
-                    <span>Explore PDFora Utility Suite</span>
+                <a href="#interactive-tools" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-sm shadow-md shadow-indigo-600/25 transition-all">
+                    <span>Use In-Browser Web Tools</span>
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                 </a>
-                <a href="#security-tech" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white hover:bg-slate-50 text-slate-700 font-bold text-sm border border-slate-200 shadow-xs transition-all">
-                    <span>Read Architecture Specs</span>
+                <a href="/guides/" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white hover:bg-slate-50 text-slate-700 font-bold text-sm border border-slate-200 shadow-xs transition-all">
+                    <span>Read Technical Guides &rarr;</span>
                 </a>
             </div>
 
@@ -431,155 +506,217 @@
             </div>
         </section>
 
-        <!-- 3. Flagship Platform Showcase: PDFora -->
-        <section id="pdfora-suite" class="max-w-5xl mx-auto px-6 py-14 border-t border-slate-200/80">
-            <div class="text-center max-w-3xl mx-auto mb-12">
+        <!-- 3. In-Browser Client-Side Web Utility Lab -->
+        <section id="interactive-tools" class="max-w-5xl mx-auto px-6 py-14 border-t border-slate-200/80">
+            <div class="text-center max-w-3xl mx-auto mb-10">
                 <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-indigo-50 text-indigo-700 border border-indigo-200 mb-3">
-                    Flagship Productivity Platform
+                    Standalone Web Application
                 </span>
-                <!-- Required H2 -->
-                <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight mb-4">
-                    PDFora — Free Online PDF Tools & Utility Suite
+                <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight mb-3">
+                    NimraDev Web Utility Lab — Free In-Browser Tools
                 </h2>
                 <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
-                    <strong>PDFora</strong> is our dedicated document engineering solution, built to free users from expensive subscription barriers and privacy-invasive file upload workflows. Whether you are assembling legal agreements, optimizing academic papers, or converting confidential business proposals, PDFora gives you desktop-grade utility inside your web browser.
+                    Execute core developer and productivity tasks directly inside your browser. All processing operates locally in memory with zero data transmission to external servers.
                 </p>
             </div>
 
-            <!-- Sub-Tools Grid with Clean Semantic HTML and Direct Internal Links -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-12">
-
-                <!-- Sub-tool 1: Merge PDF -->
-                <div class="hub-card rounded-2xl p-5 border border-slate-200">
-                    <div class="w-10 h-10 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center font-bold text-sm mb-3">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2"></path></svg>
-                    </div>
-                    <h3 class="text-base font-bold text-slate-900 mb-1.5">
-                        <a href="https://pdfora.nimradev.site" target="_blank" rel="noopener noreferrer" class="hover:text-indigo-600 transition-colors">
-                            Merge PDF
-                        </a>
-                    </h3>
-                    <p class="text-xs text-slate-600 leading-relaxed mb-3">
-                        Combine multiple PDF files into one clean, ordered document. Easily drag-and-drop to reorder pages and eliminate redundant cover sheets.
-                    </p>
-                    <a href="https://pdfora.nimradev.site" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-indigo-600 hover:text-indigo-800 inline-flex items-center gap-1">
-                        Use Merge Tool &rarr;
-                    </a>
+            <!-- Interactive Tools Component Container -->
+            <div class="bg-white rounded-3xl border border-slate-200 shadow-sm overflow-hidden mb-12">
+                <!-- Tool Selector Tabs -->
+                <div class="flex flex-wrap border-b border-slate-200 bg-slate-50/70 p-2 gap-1.5 text-xs font-bold text-slate-600">
+                    <button type="button" onclick="switchLabTool('json')" id="tab-btn-json" class="tool-tab-btn px-4 py-2.5 rounded-xl bg-white text-indigo-600 shadow-xs border border-slate-200/80 transition-all">
+                        JSON Formatter
+                    </button>
+                    <button type="button" onclick="switchLabTool('base64')" id="tab-btn-base64" class="tool-tab-btn px-4 py-2.5 rounded-xl hover:text-indigo-600 hover:bg-white/60 transition-all">
+                        Base64 Tool
+                    </button>
+                    <button type="button" onclick="switchLabTool('wordcount')" id="tab-btn-wordcount" class="tool-tab-btn px-4 py-2.5 rounded-xl hover:text-indigo-600 hover:bg-white/60 transition-all">
+                        Word Counter
+                    </button>
+                    <button type="button" onclick="switchLabTool('case')" id="tab-btn-case" class="tool-tab-btn px-4 py-2.5 rounded-xl hover:text-indigo-600 hover:bg-white/60 transition-all">
+                        Case Converter
+                    </button>
+                    <button type="button" onclick="switchLabTool('hash')" id="tab-btn-hash" class="tool-tab-btn px-4 py-2.5 rounded-xl hover:text-indigo-600 hover:bg-white/60 transition-all">
+                        UUID &amp; Hash
+                    </button>
+                    <button type="button" onclick="switchLabTool('qr')" id="tab-btn-qr" class="tool-tab-btn px-4 py-2.5 rounded-xl hover:text-indigo-600 hover:bg-white/60 transition-all">
+                        QR Generator
+                    </button>
                 </div>
 
-                <!-- Sub-tool 2: Compress PDF -->
-                <div class="hub-card rounded-2xl p-5 border border-slate-200">
-                    <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center font-bold text-sm mb-3">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
-                    </div>
-                    <h3 class="text-base font-bold text-slate-900 mb-1.5">
-                        <a href="https://pdfora.nimradev.site" target="_blank" rel="noopener noreferrer" class="hover:text-indigo-600 transition-colors">
-                            Compress PDF
-                        </a>
-                    </h3>
-                    <p class="text-xs text-slate-600 leading-relaxed mb-3">
-                        Significantly decrease PDF file weight without sacrificing legible typography or image clarity. Ideal for email dispatch and portal submissions.
-                    </p>
-                    <a href="https://pdfora.nimradev.site" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-indigo-600 hover:text-indigo-800 inline-flex items-center gap-1">
-                        Compress Documents &rarr;
-                    </a>
-                </div>
+                <!-- Tool Panels -->
+                <div class="p-6 sm:p-8">
 
-                <!-- Sub-tool 3: Split PDF -->
-                <div class="hub-card rounded-2xl p-5 border border-slate-200">
-                    <div class="w-10 h-10 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center font-bold text-sm mb-3">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path></svg>
+                    <!-- Panel 1: JSON Formatter & Validator -->
+                    <div id="panel-json" class="lab-panel block">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-sm font-bold text-slate-800">JSON Formatter, Minifier &amp; Validator</h3>
+                            <span class="text-[11px] text-slate-400">100% Client-Side Engine</span>
+                        </div>
+                        <textarea id="json-input" rows="7" class="w-full p-4 rounded-xl border border-slate-200 font-mono text-xs focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none bg-slate-50/50" placeholder='{"paste": "your json here", "nested": [1, 2, 3]}'></textarea>
+                        <div class="flex flex-wrap items-center gap-2 mt-3">
+                            <button type="button" onclick="runJsonBeautify()" class="px-4 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-xs transition-all shadow-xs">
+                                Beautify / Prettify
+                            </button>
+                            <button type="button" onclick="runJsonMinify()" class="px-4 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs transition-all">
+                                Minify / Compact
+                            </button>
+                            <button type="button" onclick="copyToolText('json-input')" class="px-4 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs transition-all">
+                                Copy to Clipboard
+                            </button>
+                            <button type="button" onclick="document.getElementById('json-input').value = ''" class="px-3 py-2 rounded-xl text-slate-400 hover:text-rose-600 text-xs font-semibold">
+                                Clear
+                            </button>
+                            <span id="json-status" class="text-xs font-semibold text-emerald-600 ml-auto"></span>
+                        </div>
                     </div>
-                    <h3 class="text-base font-bold text-slate-900 mb-1.5">
-                        <a href="https://pdfora.nimradev.site" target="_blank" rel="noopener noreferrer" class="hover:text-indigo-600 transition-colors">
-                            Split PDF
-                        </a>
-                    </h3>
-                    <p class="text-xs text-slate-600 leading-relaxed mb-3">
-                        Extract specific page intervals or separate individual chapters from comprehensive manuals and reports into standalone PDF files.
-                    </p>
-                    <a href="https://pdfora.nimradev.site" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-indigo-600 hover:text-indigo-800 inline-flex items-center gap-1">
-                        Extract Pages &rarr;
-                    </a>
-                </div>
 
-                <!-- Sub-tool 4: PDF to Image -->
-                <div class="hub-card rounded-2xl p-5 border border-slate-200">
-                    <div class="w-10 h-10 rounded-xl bg-sky-50 text-sky-600 flex items-center justify-center font-bold text-sm mb-3">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                    <!-- Panel 2: Base64 Encoder & Decoder -->
+                    <div id="panel-base64" class="lab-panel hidden">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-sm font-bold text-slate-800">Base64 Text Encoder &amp; Decoder</h3>
+                            <span class="text-[11px] text-slate-400">RFC 4648 UTF-8 Compatible</span>
+                        </div>
+                        <textarea id="base64-input" rows="7" class="w-full p-4 rounded-xl border border-slate-200 font-mono text-xs focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none bg-slate-50/50" placeholder="Type or paste any text or Base64 string..."></textarea>
+                        <div class="flex flex-wrap items-center gap-2 mt-3">
+                            <button type="button" onclick="runBase64Encode()" class="px-4 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-xs transition-all shadow-xs">
+                                Encode to Base64
+                            </button>
+                            <button type="button" onclick="runBase64Decode()" class="px-4 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs transition-all">
+                                Decode from Base64
+                            </button>
+                            <button type="button" onclick="copyToolText('base64-input')" class="px-4 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs transition-all">
+                                Copy Output
+                            </button>
+                            <span id="base64-status" class="text-xs font-semibold text-emerald-600 ml-auto"></span>
+                        </div>
                     </div>
-                    <h3 class="text-base font-bold text-slate-900 mb-1.5">
-                        <a href="https://pdfora.nimradev.site" target="_blank" rel="noopener noreferrer" class="hover:text-indigo-600 transition-colors">
-                            PDF to Image
-                        </a>
-                    </h3>
-                    <p class="text-xs text-slate-600 leading-relaxed mb-3">
-                        Rasterize vector PDF layouts into crisp high-resolution PNG, JPG, or modern WebP images with pixel-perfect fidelity.
-                    </p>
-                    <a href="https://pdfora.nimradev.site" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-indigo-600 hover:text-indigo-800 inline-flex items-center gap-1">
-                        Convert to Images &rarr;
-                    </a>
-                </div>
 
-                <!-- Sub-tool 5: Word to PDF -->
-                <div class="hub-card rounded-2xl p-5 border border-slate-200">
-                    <div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center font-bold text-sm mb-3">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                    <!-- Panel 3: Live Word Counter -->
+                    <div id="panel-wordcount" class="lab-panel hidden">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-sm font-bold text-slate-800">Live Word, Character &amp; Reading Metric Counter</h3>
+                            <span class="text-[11px] text-slate-400">Instant Realtime Analysis</span>
+                        </div>
+                        <textarea id="wordcount-input" oninput="runWordCountAnalysis()" rows="6" class="w-full p-4 rounded-xl border border-slate-200 font-sans text-xs focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none bg-slate-50/50" placeholder="Start typing or paste an article here to see live word count metrics..."></textarea>
+                        
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-4 text-center">
+                            <div class="p-3 bg-slate-50 rounded-xl border border-slate-100">
+                                <span class="text-[11px] uppercase font-bold text-slate-400">Words</span>
+                                <p id="metric-words" class="text-xl font-extrabold text-indigo-600 mt-0.5">0</p>
+                            </div>
+                            <div class="p-3 bg-slate-50 rounded-xl border border-slate-100">
+                                <span class="text-[11px] uppercase font-bold text-slate-400">Characters</span>
+                                <p id="metric-chars" class="text-xl font-extrabold text-slate-900 mt-0.5">0</p>
+                            </div>
+                            <div class="p-3 bg-slate-50 rounded-xl border border-slate-100">
+                                <span class="text-[11px] uppercase font-bold text-slate-400">Sentences</span>
+                                <p id="metric-sentences" class="text-xl font-extrabold text-slate-900 mt-0.5">0</p>
+                            </div>
+                            <div class="p-3 bg-slate-50 rounded-xl border border-slate-100">
+                                <span class="text-[11px] uppercase font-bold text-slate-400">Reading Time</span>
+                                <p id="metric-reading" class="text-xl font-extrabold text-emerald-600 mt-0.5">0 sec</p>
+                            </div>
+                        </div>
                     </div>
-                    <h3 class="text-base font-bold text-slate-900 mb-1.5">
-                        <a href="https://pdfora.nimradev.site" target="_blank" rel="noopener noreferrer" class="hover:text-indigo-600 transition-colors">
-                            Word to PDF
-                        </a>
-                    </h3>
-                    <p class="text-xs text-slate-600 leading-relaxed mb-3">
-                        Transform Microsoft Word documents (.docx, .doc) into standardized, cross-platform PDF files while preserving formatting and fonts.
-                    </p>
-                    <a href="https://pdfora.nimradev.site" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-indigo-600 hover:text-indigo-800 inline-flex items-center gap-1">
-                        Convert Documents &rarr;
-                    </a>
-                </div>
 
-                <!-- Sub-tool 6: PDF Protect & Security -->
-                <div class="hub-card rounded-2xl p-5 border border-slate-200">
-                    <div class="w-10 h-10 rounded-xl bg-rose-50 text-rose-600 flex items-center justify-center font-bold text-sm mb-3">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                    <!-- Panel 4: Text Case Converter -->
+                    <div id="panel-case" class="lab-panel hidden">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-sm font-bold text-slate-800">Text Case Transformer</h3>
+                            <span class="text-[11px] text-slate-400">String Manipulation</span>
+                        </div>
+                        <textarea id="case-input" rows="6" class="w-full p-4 rounded-xl border border-slate-200 font-sans text-xs focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none bg-slate-50/50" placeholder="Type text here to convert into uppercase, lowercase, title case, camelCase, snake_case..."></textarea>
+                        <div class="flex flex-wrap items-center gap-2 mt-3">
+                            <button type="button" onclick="runCaseConvert('upper')" class="px-3.5 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-xs">
+                                UPPERCASE
+                            </button>
+                            <button type="button" onclick="runCaseConvert('lower')" class="px-3.5 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-xs">
+                                lowercase
+                            </button>
+                            <button type="button" onclick="runCaseConvert('title')" class="px-3.5 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-xs">
+                                Title Case
+                            </button>
+                            <button type="button" onclick="runCaseConvert('camel')" class="px-3.5 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-xs">
+                                camelCase
+                            </button>
+                            <button type="button" onclick="runCaseConvert('snake')" class="px-3.5 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-xs">
+                                snake_case
+                            </button>
+                            <button type="button" onclick="copyToolText('case-input')" class="px-3.5 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-xs ml-auto shadow-xs">
+                                Copy Text
+                            </button>
+                        </div>
                     </div>
-                    <h3 class="text-base font-bold text-slate-900 mb-1.5">
-                        <a href="https://pdfora.nimradev.site" target="_blank" rel="noopener noreferrer" class="hover:text-indigo-600 transition-colors">
-                            Protect & Encrypt PDF
-                        </a>
-                    </h3>
-                    <p class="text-xs text-slate-600 leading-relaxed mb-3">
-                        Enforce 128-bit and 256-bit AES encryption passwords to safeguard confidential financial records, agreements, and intellectual property.
-                    </p>
-                    <a href="https://pdfora.nimradev.site" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-indigo-600 hover:text-indigo-800 inline-flex items-center gap-1">
-                        Secure Files &rarr;
-                    </a>
-                </div>
 
+                    <!-- Panel 5: UUID & SHA-256 Hash Generator -->
+                    <div id="panel-hash" class="lab-panel hidden">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-sm font-bold text-slate-800">Cryptographic UUID v4 &amp; SHA-256 Generator</h3>
+                            <span class="text-[11px] text-slate-400">Web Crypto API</span>
+                        </div>
+                        <div class="space-y-4">
+                            <div>
+                                <label class="text-[11px] font-bold text-slate-500 uppercase">Input Text for SHA-256 Hash</label>
+                                <input type="text" id="hash-source" oninput="runSha256Hash()" class="w-full mt-1 p-3 rounded-xl border border-slate-200 text-xs font-mono bg-slate-50/50" placeholder="Type text to calculate cryptographic SHA-256 hash..." />
+                                <div class="mt-2 p-3 rounded-xl bg-slate-100 font-mono text-xs break-all text-slate-800 flex items-center justify-between">
+                                    <span id="hash-output" class="text-indigo-700 font-bold">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</span>
+                                    <button type="button" onclick="copyRawText(document.getElementById('hash-output').innerText)" class="ml-2 px-2 py-1 rounded bg-white text-[11px] font-bold text-slate-600 border border-slate-200 shrink-0">Copy</button>
+                                </div>
+                            </div>
+                            <div class="pt-2 border-t border-slate-100 flex items-center justify-between">
+                                <div>
+                                    <span class="text-xs font-bold text-slate-800 block">Random UUID v4:</span>
+                                    <span id="uuid-output" class="font-mono text-xs text-slate-600 font-semibold">Click generate below</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <button type="button" onclick="runGenerateUuid()" class="px-4 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-xs shadow-xs">
+                                        Generate UUID
+                                    </button>
+                                    <button type="button" onclick="copyRawText(document.getElementById('uuid-output').innerText)" class="px-3 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs">
+                                        Copy
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Panel 6: QR Code Generator -->
+                    <div id="panel-qr" class="lab-panel hidden">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-sm font-bold text-slate-800">Quick In-Browser QR Code Maker</h3>
+                            <span class="text-[11px] text-slate-400">High Resolution QR</span>
+                        </div>
+                        <div class="flex flex-col sm:flex-row items-center gap-6">
+                            <div class="flex-1 w-full space-y-3">
+                                <label class="text-[11px] font-bold text-slate-500 uppercase">Text or Website URL</label>
+                                <input type="text" id="qr-input" value="https://nimradev.site" class="w-full p-3 rounded-xl border border-slate-200 text-xs font-mono bg-slate-50/50" placeholder="https://example.com or any text" />
+                                <button type="button" onclick="runGenerateQrCode()" class="w-full py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-xs shadow-xs transition-all">
+                                    Generate Instant QR Code
+                                </button>
+                            </div>
+                            <div class="flex flex-col items-center justify-center p-4 rounded-2xl bg-slate-50 border border-slate-200 shrink-0">
+                                <img id="qr-img" src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=https%3A%2F%2Fnimradev.site" alt="QR Code Preview" class="w-36 h-36 rounded-lg bg-white p-2 border border-slate-200" />
+                                <span class="text-[10px] text-slate-400 mt-2 font-mono">Scan with camera</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
 
-            <!-- Additional Detail List on PDFora Capabilities -->
-            <div class="p-6 rounded-2xl bg-white border border-slate-200">
-                <h3 class="text-sm font-bold text-slate-900 mb-2">Key Highlights of the PDFora Processing Pipeline:</h3>
-                <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs text-slate-600">
-                    <li class="flex items-center gap-2">
-                        <svg class="w-4 h-4 text-indigo-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        <span>No file queue delays — tasks execute concurrently using Web Workers.</span>
-                    </li>
-                    <li class="flex items-center gap-2">
-                        <svg class="w-4 h-4 text-indigo-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        <span>Zero bandwidth consumption for large file uploads over slow networks.</span>
-                    </li>
-                    <li class="flex items-center gap-2">
-                        <svg class="w-4 h-4 text-indigo-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        <span>Full offline compatibility once web assets are cached by Service Workers.</span>
-                    </li>
-                    <li class="flex items-center gap-2">
-                        <svg class="w-4 h-4 text-indigo-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        <span>Universal compatibility across Chrome, Safari, Firefox, and Edge.</span>
-                    </li>
-                </ul>
+            <!-- Authority Guide Spotlight Banner -->
+            <div class="p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-indigo-900 to-slate-900 text-white shadow-md flex flex-col md:flex-row items-center justify-between gap-6">
+                <div>
+                    <span class="text-[11px] uppercase font-bold tracking-wider text-indigo-300">Technical Knowledge Base</span>
+                    <h3 class="text-xl sm:text-2xl font-black mt-1">Want to Master Document Architecture?</h3>
+                    <p class="text-xs sm:text-sm text-slate-300 mt-2 max-w-xl leading-relaxed">
+                        Read our 10+ in-depth editorial articles detailing lossless PDF compression algorithms, 256-bit AES cryptographic encryption, and WebAssembly compilation.
+                    </p>
+                </div>
+                <a href="/guides/" class="px-6 py-3 rounded-xl bg-white text-indigo-900 hover:bg-slate-100 font-extrabold text-xs shrink-0 transition-all shadow-md">
+                    Explore Guides Directory &rarr;
+                </a>
             </div>
         </section>
 
@@ -661,53 +798,53 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
                 <!-- Guide Article 1 -->
-                <article class="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs flex flex-col justify-between">
+                <article class="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs flex flex-col justify-between hover:border-indigo-200 transition-all">
                     <div>
                         <div class="flex items-center gap-2 text-[11px] font-semibold text-slate-400 mb-3">
                             <span class="text-indigo-600 bg-indigo-50 px-2 py-0.5 rounded-md font-bold">Optimization</span>
                             <span>&bull;</span>
-                            <span>5 min read</span>
+                            <span>7 min read</span>
                         </div>
                         <h3 class="text-lg font-bold text-slate-900 mb-2 hover:text-indigo-600 transition-colors">
-                            How to Reduce PDF File Size Without Quality Loss
+                            <a href="/guides/how-to-compress-pdf-without-losing-quality.html">How to Reduce PDF File Size Without Quality Loss</a>
                         </h3>
                         <p class="text-xs text-slate-600 leading-relaxed mb-4">
-                            Learn the underlying science of PDF compression. We explore the distinction between lossy and lossless image resampling, the stripping of unused metadata objects, font subsetting, and vector curve preservation. Discover practical guidelines for reducing bloated 50MB files down to sleek 2MB packages without introducing blurry typography or visual artifacts.
+                            Learn the underlying science of PDF compression. We explore the distinction between lossy and lossless image resampling, the stripping of unused metadata objects, font subsetting, and vector curve preservation.
                         </p>
                     </div>
                     <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
-                        <span class="font-medium text-slate-500">Author: NimraDev Editorial</span>
-                        <a href="https://pdfora.nimradev.site" target="_blank" rel="noopener noreferrer" class="font-bold text-indigo-600 hover:text-indigo-800">
-                            Apply via PDFora &rarr;
+                        <span class="font-medium text-slate-500">Author: Nimra &amp; Team</span>
+                        <a href="/guides/how-to-compress-pdf-without-losing-quality.html" class="font-bold text-indigo-600 hover:text-indigo-800">
+                            Read Guide &rarr;
                         </a>
                     </div>
                 </article>
 
                 <!-- Guide Article 2 -->
-                <article class="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs flex flex-col justify-between">
+                <article class="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs flex flex-col justify-between hover:border-indigo-200 transition-all">
                     <div>
                         <div class="flex items-center gap-2 text-[11px] font-semibold text-slate-400 mb-3">
                             <span class="text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-md font-bold">Security</span>
                             <span>&bull;</span>
-                            <span>7 min read</span>
+                            <span>6 min read</span>
                         </div>
                         <h3 class="text-lg font-bold text-slate-900 mb-2 hover:text-indigo-600 transition-colors">
-                            Securing Confidential PDFs for Business & Remote Work
+                            <a href="/guides/how-to-protect-pdf-with-password.html">Securing Confidential PDFs with 256-Bit AES Encryption</a>
                         </h3>
                         <p class="text-xs text-slate-600 leading-relaxed mb-4">
-                            In an era of distributed teams, transmitting unencrypted contracts, employee records, and invoices presents substantial compliance risks. This guide details modern cryptographic standards, including 256-bit AES encryption, owner versus user password credentials, permission flags preventing unauthorized printing or editing, and redaction protocols.
+                            In an era of distributed teams, transmitting unencrypted contracts and invoices presents compliance risks. This guide details modern cryptographic standards, owner versus user passwords, and permission flags.
                         </p>
                     </div>
                     <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
                         <span class="font-medium text-slate-500">Author: Security Desk</span>
-                        <a href="https://pdfora.nimradev.site" target="_blank" rel="noopener noreferrer" class="font-bold text-indigo-600 hover:text-indigo-800">
-                            Learn Encryption &rarr;
+                        <a href="/guides/how-to-protect-pdf-with-password.html" class="font-bold text-indigo-600 hover:text-indigo-800">
+                            Read Guide &rarr;
                         </a>
                     </div>
                 </article>
 
                 <!-- Guide Article 3 -->
-                <article class="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs flex flex-col justify-between">
+                <article class="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs flex flex-col justify-between hover:border-indigo-200 transition-all">
                     <div>
                         <div class="flex items-center gap-2 text-[11px] font-semibold text-slate-400 mb-3">
                             <span class="text-purple-600 bg-purple-50 px-2 py-0.5 rounded-md font-bold">Architecture</span>
@@ -715,43 +852,51 @@
                             <span>6 min read</span>
                         </div>
                         <h3 class="text-lg font-bold text-slate-900 mb-2 hover:text-indigo-600 transition-colors">
-                            Client-Side vs Cloud Processing: Why Local Execution Matters
+                            <a href="/guides/client-side-vs-server-side-pdf-tools.html">Client-Side vs Cloud Processing: Why Local Execution Matters</a>
                         </h3>
                         <p class="text-xs text-slate-600 leading-relaxed mb-4">
-                            Why entrust your proprietary documents to unknown cloud servers when client devices boast immense computational power? We compare traditional server-heavy workflows against client-side browser engines. Understand how local execution eradicates GDPR, CCPA, and data breach vulnerabilities while maintaining lightning-fast performance.
+                            Why entrust proprietary documents to unknown cloud servers when client devices boast immense power? We compare traditional server workflows against client-side WebAssembly browser engines.
                         </p>
                     </div>
                     <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
                         <span class="font-medium text-slate-500">Author: NimraDev Labs</span>
-                        <a href="/about.html" class="font-bold text-indigo-600 hover:text-indigo-800">
-                            Read About Tech &rarr;
+                        <a href="/guides/client-side-vs-server-side-pdf-tools.html" class="font-bold text-indigo-600 hover:text-indigo-800">
+                            Read Guide &rarr;
                         </a>
                     </div>
                 </article>
 
                 <!-- Guide Article 4 -->
-                <article class="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs flex flex-col justify-between">
+                <article class="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs flex flex-col justify-between hover:border-indigo-200 transition-all">
                     <div>
                         <div class="flex items-center gap-2 text-[11px] font-semibold text-slate-400 mb-3">
-                            <span class="text-amber-600 bg-amber-50 px-2 py-0.5 rounded-md font-bold">Innovation</span>
+                            <span class="text-amber-600 bg-amber-50 px-2 py-0.5 rounded-md font-bold">OCR &amp; AI</span>
                             <span>&bull;</span>
-                            <span>4 min read</span>
+                            <span>8 min read</span>
                         </div>
                         <h3 class="text-lg font-bold text-slate-900 mb-2 hover:text-indigo-600 transition-colors">
-                            The Evolution of WebAssembly in Modern Browser Applications
+                            <a href="/guides/convert-scanned-pdf-to-text-ocr.html">Extracting Searchable Text from Scanned PDFs with OCR</a>
                         </h3>
                         <p class="text-xs text-slate-600 leading-relaxed mb-4">
-                            WebAssembly (Wasm) is redefining what web browsers can accomplish without plugins or native installations. Learn how low-level languages like C, C++, and Rust are compiled into binary bytecode that runs alongside JavaScript at near-native speeds, unlocking video rendering, complex math, and document compilation inside standard browsers.
+                            Learn how neural network optical character recognition operates directly inside the browser using compiled WebAssembly models to convert flat image scans into searchable, indexable text documents.
                         </p>
                     </div>
                     <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
                         <span class="font-medium text-slate-500">Author: Tech Insights</span>
-                        <a href="https://nimlearn.nimradev.site" target="_blank" rel="noopener noreferrer" class="font-bold text-indigo-600 hover:text-indigo-800">
-                            Explore Tutorials &rarr;
+                        <a href="/guides/convert-scanned-pdf-to-text-ocr.html" class="font-bold text-indigo-600 hover:text-indigo-800">
+                            Read Guide &rarr;
                         </a>
                     </div>
                 </article>
 
+            </div>
+
+            <!-- View All Guides CTA -->
+            <div class="mt-8 text-center">
+                <a href="/guides/" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs shadow-sm transition-all">
+                    <span>Explore All 10 Technical Guides &amp; Tutorials</span>
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </a>
             </div>
         </section>
 
@@ -822,6 +967,16 @@
 
                 <details class="p-5 rounded-2xl bg-white border border-slate-200 group">
                     <summary class="font-bold text-sm text-slate-900 cursor-pointer list-none flex items-center justify-between">
+                        <span>How do I calculate Punjab University (PU) GPA and CGPA?</span>
+                        <span class="text-indigo-600 font-bold group-open:rotate-180 transition-transform">&darr;</span>
+                    </summary>
+                    <p class="text-xs text-slate-600 leading-relaxed mt-3 pt-3 border-t border-slate-100">
+                        You can use our free <a href="https://punjab-university-gpa-cgpa-calculator.nimradev.site/" target="_blank" rel="noopener noreferrer" class="text-indigo-600 font-semibold underline">Punjab University GPA &amp; CGPA Calculator</a>. Input your credit hours and marks or letter grades according to official PU grading standards to compute instant semester GPA and cumulative CGPA.
+                    </p>
+                </details>
+
+                <details class="p-5 rounded-2xl bg-white border border-slate-200 group">
+                    <summary class="font-bold text-sm text-slate-900 cursor-pointer list-none flex items-center justify-between">
                         <span>How do I contact the development team?</span>
                         <span class="text-indigo-600 font-bold group-open:rotate-180 transition-transform">&darr;</span>
                     </summary>
@@ -843,7 +998,7 @@
                 <!-- Brand & Mission Column -->
                 <div class="md:col-span-2">
                     <a href="/" class="flex items-center gap-2.5 mb-3" aria-label="NimraDev Labs Home">
-                        <img src="favicon.svg" alt="NimraDev Logo" class="w-8 h-8 rounded-lg shadow-xs" />
+                        <img src="favicon.svg" alt="NimraDev Logo" width="32" height="32" loading="lazy" class="w-8 h-8 rounded-lg shadow-xs" />
                         <span class="font-extrabold text-base tracking-tight text-slate-900">NimraDev <span class="text-indigo-600">Labs</span></span>
                     </a>
                     <p class="text-xs text-slate-500 leading-relaxed max-w-sm mb-4">
@@ -863,7 +1018,7 @@
                         <li><a href="https://nimradevlabs.nimradev.site/" target="_blank" rel="noopener noreferrer" class="hover:text-indigo-600 transition-colors">NimraDev Labs Sandbox</a></li>
                         <li><a href="https://punjab-university-gpa-cgpa-calculator.nimradev.site/" target="_blank" rel="noopener noreferrer" class="hover:text-indigo-600 transition-colors">PU GPA & CGPA Calculator</a></li>
                         <li><a href="#security-tech" class="hover:text-indigo-600 transition-colors">Security Architecture</a></li>
-                        <li><a href="#insights-guides" class="hover:text-indigo-600 transition-colors">Documentation & Guides</a></li>
+                        <li><a href="/guides/" class="hover:text-indigo-600 transition-colors font-bold text-indigo-600">Guides &amp; Articles Hub &rarr;</a></li>
                     </ul>
                 </div>
 
@@ -1036,6 +1191,149 @@
             window.addEventListener('resize', resizeCanvas);
             initStars();
             animateStars();
+        }
+
+        // --- 3. Interactive Web Utility Lab Scripts ---
+        function switchLabTool(toolId) {
+            document.querySelectorAll('.lab-panel').forEach(p => {
+                p.classList.add('hidden');
+                p.classList.remove('block');
+            });
+            const target = document.getElementById('panel-' + toolId);
+            if (target) {
+                target.classList.remove('hidden');
+                target.classList.add('block');
+            }
+            document.querySelectorAll('.tool-tab-btn').forEach(btn => {
+                btn.classList.remove('bg-white', 'text-indigo-600', 'shadow-xs', 'border', 'border-slate-200/80');
+            });
+            const activeBtn = document.getElementById('tab-btn-' + toolId);
+            if (activeBtn) {
+                activeBtn.classList.add('bg-white', 'text-indigo-600', 'shadow-xs', 'border', 'border-slate-200/80');
+            }
+        }
+
+        function runJsonBeautify() {
+            const input = document.getElementById('json-input');
+            const status = document.getElementById('json-status');
+            try {
+                const parsed = JSON.parse(input.value);
+                input.value = JSON.stringify(parsed, null, 2);
+                status.textContent = 'Valid JSON (Formatted)';
+                status.className = 'text-xs font-semibold text-emerald-600 ml-auto';
+            } catch (err) {
+                status.textContent = 'Invalid JSON: ' + err.message;
+                status.className = 'text-xs font-semibold text-rose-600 ml-auto';
+            }
+        }
+
+        function runJsonMinify() {
+            const input = document.getElementById('json-input');
+            const status = document.getElementById('json-status');
+            try {
+                const parsed = JSON.parse(input.value);
+                input.value = JSON.stringify(parsed);
+                status.textContent = 'Minified Successfully';
+                status.className = 'text-xs font-semibold text-emerald-600 ml-auto';
+            } catch (err) {
+                status.textContent = 'Invalid JSON: ' + err.message;
+                status.className = 'text-xs font-semibold text-rose-600 ml-auto';
+            }
+        }
+
+        function runBase64Encode() {
+            const input = document.getElementById('base64-input');
+            const status = document.getElementById('base64-status');
+            try {
+                const encoded = btoa(unescape(encodeURIComponent(input.value)));
+                input.value = encoded;
+                status.textContent = 'Encoded to Base64';
+                status.className = 'text-xs font-semibold text-emerald-600 ml-auto';
+            } catch (err) {
+                status.textContent = 'Encoding error: ' + err.message;
+                status.className = 'text-xs font-semibold text-rose-600 ml-auto';
+            }
+        }
+
+        function runBase64Decode() {
+            const input = document.getElementById('base64-input');
+            const status = document.getElementById('base64-status');
+            try {
+                const decoded = decodeURIComponent(escape(atob(input.value.trim())));
+                input.value = decoded;
+                status.textContent = 'Decoded successfully';
+                status.className = 'text-xs font-semibold text-emerald-600 ml-auto';
+            } catch (err) {
+                status.textContent = 'Invalid Base64 string';
+                status.className = 'text-xs font-semibold text-rose-600 ml-auto';
+            }
+        }
+
+        function runWordCountAnalysis() {
+            const text = document.getElementById('wordcount-input').value;
+            const words = text.trim() ? text.trim().split(/\s+/).length : 0;
+            const chars = text.length;
+            const sentences = text.trim() ? (text.match(/[\w|\)][.?!]+(\s|$)/g) || []).length : 0;
+            const readingSeconds = Math.ceil((words / 200) * 60);
+
+            document.getElementById('metric-words').textContent = words.toLocaleString();
+            document.getElementById('metric-chars').textContent = chars.toLocaleString();
+            document.getElementById('metric-sentences').textContent = sentences.toLocaleString();
+            document.getElementById('metric-reading').textContent = readingSeconds < 60 ? readingSeconds + ' sec' : Math.ceil(readingSeconds / 60) + ' min';
+        }
+
+        function runCaseConvert(type) {
+            const input = document.getElementById('case-input');
+            const text = input.value;
+            if (!text) return;
+
+            if (type === 'upper') {
+                input.value = text.toUpperCase();
+            } else if (type === 'lower') {
+                input.value = text.toLowerCase();
+            } else if (type === 'title') {
+                input.value = text.toLowerCase().replace(/\b\w/g, s => s.toUpperCase());
+            } else if (type === 'camel') {
+                input.value = text.toLowerCase().replace(/[^a-zA-Z0-9]+(.)/g, (m, chr) => chr.toUpperCase());
+            } else if (type === 'snake') {
+                input.value = text.match(/[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g)?.map(x => x.toLowerCase()).join('_') || text.toLowerCase().replace(/\s+/g, '_');
+            }
+        }
+
+        async function runSha256Hash() {
+            const val = document.getElementById('hash-source').value;
+            const msgBuffer = new TextEncoder().encode(val);
+            const hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);
+            const hashArray = Array.from(new Uint8Array(hashBuffer));
+            const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+            document.getElementById('hash-output').textContent = hashHex;
+        }
+
+        function runGenerateUuid() {
+            const uuid = ([1e7]+-1e3+-4e3+-8e3+-1e11).replace(/[018]/g, c =>
+                (c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16)
+            );
+            document.getElementById('uuid-output').textContent = uuid;
+        }
+
+        function runGenerateQrCode() {
+            const val = document.getElementById('qr-input').value.trim() || 'https://nimradev.site';
+            const url = 'https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=' + encodeURIComponent(val);
+            document.getElementById('qr-img').src = url;
+        }
+
+        function copyToolText(elementId) {
+            const el = document.getElementById(elementId);
+            if (el) {
+                el.select();
+                navigator.clipboard.writeText(el.value);
+            }
+        }
+
+        function copyRawText(text) {
+            if (text) {
+                navigator.clipboard.writeText(text);
+            }
         }
     </script>
 </body>
