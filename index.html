@@ -96,42 +96,6 @@
             100% { opacity: 0.8; }
         }
 
-        /* Chimney smoke puffs */
-        .smoke-puff {
-            position: absolute;
-            bottom: 100%;
-            left: 50%;
-            width: 18px;
-            height: 18px;
-            background: rgba(226, 232, 240, 0.4);
-            border-radius: 50%;
-            filter: blur(4px);
-            pointer-events: none;
-            animation: riseAndFade 4s infinite ease-out;
-        }
-        .smoke-puff:nth-child(2) {
-            animation-delay: 1.3s;
-            animation-duration: 4.5s;
-        }
-        .smoke-puff:nth-child(3) {
-            animation-delay: 2.6s;
-            animation-duration: 5s;
-        }
-
-        @keyframes riseAndFade {
-            0% {
-                transform: translate(-50%, 0) scale(0.6);
-                opacity: 0.6;
-            }
-            50% {
-                transform: translate(calc(-50% + 15px), -45px) scale(1.4);
-                opacity: 0.35;
-            }
-            100% {
-                transform: translate(calc(-50% + 35px), -95px) scale(2.4);
-                opacity: 0;
-            }
-        }
 
         /* Lantern glow */
         .lantern-light {
@@ -292,17 +256,6 @@
 
             <!-- 1. ROOF & CHIMNEY -->
             <div class="w-full relative flex flex-col items-center">
-                <!-- Chimney -->
-                <div class="absolute right-12 -top-14 w-12 h-16 bg-[#52291d] rounded-t-md border-t-4 border-l-2 border-r-2 border-[#3d1e15] shadow-xl z-10">
-                    <!-- Brick line details -->
-                    <div class="w-full h-2 border-b border-black/20 mt-3"></div>
-                    <div class="w-full h-2 border-b border-black/20 mt-3"></div>
-                    
-                    <!-- Animated Smoke Puffs -->
-                    <div class="smoke-puff"></div>
-                    <div class="smoke-puff"></div>
-                    <div class="smoke-puff"></div>
-                </div>
 
                 <!-- Main Gable Roof (Triangle) -->
                 <div class="relative w-full flex justify-center items-center">
