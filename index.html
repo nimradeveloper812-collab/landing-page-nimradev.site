@@ -244,13 +244,13 @@
 
                 <!-- Main Gable Roof (Triangle) -->
                 <div class="relative w-full flex justify-center items-center">
-                    <div class="w-0 h-0 border-l-[155px] sm:border-l-[210px] border-l-transparent border-r-[155px] sm:border-r-[210px] border-r-transparent border-b-[85px] sm:border-b-[115px] border-b-[#2e1d16] filter drop-shadow-2xl relative">
+                    <div class="w-0 h-0 border-l-[185px] sm:border-l-[295px] md:border-l-[345px] border-l-transparent border-r-[185px] sm:border-r-[295px] md:border-r-[345px] border-r-transparent border-b-[95px] sm:border-b-[140px] md:border-b-[160px] border-b-[#2e1d16] filter drop-shadow-2xl relative">
                         <!-- Roof Overhang Eaves / Accent -->
-                        <div class="absolute -bottom-[87px] sm:-bottom-[117px] -left-[157px] sm:-left-[212px] w-[314px] sm:w-[424px] h-3 bg-[#4a2e22] rounded-sm"></div>
+                        <div class="absolute -bottom-[97px] sm:-bottom-[142px] md:-bottom-[162px] -left-[187px] sm:-left-[297px] md:-left-[347px] w-[374px] sm:w-[594px] md:w-[694px] h-3.5 bg-[#4a2e22] rounded-sm"></div>
                     </div>
 
                     <!-- Attic Round Window -->
-                    <div class="absolute bottom-3 sm:bottom-5 w-10 h-10 sm:w-14 sm:h-14 rounded-full bg-[#1b1411] border-4 border-[#4a2e22] flex items-center justify-center shadow-inner overflow-hidden">
+                    <div class="absolute bottom-3 sm:bottom-6 w-10 h-10 sm:w-14 sm:h-14 rounded-full bg-[#1b1411] border-4 border-[#4a2e22] flex items-center justify-center shadow-inner overflow-hidden">
                         <div class="window-glow w-full h-full bg-gradient-to-tr from-amber-400 to-yellow-200 opacity-90 transition-all duration-700 relative">
                             <!-- Window Frame cross -->
                             <div class="absolute top-1/2 left-0 w-full h-0.5 bg-[#4a2e22] -translate-y-1/2"></div>
@@ -260,21 +260,61 @@
                 </div>
             </div>
 
-            <!-- 2. HOUSE MAIN BODY / WALLS -->
-            <div class="w-[280px] sm:w-[380px] bg-gradient-to-b from-[#252836] to-[#1a1d29] rounded-b-2xl border-x-4 border-b-4 border-[#373d52] shadow-2xl relative p-4 sm:p-6 flex flex-col items-center">
+            <!-- 2. HOUSE MAIN BODY / WALLS (Expanded for 4 Windows) -->
+            <div class="w-[360px] sm:w-[580px] md:w-[680px] bg-gradient-to-b from-[#252836] to-[#1a1d29] rounded-b-2xl border-x-4 border-b-4 border-[#373d52] shadow-2xl relative p-3 sm:p-6 flex flex-col items-center">
 
                 <!-- Golden Engraved Nameplate -->
-                <div class="mb-5 px-5 py-1.5 rounded-lg bg-gradient-to-r from-amber-600 via-amber-300 to-amber-600 shadow-md border border-amber-200/50 flex items-center gap-2">
+                <div class="mb-4 sm:mb-6 px-5 py-1.5 rounded-lg bg-gradient-to-r from-amber-600 via-amber-300 to-amber-600 shadow-md border border-amber-200/50 flex items-center gap-2">
                     <span class="text-xs text-amber-950 font-black tracking-widest uppercase font-serif">
                         ✨ Nimra's Hub ✨
                     </span>
                 </div>
 
-                <!-- Entrance Row (Windows Removed) -->
-                <div class="w-full flex items-end justify-center relative">
+                <!-- 3-Column House Facade: Left Windows | Center Entrance | Right Windows -->
+                <div class="w-full grid grid-cols-3 gap-2 sm:gap-4 items-center relative">
 
-                    <!-- ================= THE ENTRANCE & 3D DOUBLE DOORS ================= -->
-                    <div class="relative flex flex-col items-center">
+                    <!-- ================= LEFT COLUMN: 2 WINDOWS ================= -->
+                    <div class="flex flex-col items-center justify-around h-full space-y-4 sm:space-y-6">
+                        
+                        <!-- Window 1: Production Room -->
+                        <div class="flex flex-col items-center group cursor-pointer" onclick="openRoomModal('production')" title="Click to open Production Room window">
+                            <span class="text-[7px] sm:text-[9px] font-extrabold text-amber-300 tracking-wider uppercase mb-1 bg-amber-500/15 px-2 py-0.5 rounded-md border border-amber-500/30 group-hover:bg-amber-500/30 group-hover:border-amber-400 transition-all text-center">
+                                Production Room
+                            </span>
+                            <div class="w-16 h-20 sm:w-22 sm:h-28 bg-[#10141d] rounded-t-xl border-3 sm:border-4 border-[#47516e] shadow-lg overflow-hidden group-hover:scale-105 group-hover:border-amber-400 transition-all relative">
+                                <div class="window-glow w-full h-full bg-gradient-to-b from-amber-300/90 to-amber-500/80 shadow-[0_0_20px_rgba(251,191,36,0.5)] group-hover:shadow-[0_0_28px_rgba(251,191,36,0.9)] transition-all relative">
+                                    <div class="absolute top-1/2 left-0 w-full h-0.5 bg-[#47516e] -translate-y-1/2"></div>
+                                    <div class="absolute top-0 left-1/2 w-0.5 h-full bg-[#47516e] -translate-x-1/2"></div>
+                                </div>
+                            </div>
+                            <span class="text-[8px] text-slate-400 group-hover:text-amber-200 mt-1 font-semibold flex items-center gap-0.5">
+                                <span>🔍 View Room</span>
+                            </span>
+                        </div>
+
+                        <!-- Window 3: Creative Labs -->
+                        <div class="flex flex-col items-center group cursor-pointer" onclick="openRoomModal('labs')" title="Click to open Creative Labs window">
+                            <span class="text-[7px] sm:text-[9px] font-extrabold text-amber-300 tracking-wider uppercase mb-1 bg-amber-500/15 px-2 py-0.5 rounded-md border border-amber-500/30 group-hover:bg-amber-500/30 group-hover:border-amber-400 transition-all text-center">
+                                Creative Labs
+                            </span>
+                            <div class="w-16 h-20 sm:w-22 sm:h-28 bg-[#10141d] rounded-t-xl border-3 sm:border-4 border-[#47516e] shadow-lg overflow-hidden group-hover:scale-105 group-hover:border-amber-400 transition-all relative">
+                                <div class="window-glow w-full h-full bg-gradient-to-b from-amber-300/90 to-amber-500/80 shadow-[0_0_20px_rgba(251,191,36,0.5)] group-hover:shadow-[0_0_28px_rgba(251,191,36,0.9)] transition-all relative">
+                                    <div class="absolute top-1/2 left-0 w-full h-0.5 bg-[#47516e] -translate-y-1/2"></div>
+                                    <div class="absolute top-0 left-1/2 w-0.5 h-full bg-[#47516e] -translate-x-1/2"></div>
+                                </div>
+                            </div>
+                            <!-- Flower box under lower window -->
+                            <div class="w-16 sm:w-22 h-3 sm:h-4 bg-[#5c3a28] rounded-b-md border-t-2 border-emerald-500 flex items-center justify-around px-1 mt-0.5 shadow-xs">
+                                <span class="text-[8px]">🌸</span>
+                                <span class="text-[8px]">🌿</span>
+                                <span class="text-[8px]">🌺</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- ================= CENTER COLUMN: ENTRANCE & 3D DOORS ================= -->
+                    <div class="flex flex-col items-center relative">
 
                         <!-- Porch Light / Lantern Hanging Above -->
                         <div class="flex flex-col items-center mb-1">
@@ -285,24 +325,24 @@
                         </div>
 
                         <!-- Door Frame & Doorway Stage -->
-                        <div id="door-portal" class="doorway-wrapper relative w-40 sm:w-52 h-60 sm:h-72 rounded-t-2xl border-4 border-[#523424] bg-[#0d1117] shadow-2xl overflow-hidden cursor-pointer group" onclick="toggleDoors()" title="Click to Open or Close Doors">
+                        <div id="door-portal" class="doorway-wrapper relative w-36 sm:w-44 h-56 sm:h-64 rounded-t-2xl border-4 border-[#523424] bg-[#0d1117] shadow-2xl overflow-hidden cursor-pointer group" onclick="toggleDoors()" title="Click to Open or Close Doors">
 
                             <!-- INTERIOR FOYER (Revealed when doors swing open) -->
-                            <div class="interior-room absolute inset-0 bg-gradient-to-b from-amber-100 via-amber-200 to-amber-300 text-slate-900 p-3 sm:p-4 flex flex-col items-center justify-between text-center z-0 shadow-inner">
-                                <div class="w-full flex flex-col items-center pt-2">
-                                    <span class="text-[10px] uppercase font-extrabold tracking-wider text-amber-800 bg-amber-400/50 px-2 py-0.5 rounded-full mb-1">Foyer</span>
-                                    <h3 class="text-sm sm:text-base font-bold text-slate-900 font-serif leading-tight">Welcome to Nimra's Hub!</h3>
-                                    <p class="text-[11px] sm:text-xs text-amber-950/80 mt-1 font-medium leading-relaxed">
+                            <div class="interior-room absolute inset-0 bg-gradient-to-b from-amber-100 via-amber-200 to-amber-300 text-slate-900 p-2 sm:p-3 flex flex-col items-center justify-between text-center z-0 shadow-inner">
+                                <div class="w-full flex flex-col items-center pt-1 sm:pt-2">
+                                    <span class="text-[9px] uppercase font-extrabold tracking-wider text-amber-800 bg-amber-400/50 px-2 py-0.5 rounded-full mb-1">Foyer</span>
+                                    <h3 class="text-xs sm:text-sm font-bold text-slate-900 font-serif leading-tight">Welcome to Nimra's Hub!</h3>
+                                    <p class="text-[10px] sm:text-[11px] text-amber-950/80 mt-1 font-medium leading-relaxed">
                                         Make yourself right at home. It is wonderful to have you here! ✨
                                     </p>
                                 </div>
 
                                 <!-- Cozy Welcome Actions inside the door -->
-                                <div class="w-full flex flex-col gap-1.5 pb-2" onclick="event.stopPropagation()">
-                                    <a href="/about.html" class="w-full py-1.5 px-2 rounded-lg bg-amber-900 text-white font-bold text-[11px] hover:bg-amber-950 transition-colors shadow-xs">
+                                <div class="w-full flex flex-col gap-1 pb-1" onclick="event.stopPropagation()">
+                                    <a href="/about.html" class="w-full py-1 px-2 rounded-lg bg-amber-900 text-white font-bold text-[10px] hover:bg-amber-950 transition-colors shadow-xs">
                                         About Nimra
                                     </a>
-                                    <a href="/contact.html" class="w-full py-1.5 px-2 rounded-lg bg-white/90 text-amber-900 font-bold text-[11px] hover:bg-white transition-colors shadow-xs border border-amber-400/60">
+                                    <a href="/contact.html" class="w-full py-1 px-2 rounded-lg bg-white/90 text-amber-900 font-bold text-[10px] hover:bg-white transition-colors shadow-xs border border-amber-400/60">
                                         Say Hello &rarr;
                                     </a>
                                 </div>
@@ -312,68 +352,105 @@
                             </div>
 
                             <!-- LEFT DOOR -->
-                            <div id="left-door" class="door-left absolute top-0 left-0 w-1/2 h-full bg-gradient-to-r from-[#422618] to-[#633b25] border-r border-[#26140b] z-20 flex flex-col justify-between p-2 shadow-2xl">
+                            <div id="left-door" class="door-left absolute top-0 left-0 w-1/2 h-full bg-gradient-to-r from-[#422618] to-[#633b25] border-r border-[#26140b] z-20 flex flex-col justify-between p-1.5 shadow-2xl">
                                 <!-- Upper Glass Pane -->
-                                <div class="w-full h-14 sm:h-18 rounded-md bg-[#e2e8f0]/20 border border-amber-400/30 backdrop-blur-xs flex items-center justify-center shadow-inner">
+                                <div class="w-full h-12 sm:h-16 rounded-md bg-[#e2e8f0]/20 border border-amber-400/30 backdrop-blur-xs flex items-center justify-center shadow-inner">
                                     <div class="w-full h-0.5 bg-amber-900/30"></div>
                                 </div>
                                 <!-- Wood Moldings / Insets -->
-                                <div class="w-full h-16 sm:h-20 rounded-md bg-[#382014] border border-[#2b180f] shadow-inner"></div>
+                                <div class="w-full h-14 sm:h-18 rounded-md bg-[#382014] border border-[#2b180f] shadow-inner"></div>
                                 <!-- Brass Handle & Keyhole -->
-                                <div class="absolute right-2 top-1/2 -translate-y-1/2 flex flex-col items-center">
-                                    <div class="w-2.5 h-7 rounded-full bg-gradient-to-b from-amber-300 via-amber-100 to-amber-500 shadow-md border border-amber-600"></div>
-                                    <div class="w-1.5 h-2 bg-black/70 rounded-full mt-1"></div>
+                                <div class="absolute right-1.5 top-1/2 -translate-y-1/2 flex flex-col items-center">
+                                    <div class="w-2 h-6 rounded-full bg-gradient-to-b from-amber-300 via-amber-100 to-amber-500 shadow-md border border-amber-600"></div>
+                                    <div class="w-1.5 h-1.5 bg-black/70 rounded-full mt-1"></div>
                                 </div>
                             </div>
 
                             <!-- RIGHT DOOR -->
-                            <div id="right-door" class="door-right absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#422618] to-[#633b25] border-l border-[#26140b] z-20 flex flex-col justify-between p-2 shadow-2xl">
+                            <div id="right-door" class="door-right absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#422618] to-[#633b25] border-l border-[#26140b] z-20 flex flex-col justify-between p-1.5 shadow-2xl">
                                 <!-- Upper Glass Pane -->
-                                <div class="w-full h-14 sm:h-18 rounded-md bg-[#e2e8f0]/20 border border-amber-400/30 backdrop-blur-xs flex items-center justify-center shadow-inner">
+                                <div class="w-full h-12 sm:h-16 rounded-md bg-[#e2e8f0]/20 border border-amber-400/30 backdrop-blur-xs flex items-center justify-center shadow-inner">
                                     <div class="w-full h-0.5 bg-amber-900/30"></div>
                                 </div>
                                 <!-- Wood Moldings / Insets -->
-                                <div class="w-full h-16 sm:h-20 rounded-md bg-[#382014] border border-[#2b180f] shadow-inner"></div>
+                                <div class="w-full h-14 sm:h-18 rounded-md bg-[#382014] border border-[#2b180f] shadow-inner"></div>
                                 <!-- Brass Handle & Keyhole -->
-                                <div class="absolute left-2 top-1/2 -translate-y-1/2 flex flex-col items-center">
-                                    <div class="w-2.5 h-7 rounded-full bg-gradient-to-b from-amber-300 via-amber-100 to-amber-500 shadow-md border border-amber-600"></div>
-                                    <div class="w-1.5 h-2 bg-black/70 rounded-full mt-1"></div>
+                                <div class="absolute left-1.5 top-1/2 -translate-y-1/2 flex flex-col items-center">
+                                    <div class="w-2 h-6 rounded-full bg-gradient-to-b from-amber-300 via-amber-100 to-amber-500 shadow-md border border-amber-600"></div>
+                                    <div class="w-1.5 h-1.5 bg-black/70 rounded-full mt-1"></div>
                                 </div>
                             </div>
 
                         </div>
 
                         <!-- Welcome Mat -->
-                        <div class="w-36 sm:w-48 h-4 bg-[#8b5a2b] border-2 border-[#5c3a1e] rounded-sm mt-1 shadow-md flex items-center justify-center">
-                            <span class="text-[8px] sm:text-[9px] font-extrabold text-amber-100 tracking-wider uppercase font-sans">WELCOME</span>
+                        <div class="w-32 sm:w-40 h-4 bg-[#8b5a2b] border-2 border-[#5c3a1e] rounded-sm mt-1 shadow-md flex items-center justify-center">
+                            <span class="text-[7px] sm:text-[8px] font-extrabold text-amber-100 tracking-wider uppercase font-sans">WELCOME</span>
                         </div>
 
                         <!-- Light Spill on the Porch floor -->
-                        <div class="interior-spill absolute top-full left-1/2 -translate-x-1/2 w-48 sm:w-64 h-16 bg-gradient-to-b from-amber-300/40 via-amber-400/20 to-transparent blur-md pointer-events-none -mt-3 z-10"></div>
+                        <div class="interior-spill absolute top-full left-1/2 -translate-x-1/2 w-44 sm:w-56 h-16 bg-gradient-to-b from-amber-300/40 via-amber-400/20 to-transparent blur-md pointer-events-none -mt-3 z-10"></div>
+
+                        <!-- Authentic Home Doorbell (Mounted to the Right of Door) -->
+                        <div class="absolute -right-3 sm:-right-5 top-1/2 -translate-y-2 z-30 flex flex-col items-center">
+                            <button type="button" id="house-doorbell" onclick="ringDoorbell()" class="group flex flex-col items-center justify-between p-1 w-5 sm:w-6 h-10 sm:h-12 rounded-full bg-gradient-to-b from-[#ca8a04] via-[#fef08a] to-[#713f12] border-2 border-[#854d0e] shadow-lg shadow-black/60 hover:scale-110 active:scale-95 transition-all cursor-pointer" title="Ring Doorbell">
+                                <span class="w-1 h-1 rounded-full bg-[#582e0a] opacity-80"></span>
+                                <span class="w-3 h-3 sm:w-3.5 sm:h-3.5 rounded-full bg-amber-100 border border-amber-300 shadow-[0_0_10px_2px_rgba(251,191,36,0.9)] group-hover:shadow-[0_0_15px_4px_rgba(251,191,36,1)] group-active:bg-amber-300 transition-all flex items-center justify-center">
+                                    <span class="w-1 h-1 rounded-full bg-amber-400"></span>
+                                </span>
+                                <span class="w-1 h-1 rounded-full bg-[#582e0a] opacity-80"></span>
+                            </button>
+                            <span class="text-[6px] sm:text-[7px] font-extrabold text-amber-300/80 tracking-widest uppercase mt-0.5 select-none">BELL</span>
+                        </div>
 
                     </div>
 
-                    <!-- Authentic Home Doorbell (Mounted on Wall beside Door) -->
-                    <div class="absolute right-2 sm:right-6 top-1/2 -translate-y-3 z-30 flex flex-col items-center">
-                        <button type="button" id="house-doorbell" onclick="ringDoorbell()" class="group flex flex-col items-center justify-between p-1 w-6 sm:w-7 h-12 sm:h-14 rounded-full bg-gradient-to-b from-[#ca8a04] via-[#fef08a] to-[#713f12] border-2 border-[#854d0e] shadow-lg shadow-black/60 hover:scale-110 active:scale-95 transition-all cursor-pointer" title="Ring Doorbell">
-                            <!-- Top Mounting Screw -->
-                            <span class="w-1 h-1 rounded-full bg-[#582e0a] opacity-80"></span>
-                            <!-- Illuminated Push Button with Glow -->
-                            <span class="w-3.5 h-3.5 sm:w-4 sm:h-4 rounded-full bg-amber-100 border border-amber-300 shadow-[0_0_12px_3px_rgba(251,191,36,0.9)] group-hover:shadow-[0_0_18px_5px_rgba(251,191,36,1)] group-active:bg-amber-300 transition-all flex items-center justify-center">
-                                <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
+                    <!-- ================= RIGHT COLUMN: 2 WINDOWS ================= -->
+                    <div class="flex flex-col items-center justify-around h-full space-y-4 sm:space-y-6">
+                        
+                        <!-- Window 2: AI/ML Websites -->
+                        <div class="flex flex-col items-center group cursor-pointer" onclick="openRoomModal('aiml')" title="Click to open AI/ML Websites window">
+                            <span class="text-[7px] sm:text-[9px] font-extrabold text-amber-300 tracking-wider uppercase mb-1 bg-amber-500/15 px-2 py-0.5 rounded-md border border-amber-500/30 group-hover:bg-amber-500/30 group-hover:border-amber-400 transition-all text-center">
+                                AI / ML Websites
                             </span>
-                            <!-- Bottom Mounting Screw -->
-                            <span class="w-1 h-1 rounded-full bg-[#582e0a] opacity-80"></span>
-                        </button>
-                        <span class="text-[7px] sm:text-[8px] font-extrabold text-amber-300/80 tracking-widest uppercase mt-1 select-none">BELL</span>
+                            <div class="w-16 h-20 sm:w-22 sm:h-28 bg-[#10141d] rounded-t-xl border-3 sm:border-4 border-[#47516e] shadow-lg overflow-hidden group-hover:scale-105 group-hover:border-amber-400 transition-all relative">
+                                <div class="window-glow w-full h-full bg-gradient-to-b from-amber-300/90 to-amber-500/80 shadow-[0_0_20px_rgba(251,191,36,0.5)] group-hover:shadow-[0_0_28px_rgba(251,191,36,0.9)] transition-all relative">
+                                    <div class="absolute top-1/2 left-0 w-full h-0.5 bg-[#47516e] -translate-y-1/2"></div>
+                                    <div class="absolute top-0 left-1/2 w-0.5 h-full bg-[#47516e] -translate-x-1/2"></div>
+                                </div>
+                            </div>
+                            <span class="text-[8px] text-slate-400 group-hover:text-amber-200 mt-1 font-semibold flex items-center gap-0.5">
+                                <span>🔍 View Room</span>
+                            </span>
+                        </div>
+
+                        <!-- Window 4: Study Room -->
+                        <div class="flex flex-col items-center group cursor-pointer" onclick="openRoomModal('study')" title="Click to open Study Room window">
+                            <span class="text-[7px] sm:text-[9px] font-extrabold text-amber-300 tracking-wider uppercase mb-1 bg-amber-500/15 px-2 py-0.5 rounded-md border border-amber-500/30 group-hover:bg-amber-500/30 group-hover:border-amber-400 transition-all text-center">
+                                Study Room
+                            </span>
+                            <div class="w-16 h-20 sm:w-22 sm:h-28 bg-[#10141d] rounded-t-xl border-3 sm:border-4 border-[#47516e] shadow-lg overflow-hidden group-hover:scale-105 group-hover:border-amber-400 transition-all relative">
+                                <div class="window-glow w-full h-full bg-gradient-to-b from-amber-300/90 to-amber-500/80 shadow-[0_0_20px_rgba(251,191,36,0.5)] group-hover:shadow-[0_0_28px_rgba(251,191,36,0.9)] transition-all relative">
+                                    <div class="absolute top-1/2 left-0 w-full h-0.5 bg-[#47516e] -translate-y-1/2"></div>
+                                    <div class="absolute top-0 left-1/2 w-0.5 h-full bg-[#47516e] -translate-x-1/2"></div>
+                                </div>
+                            </div>
+                            <!-- Flower box under lower window -->
+                            <div class="w-16 sm:w-22 h-3 sm:h-4 bg-[#5c3a28] rounded-b-md border-t-2 border-emerald-500 flex items-center justify-around px-1 mt-0.5 shadow-xs">
+                                <span class="text-[8px]">🌺</span>
+                                <span class="text-[8px]">🌿</span>
+                                <span class="text-[8px]">🌸</span>
+                            </div>
+                        </div>
+
                     </div>
 
                 </div>
 
             </div>
 
-            <!-- 3. STONE PORCH & STEPS -->
-            <div class="w-[300px] sm:w-[410px] flex flex-col items-center relative z-10">
+            <!-- 3. STONE PORCH & STEPS (Expanded) -->
+            <div class="w-[370px] sm:w-[590px] md:w-[690px] flex flex-col items-center relative z-10">
                 <!-- Step 1 -->
                 <div class="w-full h-4 bg-[#374151] border-t border-slate-500 rounded-xs shadow-md"></div>
                 <!-- Step 2 -->
@@ -416,11 +493,218 @@
         </div>
     </footer>
 
+    <!-- Room Modal Window Overlay -->
+    <div id="room-modal-overlay" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/85 backdrop-blur-md opacity-0 pointer-events-none transition-all duration-300" onclick="handleBackdropClick(event)" aria-modal="true" role="dialog">
+        <div id="room-modal-container" class="w-full max-w-xl bg-[#1a1f2c] border-2 border-amber-500/40 rounded-2xl shadow-2xl shadow-black/90 overflow-hidden transform scale-95 transition-all duration-300 relative text-slate-100 flex flex-col" onclick="event.stopPropagation()">
+            
+            <!-- Modal Header -->
+            <div class="px-5 py-4 border-b border-slate-700/70 bg-gradient-to-r from-slate-900 via-[#1e2433] to-slate-900 flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <div id="modal-icon-badge" class="w-10 h-10 rounded-xl bg-amber-500/20 border border-amber-400/40 flex items-center justify-center text-amber-300 text-xl shadow-inner">
+                        🪟
+                    </div>
+                    <div>
+                        <h2 id="modal-title" class="text-base sm:text-lg font-bold text-white font-serif tracking-wide">Room Name</h2>
+                        <p id="modal-subtitle" class="text-[11px] sm:text-xs text-amber-300/80">Room description</p>
+                    </div>
+                </div>
+
+                <!-- Corner Close Window Button -->
+                <button type="button" onclick="closeRoomModal()" class="px-3.5 py-1.5 rounded-xl bg-amber-500/15 hover:bg-amber-500 text-amber-300 hover:text-slate-950 border border-amber-500/40 hover:border-amber-400 font-extrabold text-xs sm:text-sm transition-all flex items-center gap-1.5 cursor-pointer shadow-sm hover:shadow-amber-500/20" title="Close this room window">
+                    <span>✕</span>
+                    <span>Close Window</span>
+                </button>
+            </div>
+
+            <!-- Modal Body / Room Content -->
+            <div id="modal-body" class="p-4 sm:p-6 max-h-[70vh] overflow-y-auto space-y-3.5">
+                <!-- Injected dynamically via JS -->
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="px-5 py-3 border-t border-slate-800 bg-slate-950/60 flex items-center justify-between text-xs text-slate-400">
+                <span class="flex items-center gap-1.5">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    <span class="font-serif text-slate-300 font-bold">Nimra's Hub</span>
+                    <span>&bull;</span>
+                    <span class="text-slate-400">Interactive Window</span>
+                </span>
+                <button type="button" onclick="closeRoomModal()" class="text-xs text-amber-300 hover:text-amber-200 font-semibold underline underline-offset-2 transition-colors cursor-pointer">
+                    Close Window ✕
+                </button>
+            </div>
+
+        </div>
+    </div>
+
     <!-- Interactive JavaScript for 3D Doors, Doorbell Sound & Light Switch -->
     <script>
         let areDoorsOpen = false;
         let areLightsOn = true;
         let audioCtx = null;
+
+        // Room Data for the 4 House Windows
+        const roomData = {
+            production: {
+                title: "Production Room",
+                icon: "🚀",
+                subtitle: "Live, deployed web applications & tools",
+                items: [
+                    {
+                        name: "PDFora",
+                        tag: "Live Application",
+                        tagColor: "bg-emerald-500/20 text-emerald-300 border-emerald-500/30",
+                        desc: "Fast, client-side PDF utility suite to merge, split, compress, stamp, and manage documents with full data privacy.",
+                        link: "https://pdfora.nimradev.site",
+                        btnText: "Launch PDFora &rarr;"
+                    },
+                    {
+                        name: "PU GPA / CGPA Calculator",
+                        tag: "Punjab University",
+                        tagColor: "bg-blue-500/20 text-blue-300 border-blue-500/30",
+                        desc: "Official semester GPA & cumulative CGPA calculator calibrated for Punjab University criteria and grading scales.",
+                        link: "https://punjab-university-gpa-cgpa-calculator.nimradev.site/",
+                        btnText: "Open Calculator &rarr;"
+                    },
+                    {
+                        name: "NimLearn Academy",
+                        tag: "Learning Platform",
+                        tagColor: "bg-purple-500/20 text-purple-300 border-purple-500/30",
+                        desc: "Structured educational hub offering curated coding roadmaps, practical exercises, and developer guides.",
+                        link: "https://nimlearn.nimradev.site",
+                        btnText: "Visit NimLearn &rarr;"
+                    }
+                ]
+            },
+            aiml: {
+                title: "AI / ML Websites",
+                icon: "🤖",
+                subtitle: "Next-generation artificial intelligence agents & tools",
+                items: [
+                    {
+                        name: "Travel Mate AI",
+                        tag: "AI Travel Assistant",
+                        tagColor: "bg-amber-500/20 text-amber-300 border-amber-500/30",
+                        desc: "Intelligent travel companion that curates bespoke itineraries, destination discovery, and vacation budgets.",
+                        link: "#travel-mate-ai",
+                        btnText: "Explore Travel Mate AI &rarr;"
+                    },
+                    {
+                        name: "AI Life OS",
+                        tag: "AI Productivity Suite",
+                        tagColor: "bg-cyan-500/20 text-cyan-300 border-cyan-500/30",
+                        desc: "Personal AI operating system optimizing daily routines, schedule tracking, smart notes, and habit workflows.",
+                        link: "#ai-life-os",
+                        btnText: "Open AI Life OS &rarr;"
+                    }
+                ]
+            },
+            labs: {
+                title: "Creative Labs",
+                icon: "🧪",
+                subtitle: "Interactive web sandboxes & experimental UI prototypes",
+                items: [
+                    {
+                        name: "NimraDev Labs Sandbox",
+                        tag: "Experimental Lab",
+                        tagColor: "bg-fuchsia-500/20 text-fuchsia-300 border-fuchsia-500/30",
+                        desc: "Living playground showcasing creative UI interactions, canvas experiments, animations, and micro-tools.",
+                        link: "https://nimradevlabs.nimradev.site/",
+                        btnText: "Enter Sandbox &rarr;"
+                    }
+                ]
+            },
+            study: {
+                title: "Study Room",
+                icon: "📚",
+                subtitle: "Developer notes, portfolio insights & contact channels",
+                items: [
+                    {
+                        name: "About Nimra's Architecture",
+                        tag: "Portfolio & Bio",
+                        tagColor: "bg-amber-500/20 text-amber-300 border-amber-500/30",
+                        desc: "Detailed background on engineering principles, tech stack, and the design behind Nimra's Hub ecosystem.",
+                        link: "/about.html",
+                        btnText: "Read About &rarr;"
+                    },
+                    {
+                        name: "Connect & Inquire",
+                        tag: "Direct Contact",
+                        tagColor: "bg-rose-500/20 text-rose-300 border-rose-500/30",
+                        desc: "Inquire about software development collaborations, feedback, or general questions.",
+                        link: "/contact.html",
+                        btnText: "Contact Nimra &rarr;"
+                    }
+                ]
+            }
+        };
+
+        // Open Room Modal
+        function openRoomModal(roomKey) {
+            const data = roomData[roomKey];
+            if (!data) return;
+
+            const overlay = document.getElementById('room-modal-overlay');
+            const container = document.getElementById('room-modal-container');
+            const titleEl = document.getElementById('modal-title');
+            const subEl = document.getElementById('modal-subtitle');
+            const iconBadge = document.getElementById('modal-icon-badge');
+            const bodyEl = document.getElementById('modal-body');
+
+            titleEl.textContent = data.title;
+            subEl.textContent = data.subtitle;
+            iconBadge.textContent = data.icon;
+
+            bodyEl.innerHTML = data.items.map(item => `
+                <div class="p-3.5 sm:p-4 rounded-xl bg-slate-900/90 border border-slate-700/60 hover:border-amber-400/50 transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-3 group">
+                    <div class="flex-1">
+                        <div class="flex items-center gap-2 mb-1 flex-wrap">
+                            <h3 class="text-sm sm:text-base font-bold text-white group-hover:text-amber-300 transition-colors">${item.name}</h3>
+                            <span class="text-[10px] font-semibold px-2 py-0.5 rounded-full border ${item.tagColor}">${item.tag}</span>
+                        </div>
+                        <p class="text-xs text-slate-300 leading-relaxed">${item.desc}</p>
+                    </div>
+                    <a href="${item.link}" ${item.link.startsWith('http') ? 'target="_blank" rel="noopener noreferrer"' : ''} class="inline-flex items-center justify-center px-4 py-2 rounded-lg bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs sm:text-sm whitespace-nowrap transition-all shadow-md shadow-amber-500/20 shrink-0">
+                        ${item.btnText}
+                    </a>
+                </div>
+            `).join('');
+
+            overlay.classList.remove('opacity-0', 'pointer-events-none');
+            overlay.classList.add('opacity-100', 'pointer-events-auto');
+            container.classList.remove('scale-95');
+            container.classList.add('scale-100');
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Close Room Modal
+        function closeRoomModal() {
+            const overlay = document.getElementById('room-modal-overlay');
+            const container = document.getElementById('room-modal-container');
+
+            if (!overlay) return;
+            overlay.classList.remove('opacity-100', 'pointer-events-auto');
+            overlay.classList.add('opacity-0', 'pointer-events-none');
+            if (container) {
+                container.classList.remove('scale-100');
+                container.classList.add('scale-95');
+            }
+            document.body.style.overflow = '';
+        }
+
+        // Click outside modal backdrop to close
+        function handleBackdropClick(e) {
+            if (e.target.id === 'room-modal-overlay') {
+                closeRoomModal();
+            }
+        }
+
+        // Press Escape key to close modal
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeRoomModal();
+            }
+        });
 
         // Initialize Web Audio Context for Doorbell Chime
         function getAudioContext() {
