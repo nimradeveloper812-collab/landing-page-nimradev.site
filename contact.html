@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Contact NimraDev — Feedback, Tool Requests &amp; Support</title>
-    <meta name="title" content="Contact NimraDev — Feedback, Tool Requests &amp; Support">
-    <meta name="description" content="Get in touch with Nimra (NimraDev). Share your feedback, suggest new web tools, report issues, or inquire about our platforms.">
-    <meta name="keywords" content="Contact NimraDev, NimraDev Hub contact, tool suggestions, bug report, PDFora feedback, web tools support">
+    <title>Contact — Nimra's Hub</title>
+    <meta name="title" content="Contact — Nimra's Hub">
+    <meta name="description" content="Get in touch with Nimra. Send a note, share your thoughts, or reach out to Nimra's Hub.">
     <meta name="author" content="Nimra (NimraDev)">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    <meta name="theme-color" content="#4f46e5">
-    <meta name="language" content="English">
+    <meta name="google-site-verification" content="kr2-BeOvUXGL6hmuOji60yubfa12at2MSyVypzMLf_8">
+    <meta name="theme-color" content="#1e1b4b">
+    <meta name="application-name" content="Nimra's Hub">
     <link rel="canonical" href="https://nimradev.site/contact.html">
 
     <!-- Google AdSense Verification & Auto-Ads -->
@@ -23,7 +23,6 @@
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link rel="dns-prefetch" href="//cdn.tailwindcss.com">
-    <link rel="dns-prefetch" href="//pagead2.googlesyndication.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -34,17 +33,16 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="manifest" href="/site.webmanifest">
 
-    <!-- Open Graph -->
+    <!-- Open Graph / Facebook Meta -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://nimradev.site/contact.html">
-    <meta property="og:site_name" content="NimraDev Hub">
-    <meta property="og:title" content="Contact NimraDev — Feedback &amp; Tool Requests">
-    <meta property="og:description" content="Reach out to Nimra with feedback, suggestions, or questions regarding NimraDev Hub tools.">
+    <meta property="og:site_name" content="Nimra's Hub">
+    <meta property="og:title" content="Contact — Nimra's Hub">
+    <meta property="og:description" content="Get in touch with Nimra. Send a note, share your thoughts, or reach out to Nimra's Hub.">
     <meta property="og:image" content="https://nimradev.site/og-image.png">
-    <meta property="og:locale" content="en_US">
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,500&display=swap" rel="stylesheet">
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -54,117 +52,170 @@
                 extend: {
                     fontFamily: {
                         sans: ['"Plus Jakarta Sans"', 'sans-serif'],
-                        mono: ['"JetBrains Mono"', 'monospace'],
+                        serif: ['"Playfair Display"', 'serif'],
                     }
                 }
             }
         }
     </script>
+
+    <style>
+        body {
+            background: radial-gradient(circle at 50% 20%, #1e1b4b 0%, #0f172a 60%, #090d16 100%);
+            color: #e2e8f0;
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+
+        .stars-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            background-image: 
+                radial-gradient(1.5px 1.5px at 20px 30px, #ffffff, rgba(0,0,0,0)),
+                radial-gradient(1px 1px at 140px 80px, #ffd700, rgba(0,0,0,0)),
+                radial-gradient(1.5px 1.5px at 280px 150px, #ffffff, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 450px 70px, #ffd8a8, rgba(0,0,0,0)),
+                radial-gradient(1px 1px at 620px 180px, #ffffff, rgba(0,0,0,0)),
+                radial-gradient(1.5px 1.5px at 850px 60px, #ffe066, rgba(0,0,0,0)),
+                radial-gradient(1px 1px at 980px 190px, #ffffff, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 1200px 120px, #ffffff, rgba(0,0,0,0));
+            background-repeat: repeat;
+            background-size: 600px 300px;
+            opacity: 0.6;
+            animation: starsTwinkle 4s ease-in-out infinite alternate;
+        }
+
+        @keyframes starsTwinkle {
+            0% { opacity: 0.4; }
+            100% { opacity: 0.8; }
+        }
+    </style>
 </head>
 
-<body class="bg-[#fafcff] text-slate-800 min-h-screen flex flex-col justify-between selection:bg-indigo-500 selection:text-white font-sans antialiased">
+<body class="flex flex-col justify-between selection:bg-amber-400 selection:text-slate-950 font-sans antialiased relative min-h-screen">
 
-    <!-- Header -->
-    <header class="py-4 px-6 sm:px-10 border-b border-slate-200/80 bg-white/90 backdrop-blur-md sticky top-0 z-30">
-        <div class="max-w-6xl mx-auto flex items-center justify-between">
-            <a href="/" class="flex items-center gap-3 group" aria-label="NimraDev Hub Home">
-                <img src="/favicon.svg" alt="NimraDev Logo" class="w-8 h-8 rounded-xl shadow-xs group-hover:scale-105 transition-transform object-contain" />
-                <div class="flex items-center gap-1.5">
-                    <span class="font-extrabold text-base tracking-tight text-slate-900 leading-tight">NimraDev</span>
-                    <span class="px-2 py-0.5 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-indigo-100 text-indigo-700">Hub</span>
-                </div>
-            </a>
-            <div class="flex items-center gap-4 text-xs font-semibold">
-                <a href="/" class="text-slate-600 hover:text-indigo-600 transition-colors">Home Hub</a>
-                <a href="/guides/" class="hidden sm:inline text-slate-600 hover:text-indigo-600 transition-colors">Guides</a>
-                <a href="/about.html" class="text-slate-600 hover:text-indigo-600 transition-colors">About</a>
+    <!-- Stars Background Layer -->
+    <div class="stars-bg"></div>
+
+    <!-- Minimal Header Navigation -->
+    <header class="w-full py-4 px-6 sm:px-12 relative z-50 flex items-center justify-between border-b border-slate-800/60 bg-slate-950/40 backdrop-blur-md">
+        <!-- Logo -->
+        <a href="/" class="flex items-center gap-3 group" aria-label="Nimra's Hub Home">
+            <div class="w-10 h-10 rounded-2xl bg-gradient-to-tr from-amber-500 to-amber-300 flex items-center justify-center text-slate-950 font-black shadow-lg shadow-amber-500/20 group-hover:scale-105 transition-transform">
+                <svg class="w-5 h-5 text-slate-950" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z"/>
+                </svg>
             </div>
+            <div class="flex flex-col">
+                <span class="text-xl font-bold tracking-tight text-white font-serif flex items-center gap-1.5">
+                    Nimra's Hub
+                    <span class="text-[10px] uppercase font-sans tracking-widest px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30">Contact</span>
+                </span>
+                <span class="text-[11px] text-slate-400 font-sans">nimradev.site</span>
+            </div>
+        </a>
+
+        <!-- Quick Links -->
+        <div class="flex items-center gap-3 sm:gap-4 text-xs font-semibold">
+            <a href="/" class="text-slate-300 hover:text-amber-300 transition-colors flex items-center gap-1">
+                <span>🚪</span>
+                <span>Home</span>
+            </a>
+            <a href="/about.html" class="px-4 py-2 rounded-xl bg-slate-800/80 hover:bg-slate-700/80 text-slate-300 hover:text-white border border-slate-700 transition-all shadow-sm">
+                About
+            </a>
         </div>
     </header>
 
     <!-- Main Content -->
-    <main class="max-w-3xl mx-auto px-6 py-12 flex-1 w-full">
-        <!-- Breadcrumb -->
-        <nav class="flex text-xs text-slate-400 mb-6" aria-label="Breadcrumb">
-            <ol class="inline-flex items-center space-x-2">
-                <li><a href="/" class="hover:text-indigo-600">Home Hub</a></li>
-                <li><span>/</span></li>
-                <li class="text-slate-700 font-medium">Contact</li>
-            </ol>
-        </nav>
+    <main class="max-w-2xl mx-auto px-6 py-12 flex-1 w-full relative z-20">
 
-        <div class="text-center sm:text-left mb-8">
-            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-indigo-50 text-indigo-700 border border-indigo-200 mb-3">
+        <!-- Title Section -->
+        <div class="mb-8 text-center sm:text-left">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-300 text-xs font-semibold mb-3">
+                <span class="w-2 h-2 rounded-full bg-amber-400"></span>
+                <span>The Mailbox</span>
+            </div>
+            <h1 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight font-serif mb-3">
                 Get In Touch
-            </span>
-            <h1 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight mb-2">Contact NimraDev</h1>
-            <p class="text-sm text-slate-600 leading-relaxed">
-                Found a bug? Want a new tool added? Or have feedback on any of our web utilities? Send a note below.
+            </h1>
+            <p class="text-sm text-slate-300 leading-relaxed">
+                Have a question, feedback, or just want to say hello? Drop a note into my mailbox below.
             </p>
         </div>
 
-        <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-xs mb-8">
+        <!-- Contact Form Card -->
+        <div class="p-6 sm:p-8 rounded-3xl bg-slate-900/60 border border-slate-800/80 backdrop-blur-md shadow-xl mb-6">
             <form id="contact-form" onsubmit="handleContactSubmit(event)" class="space-y-4">
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                        <label for="user-name" class="block text-xs font-bold text-slate-700 uppercase mb-1">Your Name</label>
-                        <input type="text" id="user-name" required placeholder="Ali / John Doe" class="w-full p-3 rounded-xl border border-slate-200 text-xs focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none bg-slate-50/50" />
+                        <label for="user-name" class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1.5">Your Name</label>
+                        <input type="text" id="user-name" required placeholder="Your name" class="w-full p-3.5 rounded-xl border border-slate-700/80 bg-slate-950/60 text-white text-xs placeholder-slate-500 focus:border-amber-400 focus:ring-1 focus:ring-amber-400 outline-none transition-all" />
                     </div>
                     <div>
-                        <label for="user-email" class="block text-xs font-bold text-slate-700 uppercase mb-1">Your Email</label>
-                        <input type="email" id="user-email" required placeholder="you@example.com" class="w-full p-3 rounded-xl border border-slate-200 text-xs focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none bg-slate-50/50" />
+                        <label for="user-email" class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1.5">Your Email</label>
+                        <input type="email" id="user-email" required placeholder="you@example.com" class="w-full p-3.5 rounded-xl border border-slate-700/80 bg-slate-950/60 text-white text-xs placeholder-slate-500 focus:border-amber-400 focus:ring-1 focus:ring-amber-400 outline-none transition-all" />
                     </div>
                 </div>
 
                 <div>
-                    <label for="subject-category" class="block text-xs font-bold text-slate-700 uppercase mb-1">Topic</label>
-                    <select id="subject-category" class="w-full p-3 rounded-xl border border-slate-200 text-xs focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none bg-slate-50/50 text-slate-700">
-                        <option value="suggestion">Suggest a New Web Tool</option>
-                        <option value="bug">Report a Bug / Issue</option>
-                        <option value="pdfora">PDFora Suite Feedback</option>
-                        <option value="platform">Platform Question</option>
-                        <option value="general">General Feedback / Inquiries</option>
+                    <label for="subject-category" class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1.5">Subject / Topic</label>
+                    <select id="subject-category" class="w-full p-3.5 rounded-xl border border-slate-700/80 bg-slate-950/60 text-slate-200 text-xs focus:border-amber-400 focus:ring-1 focus:ring-amber-400 outline-none transition-all">
+                        <option value="general">Friendly Hello / General Note</option>
+                        <option value="feedback">Feedback on Nimra's Hub</option>
+                        <option value="collaboration">Collaboration / Project Idea</option>
+                        <option value="inquiry">General Question</option>
                     </select>
                 </div>
 
                 <div>
-                    <label for="user-message" class="block text-xs font-bold text-slate-700 uppercase mb-1">Message</label>
-                    <textarea id="user-message" rows="5" required placeholder="Write your message, feedback, or suggestion here..." class="w-full p-3 rounded-xl border border-slate-200 text-xs focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none bg-slate-50/50"></textarea>
+                    <label for="user-message" class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1.5">Message</label>
+                    <textarea id="user-message" rows="5" required placeholder="Write your message here..." class="w-full p-3.5 rounded-xl border border-slate-700/80 bg-slate-950/60 text-white text-xs placeholder-slate-500 focus:border-amber-400 focus:ring-1 focus:ring-amber-400 outline-none transition-all leading-relaxed"></textarea>
                 </div>
 
-                <div class="flex items-center justify-between pt-2">
-                    <button type="submit" class="px-6 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-xs transition-all shadow-xs">
-                        Send Message
+                <div class="flex flex-col sm:flex-row items-center justify-between gap-3 pt-2">
+                    <button type="submit" class="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-extrabold text-xs transition-all shadow-lg shadow-amber-500/20">
+                        Send Message &rarr;
                     </button>
-                    <span id="form-feedback" class="text-xs font-semibold text-emerald-600"></span>
+                    <span id="form-feedback" class="text-xs font-medium text-amber-300"></span>
                 </div>
             </form>
         </div>
 
         <!-- Direct Email Card -->
-        <div class="p-6 rounded-2xl bg-indigo-50/60 border border-indigo-100 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+        <div class="p-6 rounded-2xl bg-slate-900/40 border border-slate-800/80 backdrop-blur-md flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
             <div>
-                <span class="text-xs font-bold text-indigo-900 block">Prefer direct email?</span>
-                <span class="text-xs text-slate-600">You can also write directly to:</span>
+                <span class="text-xs font-bold text-white block">Direct Email</span>
+                <span class="text-xs text-slate-400">Feel free to write to me directly at:</span>
             </div>
-            <a href="mailto:nimra.developer.8122005@gmail.com" class="px-4 py-2 rounded-xl bg-white border border-indigo-200 text-indigo-700 font-mono text-xs font-bold hover:bg-indigo-600 hover:text-white transition-all shadow-xs">
+            <a href="mailto:nimra.developer.8122005@gmail.com" class="px-4 py-2 rounded-xl bg-amber-500/10 border border-amber-500/30 text-amber-300 font-mono text-xs font-bold hover:bg-amber-500 hover:text-slate-950 transition-all shadow-xs">
                 nimra.developer.8122005@gmail.com
             </a>
         </div>
 
     </main>
 
-    <!-- Footer -->
-    <footer class="py-6 px-6 border-t border-slate-200/80 text-center text-xs text-slate-500 bg-white">
-        <div class="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
-            <p>&copy; 2026 NimraDev Hub. All rights reserved.</p>
-            <div class="flex items-center space-x-5">
-                <a href="/" class="hover:text-indigo-600 transition-colors">Home Hub</a>
-                <a href="/guides/" class="hover:text-indigo-600 transition-colors">Guides</a>
-                <a href="/about.html" class="hover:text-indigo-600 transition-colors">About</a>
-                <a href="/privacy-policy.html" class="hover:text-indigo-600 transition-colors">Privacy</a>
-                <a href="/terms.html" class="hover:text-indigo-600 transition-colors">Terms</a>
+    <!-- Minimal, Cozy Footer -->
+    <footer class="w-full border-t border-slate-800/80 bg-slate-950/60 backdrop-blur-md relative z-20 py-6 px-6 sm:px-12 text-slate-400 text-xs text-center">
+        <div class="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-2">
+                <span class="font-bold text-slate-200 font-serif">Nimra's Hub</span>
+                <span>&bull;</span>
+                <span class="text-slate-500">nimradev.site</span>
             </div>
+
+            <div class="flex items-center space-x-6 text-xs">
+                <a href="/about.html" class="hover:text-amber-300 transition-colors">About</a>
+                <a href="/contact.html" class="text-amber-300 font-semibold transition-colors">Contact</a>
+                <a href="/privacy-policy.html" class="hover:text-amber-300 transition-colors">Privacy Policy</a>
+                <a href="/terms.html" class="hover:text-amber-300 transition-colors">Terms</a>
+            </div>
+
+            <p class="text-slate-500 text-[11px]">&copy; 2026 Nimra's Hub. All rights reserved.</p>
         </div>
     </footer>
 
@@ -176,17 +227,18 @@
             const message = document.getElementById('user-message').value;
             
             const feedback = document.getElementById('form-feedback');
-            feedback.textContent = '✓ Thanks ' + name + '! Preparing your email client...';
+            feedback.textContent = '✓ Opening email client...';
             
             const mailtoUri = 'mailto:nimra.developer.8122005@gmail.com?subject=' + 
-                              encodeURIComponent('[NimraDev Hub ' + category.toUpperCase() + '] from ' + name) + 
+                              encodeURIComponent('[Nimra\'s Hub ' + category.toUpperCase() + '] from ' + name) + 
                               '&body=' + encodeURIComponent(message);
             
             setTimeout(() => {
                 window.location.href = mailtoUri;
-                feedback.textContent = '✓ If email client did not open, email: nimra.developer.8122005@gmail.com';
-            }, 800);
+                feedback.textContent = '✓ Email sent or ready in your email app!';
+            }, 600);
         }
     </script>
+
 </body>
 </html>

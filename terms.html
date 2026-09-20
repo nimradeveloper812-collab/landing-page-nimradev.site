@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
+    <!-- Primary Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms of Service | NimraDev Hub — Platform Terms</title>
-    <meta name="title" content="Terms of Service | NimraDev Hub — Platform Terms">
-    <meta name="description" content="Review the Terms of Service for NimraDev Hub, PDFora, and connected web utilities. Covers acceptable use, client-side data ownership, and compliance.">
-    <meta name="keywords" content="Terms of Service, NimraDev Hub, PDFora terms, user agreement, software terms">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Terms of Service — Nimra's Hub</title>
+    <meta name="title" content="Terms of Service — Nimra's Hub">
+    <meta name="description" content="Terms of Service for Nimra's Hub. Outlines user rights, acceptable use, and platform policies.">
     <meta name="author" content="Nimra (NimraDev)">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    <meta name="theme-color" content="#4f46e5">
-    <meta name="language" content="English">
+    <meta name="google-site-verification" content="kr2-BeOvUXGL6hmuOji60yubfa12at2MSyVypzMLf_8">
+    <meta name="theme-color" content="#1e1b4b">
+    <meta name="application-name" content="Nimra's Hub">
     <link rel="canonical" href="https://nimradev.site/terms.html">
+
+    <!-- Google AdSense Verification & Auto-Ads -->
     <meta name="google-adsense-account" content="ca-pub-4933513982054789">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4933513982054789" crossorigin="anonymous"></script>
 
@@ -19,11 +23,10 @@
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link rel="dns-prefetch" href="//cdn.tailwindcss.com">
-    <link rel="dns-prefetch" href="//pagead2.googlesyndication.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- Favicons & Manifest -->
+    <!-- Favicons -->
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
@@ -33,126 +36,199 @@
     <!-- Open Graph / Facebook Meta -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://nimradev.site/terms.html">
-    <meta property="og:site_name" content="NimraDev Hub">
-    <meta property="og:title" content="Terms of Service | NimraDev Hub — Platform Terms">
-    <meta property="og:description" content="Review the Terms of Service for NimraDev Hub and PDFora. Outlines user rights, client-side processing, and platform policies.">
+    <meta property="og:site_name" content="Nimra's Hub">
+    <meta property="og:title" content="Terms of Service — Nimra's Hub">
+    <meta property="og:description" content="Terms of Service for Nimra's Hub. Outlines user rights, acceptable use, and platform policies.">
     <meta property="og:image" content="https://nimradev.site/og-image.png">
-    <meta property="og:locale" content="en_US">
-
-    <!-- Twitter Meta -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://nimradev.site/terms.html">
-    <meta name="twitter:title" content="Terms of Service | NimraDev Hub — Platform Terms">
-    <meta name="twitter:description" content="Review the Terms of Service for NimraDev Hub and PDFora. Outlines user rights, client-side processing, and platform policies.">
-    <meta name="twitter:image" content="https://nimradev.site/og-image.png">
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,500&display=swap" rel="stylesheet">
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
     <style>
-        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        body {
+            background: radial-gradient(circle at 50% 20%, #1e1b4b 0%, #0f172a 60%, #090d16 100%);
+            color: #e2e8f0;
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+
+        .stars-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            background-image: 
+                radial-gradient(1.5px 1.5px at 20px 30px, #ffffff, rgba(0,0,0,0)),
+                radial-gradient(1px 1px at 140px 80px, #ffd700, rgba(0,0,0,0)),
+                radial-gradient(1.5px 1.5px at 280px 150px, #ffffff, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 450px 70px, #ffd8a8, rgba(0,0,0,0)),
+                radial-gradient(1px 1px at 620px 180px, #ffffff, rgba(0,0,0,0)),
+                radial-gradient(1.5px 1.5px at 850px 60px, #ffe066, rgba(0,0,0,0)),
+                radial-gradient(1px 1px at 980px 190px, #ffffff, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 1200px 120px, #ffffff, rgba(0,0,0,0));
+            background-repeat: repeat;
+            background-size: 600px 300px;
+            opacity: 0.6;
+            animation: starsTwinkle 4s ease-in-out infinite alternate;
+        }
+
+        @keyframes starsTwinkle {
+            0% { opacity: 0.4; }
+            100% { opacity: 0.8; }
+        }
     </style>
 </head>
-<body class="bg-[#fafcff] text-slate-800 min-h-screen flex flex-col justify-between selection:bg-indigo-500 selection:text-white">
 
-    <header class="py-4 px-6 sm:px-10 border-b border-slate-200/80 bg-white flex items-center justify-between">
-        <a href="/" class="flex items-center gap-2.5 group" aria-label="NimraDev Hub Home">
-            <img src="/favicon.svg" alt="NimraDev Logo" class="w-8 h-8 rounded-lg shadow-sm group-hover:scale-105 transition-transform object-contain" />
-            <div class="flex items-center gap-1.5">
-                <span class="font-extrabold text-base tracking-tight text-slate-900">NimraDev</span>
-                <span class="px-2 py-0.5 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-indigo-100 text-indigo-700">Hub</span>
+<body class="flex flex-col justify-between selection:bg-amber-400 selection:text-slate-950 font-sans antialiased relative min-h-screen">
+
+    <!-- Stars Background Layer -->
+    <div class="stars-bg"></div>
+
+    <!-- Header Navigation -->
+    <header class="w-full py-4 px-6 sm:px-12 relative z-50 flex items-center justify-between border-b border-slate-800/60 bg-slate-950/40 backdrop-blur-md">
+        <!-- Logo -->
+        <a href="/" class="flex items-center gap-3 group" aria-label="Nimra's Hub Home">
+            <div class="w-10 h-10 rounded-2xl bg-gradient-to-tr from-amber-500 to-amber-300 flex items-center justify-center text-slate-950 font-black shadow-lg shadow-amber-500/20 group-hover:scale-105 transition-transform">
+                <svg class="w-5 h-5 text-slate-950" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z"/>
+                </svg>
+            </div>
+            <div class="flex flex-col">
+                <span class="text-xl font-bold tracking-tight text-white font-serif flex items-center gap-1.5">
+                    Nimra's Hub
+                    <span class="text-[10px] uppercase font-sans tracking-widest px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30">Terms</span>
+                </span>
+                <span class="text-[11px] text-slate-400 font-sans">nimradev.site</span>
             </div>
         </a>
-        <a href="/" class="text-xs font-semibold text-indigo-600 hover:text-indigo-800 transition-colors">
-            &larr; Back to Hub
-        </a>
+
+        <!-- Quick Links -->
+        <div class="flex items-center gap-3 sm:gap-4 text-xs font-semibold">
+            <a href="/" class="text-slate-300 hover:text-amber-300 transition-colors flex items-center gap-1">
+                <span>🚪</span>
+                <span>Home</span>
+            </a>
+            <a href="/contact.html" class="px-4 py-2 rounded-xl bg-slate-800/80 hover:bg-slate-700/80 text-slate-300 hover:text-white border border-slate-700 transition-all shadow-sm">
+                Contact
+            </a>
+        </div>
     </header>
 
-    <main class="max-w-3xl mx-auto px-6 py-12 flex-1 w-full">
-        <div class="mb-8">
-            <h1 class="text-3xl font-extrabold text-slate-900 mb-2">Terms of Service</h1>
-            <p class="text-xs text-slate-400">Last updated: September 18, 2026</p>
+    <!-- Main Content -->
+    <main class="max-w-3xl mx-auto px-6 py-12 flex-1 w-full relative z-20">
+
+        <!-- Title Section -->
+        <div class="mb-8 text-center sm:text-left">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-300 text-xs font-semibold mb-3">
+                <span class="w-2 h-2 rounded-full bg-amber-400"></span>
+                <span>Terms of Service</span>
+            </div>
+            <h1 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight font-serif mb-2">
+                Terms of Service
+            </h1>
+            <p class="text-xs text-slate-400">Last updated: September 2026</p>
         </div>
 
-        <div class="space-y-6 text-sm text-slate-600 leading-relaxed">
-            <section class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm">
-                <h2 class="text-base font-bold text-slate-900 mb-2">1. Acceptance of Terms</h2>
+        <!-- Terms Sections -->
+        <div class="space-y-6 text-sm text-slate-300 leading-relaxed">
+
+            <section class="p-6 sm:p-7 rounded-3xl bg-slate-900/60 border border-slate-800/80 backdrop-blur-md shadow-xl">
+                <h2 class="text-base font-bold text-white font-serif mb-2 flex items-center gap-2">
+                    <span class="w-2 h-5 bg-amber-400 rounded-full inline-block"></span>
+                    1. Acceptance of Terms
+                </h2>
                 <p>
-                    By accessing or utilizing <strong>nimradev.site</strong>, its subdomains, or any tools created by NimraDev (including PDFora at <a href="https://pdfora.nimradev.site" class="text-indigo-600 hover:underline">pdfora.nimradev.site</a> and the PU GPA Calculator), you agree to be bound by these Terms of Service and our Privacy Policy.
+                    By accessing or utilizing <strong>Nimra's Hub</strong> (<span class="font-mono text-amber-300">nimradev.site</span>), you agree to be bound by these Terms of Service and our Privacy Policy. If you do not agree with any portion of these terms, you should discontinue using the website.
                 </p>
             </section>
 
-            <section class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm">
-                <h2 class="text-base font-bold text-slate-900 mb-2">2. Description of Services &amp; Client-Side Operation</h2>
+            <section class="p-6 sm:p-7 rounded-3xl bg-slate-900/60 border border-slate-800/80 backdrop-blur-md shadow-xl">
+                <h2 class="text-base font-bold text-white font-serif mb-2 flex items-center gap-2">
+                    <span class="w-2 h-5 bg-amber-400 rounded-full inline-block"></span>
+                    2. User Data Ownership
+                </h2>
                 <p class="mb-2">
-                    NimraDev Hub provides free web utilities for document manipulation, text transformation, developer formatting, and academic grading calculations.
+                    You retain 100% ownership, copyright, and intellectual property rights over any text, data, or files processed using browser utilities provided on Nimra's Hub.
                 </p>
                 <p>
-                    Our tools operate primarily on a client-side paradigm. Operations take place locally in your browser memory via WebAssembly and browser APIs, ensuring your files and inputs remain on your device.
+                    All original layout design, artwork, software code, and branding created for Nimra's Hub remain the property of Nimra.
                 </p>
             </section>
 
-            <section class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm">
-                <h2 class="text-base font-bold text-slate-900 mb-2">3. User Data Ownership &amp; Intellectual Property</h2>
-                <p class="mb-2">
-                    You retain 100% ownership, copyright, and intellectual property rights over all files, text, images, or documents you process through our utilities.
-                </p>
-                <p>
-                    All original software code, branding, logos, and written guides created for NimraDev Hub remain the intellectual property of NimraDev.
-                </p>
-            </section>
-
-            <section class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm">
-                <h2 class="text-base font-bold text-slate-900 mb-2">4. Acceptable Use Policy</h2>
-                <p class="mb-2">You agree not to use our web utilities to:</p>
-                <ul class="list-disc pl-5 space-y-1">
-                    <li>Transmit, process, or disseminate unlawful, infringing, or harmful materials.</li>
-                    <li>Attempt to disrupt, overload, or attack our hosting infrastructure or APIs.</li>
-                    <li>Engage in abusive automated scraping that impairs service performance for other users.</li>
+            <section class="p-6 sm:p-7 rounded-3xl bg-slate-900/60 border border-slate-800/80 backdrop-blur-md shadow-xl">
+                <h2 class="text-base font-bold text-white font-serif mb-2 flex items-center gap-2">
+                    <span class="w-2 h-5 bg-amber-400 rounded-full inline-block"></span>
+                    3. Acceptable Use
+                </h2>
+                <p class="mb-2">When using Nimra's Hub, you agree not to:</p>
+                <ul class="list-disc pl-5 space-y-1 text-xs text-slate-400">
+                    <li>Attempt to disrupt, overload, or compromise our hosting infrastructure.</li>
+                    <li>Use the site for any unlawful, infringing, or malicious activities.</li>
+                    <li>Engage in abusive automated attacks against the web service.</li>
                 </ul>
             </section>
 
-            <section class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm">
-                <h2 class="text-base font-bold text-slate-900 mb-2">5. Advertising &amp; Third-Party Services</h2>
-                <p class="mb-2">
-                    To maintain our platform as a free service without subscription fees, we display advertisements provided by <strong>Google AdSense</strong>.
-                </p>
+            <section class="p-6 sm:p-7 rounded-3xl bg-slate-900/60 border border-slate-800/80 backdrop-blur-md shadow-xl">
+                <h2 class="text-base font-bold text-white font-serif mb-2 flex items-center gap-2">
+                    <span class="w-2 h-5 bg-amber-400 rounded-full inline-block"></span>
+                    4. Third-Party Ads
+                </h2>
                 <p>
-                    Advertisements must adhere to Google Publisher Policies. We do not endorse or assume liability for third-party products, services, or websites linked within advertisements.
+                    To keep the site completely free, we may display advertisements powered by Google AdSense. We are not responsible for the content, privacy practices, or availability of third-party websites linked through advertisements.
                 </p>
             </section>
 
-            <section class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm">
-                <h2 class="text-base font-bold text-slate-900 mb-2">6. Disclaimer of Warranties &amp; Limitation of Liability</h2>
-                <p class="mb-2">
-                    All tools and services are provided on an "AS IS" and "AS AVAILABLE" basis without warranties of any kind, either express or implied.
+            <section class="p-6 sm:p-7 rounded-3xl bg-slate-900/60 border border-slate-800/80 backdrop-blur-md shadow-xl">
+                <h2 class="text-base font-bold text-white font-serif mb-2 flex items-center gap-2">
+                    <span class="w-2 h-5 bg-amber-400 rounded-full inline-block"></span>
+                    5. Disclaimer &amp; Contact
+                </h2>
+                <p class="mb-3">
+                    All experiences and tools are provided on an "AS IS" basis without warranties of any kind.
                 </p>
                 <p>
-                    NimraDev Hub shall not be liable for any direct, indirect, incidental, or consequential damages resulting from the use or inability to use our tools or calculators.
+                    For inquiries regarding these terms, reach out to: <a href="mailto:nimra.developer.8122005@gmail.com" class="text-amber-300 font-mono underline">nimra.developer.8122005@gmail.com</a>.
                 </p>
             </section>
 
-            <section class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm">
-                <h2 class="text-base font-bold text-slate-900 mb-2">7. Contact Information</h2>
-                <p>
-                    For inquiries regarding these Terms of Service, contact us at: <a href="mailto:nimra.developer.8122005@gmail.com" class="text-indigo-600 font-semibold hover:underline font-mono">nimra.developer.8122005@gmail.com</a>.
-                </p>
-            </section>
         </div>
+
     </main>
 
-    <footer class="py-6 px-6 border-t border-slate-200/80 text-center text-xs text-slate-500 bg-white">
-        <div class="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
-            <p>&copy; 2026 NimraDev Hub. All rights reserved.</p>
-            <div class="flex items-center space-x-5">
-                <a href="/" class="hover:text-indigo-600 transition-colors">Home Hub</a>
-                <a href="/about.html" class="hover:text-indigo-600 transition-colors">About</a>
-                <a href="/privacy-policy.html" class="hover:text-indigo-600 transition-colors">Privacy Policy</a>
-                <a href="/terms.html" class="text-indigo-600 font-medium">Terms of Service</a>
-                <a href="/contact.html" class="hover:text-indigo-600 transition-colors">Contact</a>
+    <!-- Minimal, Cozy Footer -->
+    <footer class="w-full border-t border-slate-800/80 bg-slate-950/60 backdrop-blur-md relative z-20 py-6 px-6 sm:px-12 text-slate-400 text-xs text-center">
+        <div class="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-2">
+                <span class="font-bold text-slate-200 font-serif">Nimra's Hub</span>
+                <span>&bull;</span>
+                <span class="text-slate-500">nimradev.site</span>
             </div>
+
+            <div class="flex items-center space-x-6 text-xs">
+                <a href="/about.html" class="hover:text-amber-300 transition-colors">About</a>
+                <a href="/contact.html" class="hover:text-amber-300 transition-colors">Contact</a>
+                <a href="/privacy-policy.html" class="hover:text-amber-300 transition-colors">Privacy Policy</a>
+                <a href="/terms.html" class="text-amber-300 font-semibold transition-colors">Terms</a>
+            </div>
+
+            <p class="text-slate-500 text-[11px]">&copy; 2026 Nimra's Hub. All rights reserved.</p>
         </div>
     </footer>
 

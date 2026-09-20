@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>About NimraDev — Developer, Web Tools &amp; Mission</title>
-    <meta name="title" content="About NimraDev — Developer, Web Tools &amp; Mission">
-    <meta name="description" content="Learn about Nimra (NimraDev), the story behind NimraDev Hub, and our mission to build fast, free, privacy-first client-side web tools, developer utilities, and digital platforms.">
-    <meta name="keywords" content="About NimraDev, NimraDev Hub, nimradev.site, developer portfolio, PDFora, web tools, developer utilities, client-side web apps">
+    <title>About — Nimra's Hub</title>
+    <meta name="title" content="About — Nimra's Hub">
+    <meta name="description" content="Discover the story, creator, and welcoming vision behind Nimra's Hub.">
     <meta name="author" content="Nimra (NimraDev)">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    <meta name="theme-color" content="#4f46e5">
-    <meta name="language" content="English">
+    <meta name="google-site-verification" content="kr2-BeOvUXGL6hmuOji60yubfa12at2MSyVypzMLf_8">
+    <meta name="theme-color" content="#1e1b4b">
+    <meta name="application-name" content="Nimra's Hub">
     <link rel="canonical" href="https://nimradev.site/about.html">
 
     <!-- Google AdSense Verification & Auto-Ads -->
@@ -23,7 +23,6 @@
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link rel="dns-prefetch" href="//cdn.tailwindcss.com">
-    <link rel="dns-prefetch" href="//pagead2.googlesyndication.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -37,14 +36,13 @@
     <!-- Open Graph / Facebook Meta -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://nimradev.site/about.html">
-    <meta property="og:site_name" content="NimraDev Hub">
-    <meta property="og:title" content="About NimraDev — Developer &amp; Web Tools Hub">
-    <meta property="og:description" content="Discover the story, mission, and privacy-first philosophy behind NimraDev Hub and our free web utility suite.">
+    <meta property="og:site_name" content="Nimra's Hub">
+    <meta property="og:title" content="About — Nimra's Hub">
+    <meta property="og:description" content="Discover the story, creator, and welcoming vision behind Nimra's Hub.">
     <meta property="og:image" content="https://nimradev.site/og-image.png">
-    <meta property="og:locale" content="en_US">
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,500&display=swap" rel="stylesheet">
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -54,167 +52,198 @@
                 extend: {
                     fontFamily: {
                         sans: ['"Plus Jakarta Sans"', 'sans-serif'],
-                        mono: ['"JetBrains Mono"', 'monospace'],
+                        serif: ['"Playfair Display"', 'serif'],
                     }
                 }
             }
         }
     </script>
+
+    <style>
+        body {
+            background: radial-gradient(circle at 50% 20%, #1e1b4b 0%, #0f172a 60%, #090d16 100%);
+            color: #e2e8f0;
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+
+        .stars-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            background-image: 
+                radial-gradient(1.5px 1.5px at 20px 30px, #ffffff, rgba(0,0,0,0)),
+                radial-gradient(1px 1px at 140px 80px, #ffd700, rgba(0,0,0,0)),
+                radial-gradient(1.5px 1.5px at 280px 150px, #ffffff, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 450px 70px, #ffd8a8, rgba(0,0,0,0)),
+                radial-gradient(1px 1px at 620px 180px, #ffffff, rgba(0,0,0,0)),
+                radial-gradient(1.5px 1.5px at 850px 60px, #ffe066, rgba(0,0,0,0)),
+                radial-gradient(1px 1px at 980px 190px, #ffffff, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 1200px 120px, #ffffff, rgba(0,0,0,0));
+            background-repeat: repeat;
+            background-size: 600px 300px;
+            opacity: 0.6;
+            animation: starsTwinkle 4s ease-in-out infinite alternate;
+        }
+
+        @keyframes starsTwinkle {
+            0% { opacity: 0.4; }
+            100% { opacity: 0.8; }
+        }
+    </style>
 </head>
 
-<body class="bg-[#fafcff] text-slate-800 min-h-screen flex flex-col justify-between selection:bg-indigo-500 selection:text-white font-sans antialiased">
+<body class="flex flex-col justify-between selection:bg-amber-400 selection:text-slate-950 font-sans antialiased relative min-h-screen">
 
-    <!-- Header Navigation -->
-    <header class="py-4 px-6 sm:px-10 border-b border-slate-200/80 bg-white/90 backdrop-blur-md sticky top-0 z-30">
-        <div class="max-w-6xl mx-auto flex items-center justify-between">
-            <a href="/" class="flex items-center gap-3 group" aria-label="NimraDev Hub Home">
-                <img src="/favicon.svg" alt="NimraDev Logo" class="w-8 h-8 rounded-xl shadow-xs group-hover:scale-105 transition-transform object-contain" />
-                <div class="flex items-center gap-1.5">
-                    <span class="font-extrabold text-base tracking-tight text-slate-900 leading-tight">NimraDev</span>
-                    <span class="px-2 py-0.5 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-indigo-100 text-indigo-700">Hub</span>
-                </div>
-            </a>
-            <div class="flex items-center gap-4 text-xs font-semibold">
-                <a href="/" class="text-slate-600 hover:text-indigo-600 transition-colors">Home Hub</a>
-                <a href="/guides/" class="hidden sm:inline text-slate-600 hover:text-indigo-600 transition-colors">Guides</a>
-                <a href="/contact.html" class="px-4 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white transition-all shadow-xs">Contact</a>
+    <!-- Stars Background Layer -->
+    <div class="stars-bg"></div>
+
+    <!-- Minimal Header Navigation -->
+    <header class="w-full py-4 px-6 sm:px-12 relative z-50 flex items-center justify-between border-b border-slate-800/60 bg-slate-950/40 backdrop-blur-md">
+        <!-- Logo -->
+        <a href="/" class="flex items-center gap-3 group" aria-label="Nimra's Hub Home">
+            <div class="w-10 h-10 rounded-2xl bg-gradient-to-tr from-amber-500 to-amber-300 flex items-center justify-center text-slate-950 font-black shadow-lg shadow-amber-500/20 group-hover:scale-105 transition-transform">
+                <svg class="w-5 h-5 text-slate-950" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z"/>
+                </svg>
             </div>
+            <div class="flex flex-col">
+                <span class="text-xl font-bold tracking-tight text-white font-serif flex items-center gap-1.5">
+                    Nimra's Hub
+                    <span class="text-[10px] uppercase font-sans tracking-widest px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30">About</span>
+                </span>
+                <span class="text-[11px] text-slate-400 font-sans">nimradev.site</span>
+            </div>
+        </a>
+
+        <!-- Quick Links -->
+        <div class="flex items-center gap-3 sm:gap-4 text-xs font-semibold">
+            <a href="/" class="text-slate-300 hover:text-amber-300 transition-colors flex items-center gap-1">
+                <span>🚪</span>
+                <span>Home</span>
+            </a>
+            <a href="/contact.html" class="px-4 py-2 rounded-xl bg-amber-500/20 hover:bg-amber-500/30 text-amber-300 border border-amber-500/40 transition-all shadow-sm">
+                Contact
+            </a>
         </div>
     </header>
 
     <!-- Main Content -->
-    <main class="max-w-4xl mx-auto px-6 py-12 flex-1 w-full">
-        <!-- Breadcrumb -->
-        <nav class="flex text-xs text-slate-400 mb-6" aria-label="Breadcrumb">
-            <ol class="inline-flex items-center space-x-2">
-                <li><a href="/" class="hover:text-indigo-600">Home Hub</a></li>
-                <li><span>/</span></li>
-                <li class="text-slate-700 font-medium">About NimraDev</li>
-            </ol>
-        </nav>
+    <main class="max-w-3xl mx-auto px-6 py-12 flex-1 w-full relative z-20">
 
+        <!-- Title Section -->
         <div class="mb-10 text-center sm:text-left">
-            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-indigo-50 text-indigo-700 border border-indigo-200 mb-3">
-                Creator &amp; Mission Story
-            </span>
-            <h1 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight mb-3">About NimraDev &amp; The Hub</h1>
-            <p class="text-base text-slate-600 max-w-2xl leading-relaxed">
-                Building fast, lightweight, and privacy-respecting browser tools for students, creators, and developers worldwide.
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-300 text-xs font-semibold mb-3">
+                <span class="w-2 h-2 rounded-full bg-amber-400"></span>
+                <span>Story &amp; Purpose</span>
+            </div>
+            <h1 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight font-serif mb-3">
+                About Nimra's Hub
+            </h1>
+            <p class="text-sm sm:text-base text-slate-300 max-w-xl leading-relaxed">
+                A warm, independent digital home created to share creative ideas, helpful web experiments, and welcoming experiences.
             </p>
         </div>
 
-        <div class="space-y-8 text-slate-700 leading-relaxed text-sm">
-            
-            <!-- Bio & Story -->
-            <section class="p-7 sm:p-8 rounded-3xl bg-white border border-slate-200 shadow-xs">
-                <h2 class="text-xl font-bold text-slate-900 mb-4 flex items-center gap-2">
-                    <span class="w-2 h-6 bg-indigo-600 rounded-full inline-block"></span>
-                    Hey, I'm Nimra!
-                </h2>
-                <p class="mb-4">
-                    I am an independent web developer who loves creating useful software for the open web. Over time, I noticed how hard it has become to find simple, reliable utilities online without running into aggressive paywalls, 30-second countdown timers, forced account signups, or websites that upload your personal documents to unknown remote servers.
+        <!-- Content Cards -->
+        <div class="space-y-6">
+
+            <!-- Card 1: Hey, I'm Nimra -->
+            <section class="p-6 sm:p-8 rounded-3xl bg-slate-900/60 border border-slate-800/80 backdrop-blur-md shadow-xl">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-10 h-10 rounded-xl bg-amber-500/20 border border-amber-500/30 flex items-center justify-center text-amber-300 text-lg">
+                        👋
+                    </div>
+                    <div>
+                        <h2 class="text-xl font-bold text-white font-serif">Hey, I'm Nimra!</h2>
+                        <span class="text-xs text-amber-400/80 font-medium">Creator of Nimra's Hub</span>
+                    </div>
+                </div>
+                <p class="text-sm text-slate-300 leading-relaxed mb-4">
+                    Welcome to my space! I am a passionate developer and digital creator who loves building clean, joyful, and privacy-respecting experiences on the web.
                 </p>
-                <p>
-                    I built <strong>NimraDev Hub</strong> (<a href="https://nimradev.site" class="text-indigo-600 font-semibold hover:underline">nimradev.site</a>) to be an honest, clean alternative. Whether you are managing documents, formatting data, exploring coding notes, or using browser utilities, everything on this hub is built to run <strong>instantly inside your own browser</strong>.
+                <p class="text-sm text-slate-300 leading-relaxed">
+                    I created <strong>Nimra's Hub</strong> (<span class="font-mono text-amber-300">nimradev.site</span>) to serve as my personal digital home—a cozy retreat where visitors can step inside, discover my projects, and connect directly with me.
                 </p>
             </section>
 
-            <!-- Philosophy Section -->
-            <section class="p-7 sm:p-8 rounded-3xl bg-white border border-slate-200 shadow-xs">
-                <h2 class="text-xl font-bold text-slate-900 mb-4 flex items-center gap-2">
-                    <span class="w-2 h-6 bg-emerald-600 rounded-full inline-block"></span>
-                    Why Client-Side Execution Matters
-                </h2>
-                <p class="mb-4">
-                    Traditional online utilities send your files across the internet to be processed on remote cloud servers. This exposes confidential agreements, personal certificates, and private academic records to data leaks and retention.
+            <!-- Card 2: The Vision -->
+            <section class="p-6 sm:p-8 rounded-3xl bg-slate-900/60 border border-slate-800/80 backdrop-blur-md shadow-xl">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-10 h-10 rounded-xl bg-amber-500/20 border border-amber-500/30 flex items-center justify-center text-amber-300 text-lg">
+                        🏡
+                    </div>
+                    <div>
+                        <h2 class="text-xl font-bold text-white font-serif">Why a Digital Home?</h2>
+                        <span class="text-xs text-amber-400/80 font-medium">Warmth, Simplicity &amp; Respect</span>
+                    </div>
+                </div>
+                <p class="text-sm text-slate-300 leading-relaxed mb-4">
+                    The modern web has become full of endless walls of text, pushy advertisements, and impersonal corporate portals. 
                 </p>
-                <p class="mb-4">
-                    At NimraDev Hub, our tools use modern browser technologies—such as <strong>WebAssembly</strong>, <strong>HTML5 Web Workers</strong>, and the <strong>Web Crypto API</strong>. This means:
+                <p class="text-sm text-slate-300 leading-relaxed mb-4">
+                    Nimra's Hub is designed differently:
                 </p>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 my-4">
-                    <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100">
-                        <h3 class="font-bold text-slate-900 text-xs uppercase tracking-wider mb-1 text-emerald-600">1. Total File Privacy</h3>
-                        <p class="text-xs text-slate-600">Your documents stay in your device's memory. We do not store, view, or transmit your files anywhere.</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+                    <div class="p-4 rounded-2xl bg-slate-950/50 border border-slate-800/80">
+                        <span class="text-xs font-bold text-amber-300 block mb-1">✨ Cozy &amp; Welcoming</span>
+                        <p class="text-xs text-slate-400 leading-relaxed">A home aesthetic designed to feel like an inviting physical cottage with open doors.</p>
                     </div>
-                    <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100">
-                        <h3 class="font-bold text-slate-900 text-xs uppercase tracking-wider mb-1 text-indigo-600">2. Blazing Speed</h3>
-                        <p class="text-xs text-slate-600">No waiting for slow file uploads or server conversion queues. Processing starts immediately.</p>
-                    </div>
-                    <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100">
-                        <h3 class="font-bold text-slate-900 text-xs uppercase tracking-wider mb-1 text-purple-600">3. Always Free</h3>
-                        <p class="text-xs text-slate-600">Because we don't run heavy server processing fleets, we don't need to lock tools behind expensive paywalls.</p>
-                    </div>
-                    <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100">
-                        <h3 class="font-bold text-slate-900 text-xs uppercase tracking-wider mb-1 text-amber-600">4. Open Standards</h3>
-                        <p class="text-xs text-slate-600">Built using standards-compliant web technologies compatible with Chrome, Firefox, Safari, and Edge.</p>
+                    <div class="p-4 rounded-2xl bg-slate-950/50 border border-slate-800/80">
+                        <span class="text-xs font-bold text-amber-300 block mb-1">🔒 Respect for Privacy</span>
+                        <p class="text-xs text-slate-400 leading-relaxed">No tracking of your personal documents, zero invasive profiling, and complete transparency.</p>
                     </div>
                 </div>
             </section>
 
-            <!-- Ecosystem Apps -->
-            <section class="p-7 sm:p-8 rounded-3xl bg-white border border-slate-200 shadow-xs">
-                <h2 class="text-xl font-bold text-slate-900 mb-4 flex items-center gap-2">
-                    <span class="w-2 h-6 bg-purple-600 rounded-full inline-block"></span>
-                    Ecosystem Projects &amp; Platforms
-                </h2>
-                <div class="space-y-4">
-                    <div class="p-4 rounded-2xl bg-indigo-50/50 border border-indigo-100">
-                        <h3 class="font-bold text-slate-900 text-sm mb-1 flex items-center justify-between">
-                            <span>PDFora</span>
-                            <a href="https://pdfora.nimradev.site" target="_blank" rel="noopener noreferrer" class="text-indigo-600 text-xs font-bold hover:underline">pdfora.nimradev.site ↗</a>
-                        </h3>
-                        <p class="text-xs text-slate-600">Full browser-based PDF suite: merge multiple documents, compress file sizes cleanly, split chapters, convert formats, and encrypt with AES passwords.</p>
+            <!-- Card 3: Connect -->
+            <section class="p-6 sm:p-8 rounded-3xl bg-slate-900/60 border border-slate-800/80 backdrop-blur-md shadow-xl">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-10 h-10 rounded-xl bg-amber-500/20 border border-amber-500/30 flex items-center justify-center text-amber-300 text-lg">
+                        💌
                     </div>
-                    <div class="p-4 rounded-2xl bg-teal-50/50 border border-teal-100">
-                        <h3 class="font-bold text-slate-900 text-sm mb-1 flex items-center justify-between">
-                            <span>Academic &amp; Student Tools</span>
-                            <a href="https://punjab-university-gpa-cgpa-calculator.nimradev.site/" target="_blank" rel="noopener noreferrer" class="text-teal-700 text-xs font-bold hover:underline">Academic Portal ↗</a>
-                        </h3>
-                        <p class="text-xs text-slate-600">Calculators and academic grading reference utilities designed for students, offering quick GPA and cumulative CGPA estimates.</p>
-                    </div>
-                    <div class="p-4 rounded-2xl bg-purple-50/50 border border-purple-100">
-                        <h3 class="font-bold text-slate-900 text-sm mb-1 flex items-center justify-between">
-                            <span>NimLearn</span>
-                            <a href="https://nimlearn.nimradev.site" target="_blank" rel="noopener noreferrer" class="text-purple-700 text-xs font-bold hover:underline">nimlearn.nimradev.site ↗</a>
-                        </h3>
-                        <p class="text-xs text-slate-600">A developer academy and resource hub featuring coding cheat sheets, frontend frameworks tutorials, and hands-on programming guides.</p>
+                    <div>
+                        <h2 class="text-xl font-bold text-white font-serif">Get in Touch</h2>
+                        <span class="text-xs text-amber-400/80 font-medium">Say hello anytime</span>
                     </div>
                 </div>
-            </section>
-
-            <!-- Feedback & Contact -->
-            <section class="p-7 sm:p-8 rounded-3xl bg-white border border-slate-200 shadow-xs">
-                <h2 class="text-xl font-bold text-slate-900 mb-3 flex items-center gap-2">
-                    <span class="w-2 h-6 bg-amber-600 rounded-full inline-block"></span>
-                    Get in Touch
-                </h2>
-                <p class="mb-4">
-                    Have an idea for a new tool you'd like to see on the hub? Or noticed a bug in one of our calculators? I would love to hear from you! Please feel free to send a message through our contact page.
+                <p class="text-sm text-slate-300 leading-relaxed mb-5">
+                    Whether you have feedback, want to collaborate on a web project, or simply want to say hi, my door is always open!
                 </p>
-                <div class="flex flex-wrap gap-4 text-xs font-bold">
-                    <a href="/contact.html" class="px-5 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white transition-all shadow-xs">
-                        Contact NimraDev
+                <div class="flex flex-wrap items-center gap-3">
+                    <a href="/contact.html" class="px-5 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs transition-all shadow-md shadow-amber-500/20">
+                        Send a Message &rarr;
                     </a>
-                    <a href="/" class="px-5 py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 transition-all">
-                        Back to Home Hub
+                    <a href="/" class="px-5 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-bold text-xs border border-slate-700 transition-all">
+                        Back to Home
                     </a>
                 </div>
             </section>
 
         </div>
+
     </main>
 
-    <!-- Footer -->
-    <footer class="py-6 px-6 border-t border-slate-200/80 text-center text-xs text-slate-500 bg-white">
-        <div class="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
-            <p>&copy; 2026 NimraDev Hub. All rights reserved.</p>
-            <div class="flex items-center space-x-5">
-                <a href="/" class="hover:text-indigo-600 transition-colors">Home Hub</a>
-                <a href="/guides/" class="hover:text-indigo-600 transition-colors">Guides</a>
-                <a href="/privacy-policy.html" class="hover:text-indigo-600 transition-colors">Privacy</a>
-                <a href="/terms.html" class="hover:text-indigo-600 transition-colors">Terms</a>
-                <a href="/contact.html" class="hover:text-indigo-600 transition-colors">Contact</a>
+    <!-- Minimal, Cozy Footer -->
+    <footer class="w-full border-t border-slate-800/80 bg-slate-950/60 backdrop-blur-md relative z-20 py-6 px-6 sm:px-12 text-slate-400 text-xs text-center">
+        <div class="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-2">
+                <span class="font-bold text-slate-200 font-serif">Nimra's Hub</span>
+                <span>&bull;</span>
+                <span class="text-slate-500">nimradev.site</span>
             </div>
+
+            <div class="flex items-center space-x-6 text-xs">
+                <a href="/about.html" class="text-amber-300 font-semibold transition-colors">About</a>
+                <a href="/contact.html" class="hover:text-amber-300 transition-colors">Contact</a>
+                <a href="/privacy-policy.html" class="hover:text-amber-300 transition-colors">Privacy Policy</a>
+                <a href="/terms.html" class="hover:text-amber-300 transition-colors">Terms</a>
+            </div>
+
+            <p class="text-slate-500 text-[11px]">&copy; 2026 Nimra's Hub. All rights reserved.</p>
         </div>
     </footer>
 
