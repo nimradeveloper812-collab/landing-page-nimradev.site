@@ -244,9 +244,9 @@
 
                 <!-- Main Gable Roof (Triangle) -->
                 <div class="relative w-full flex justify-center items-center">
-                    <div class="w-0 h-0 border-l-[170px] sm:border-l-[260px] border-l-transparent border-r-[170px] sm:border-r-[260px] border-r-transparent border-b-[90px] sm:border-b-[130px] border-b-[#2e1d16] filter drop-shadow-2xl relative">
+                    <div class="w-0 h-0 border-l-[155px] sm:border-l-[210px] border-l-transparent border-r-[155px] sm:border-r-[210px] border-r-transparent border-b-[85px] sm:border-b-[115px] border-b-[#2e1d16] filter drop-shadow-2xl relative">
                         <!-- Roof Overhang Eaves / Accent -->
-                        <div class="absolute -bottom-[92px] sm:-bottom-[132px] -left-[172px] sm:-left-[262px] w-[344px] sm:w-[524px] h-3 bg-[#4a2e22] rounded-sm"></div>
+                        <div class="absolute -bottom-[87px] sm:-bottom-[117px] -left-[157px] sm:-left-[212px] w-[314px] sm:w-[424px] h-3 bg-[#4a2e22] rounded-sm"></div>
                     </div>
 
                     <!-- Attic Round Window -->
@@ -261,7 +261,7 @@
             </div>
 
             <!-- 2. HOUSE MAIN BODY / WALLS -->
-            <div class="w-[320px] sm:w-[480px] bg-gradient-to-b from-[#252836] to-[#1a1d29] rounded-b-2xl border-x-4 border-b-4 border-[#373d52] shadow-2xl relative p-4 sm:p-6 flex flex-col items-center">
+            <div class="w-[280px] sm:w-[380px] bg-gradient-to-b from-[#252836] to-[#1a1d29] rounded-b-2xl border-x-4 border-b-4 border-[#373d52] shadow-2xl relative p-4 sm:p-6 flex flex-col items-center">
 
                 <!-- Golden Engraved Nameplate -->
                 <div class="mb-5 px-5 py-1.5 rounded-lg bg-gradient-to-r from-amber-600 via-amber-300 to-amber-600 shadow-md border border-amber-200/50 flex items-center gap-2">
@@ -270,29 +270,8 @@
                     </span>
                 </div>
 
-                <!-- Windows & Doorway Row -->
-                <div class="w-full flex items-end justify-between px-2 sm:px-6 relative">
-
-                    <!-- Left Window -->
-                    <div class="flex flex-col items-center">
-                        <div class="w-14 h-24 sm:w-20 sm:h-32 bg-[#10141d] rounded-t-xl border-4 border-[#47516e] shadow-lg relative overflow-hidden">
-                            <!-- Window light glow -->
-                            <div class="window-glow w-full h-full bg-gradient-to-b from-amber-300/90 to-amber-500/80 shadow-[0_0_25px_rgba(251,191,36,0.5)] transition-all duration-700 relative">
-                                <!-- Curtains -->
-                                <div class="absolute top-0 left-0 w-3 sm:w-4 h-full bg-rose-900/80 rounded-r-md"></div>
-                                <div class="absolute top-0 right-0 w-3 sm:w-4 h-full bg-rose-900/80 rounded-l-md"></div>
-                                <!-- Panes -->
-                                <div class="absolute top-1/2 left-0 w-full h-0.5 bg-[#47516e] -translate-y-1/2"></div>
-                                <div class="absolute top-0 left-1/2 w-0.5 h-full bg-[#47516e] -translate-x-1/2"></div>
-                            </div>
-                        </div>
-                        <!-- Flower box -->
-                        <div class="w-16 sm:w-24 h-4 bg-[#5c3a28] rounded-b-md mt-1 border-t-2 border-emerald-500 flex items-center justify-around px-1">
-                            <span class="text-[9px]">🌸</span>
-                            <span class="text-[9px]">🌿</span>
-                            <span class="text-[9px]">🌺</span>
-                        </div>
-                    </div>
+                <!-- Entrance Row (Windows Removed) -->
+                <div class="w-full flex items-end justify-center relative">
 
                     <!-- ================= THE ENTRANCE & 3D DOUBLE DOORS ================= -->
                     <div class="relative flex flex-col items-center">
@@ -306,7 +285,7 @@
                         </div>
 
                         <!-- Door Frame & Doorway Stage -->
-                        <div id="door-portal" class="doorway-wrapper relative w-36 sm:w-48 h-56 sm:h-64 rounded-t-2xl border-4 border-[#523424] bg-[#0d1117] shadow-2xl overflow-hidden cursor-pointer group" onclick="toggleDoors()" title="Click to Open or Close Doors">
+                        <div id="door-portal" class="doorway-wrapper relative w-40 sm:w-52 h-60 sm:h-72 rounded-t-2xl border-4 border-[#523424] bg-[#0d1117] shadow-2xl overflow-hidden cursor-pointer group" onclick="toggleDoors()" title="Click to Open or Close Doors">
 
                             <!-- INTERIOR FOYER (Revealed when doors swing open) -->
                             <div class="interior-room absolute inset-0 bg-gradient-to-b from-amber-100 via-amber-200 to-amber-300 text-slate-900 p-3 sm:p-4 flex flex-col items-center justify-between text-center z-0 shadow-inner">
@@ -364,9 +343,8 @@
 
                         </div>
 
-
                         <!-- Welcome Mat -->
-                        <div class="w-32 sm:w-44 h-4 bg-[#8b5a2b] border-2 border-[#5c3a1e] rounded-sm mt-1 shadow-md flex items-center justify-center">
+                        <div class="w-36 sm:w-48 h-4 bg-[#8b5a2b] border-2 border-[#5c3a1e] rounded-sm mt-1 shadow-md flex items-center justify-center">
                             <span class="text-[8px] sm:text-[9px] font-extrabold text-amber-100 tracking-wider uppercase font-sans">WELCOME</span>
                         </div>
 
@@ -375,33 +353,12 @@
 
                     </div>
 
-                    <!-- Right Window -->
-                    <div class="flex flex-col items-center">
-                        <div class="w-14 h-24 sm:w-20 sm:h-32 bg-[#10141d] rounded-t-xl border-4 border-[#47516e] shadow-lg relative overflow-hidden">
-                            <!-- Window light glow -->
-                            <div class="window-glow w-full h-full bg-gradient-to-b from-amber-300/90 to-amber-500/80 shadow-[0_0_25px_rgba(251,191,36,0.5)] transition-all duration-700 relative">
-                                <!-- Curtains -->
-                                <div class="absolute top-0 left-0 w-3 sm:w-4 h-full bg-rose-900/80 rounded-r-md"></div>
-                                <div class="absolute top-0 right-0 w-3 sm:w-4 h-full bg-rose-900/80 rounded-l-md"></div>
-                                <!-- Panes -->
-                                <div class="absolute top-1/2 left-0 w-full h-0.5 bg-[#47516e] -translate-y-1/2"></div>
-                                <div class="absolute top-0 left-1/2 w-0.5 h-full bg-[#47516e] -translate-x-1/2"></div>
-                            </div>
-                        </div>
-                        <!-- Flower box -->
-                        <div class="w-16 sm:w-24 h-4 bg-[#5c3a28] rounded-b-md mt-1 border-t-2 border-emerald-500 flex items-center justify-around px-1">
-                            <span class="text-[9px]">🌺</span>
-                            <span class="text-[9px]">🌿</span>
-                            <span class="text-[9px]">🌸</span>
-                        </div>
-                    </div>
-
                 </div>
 
             </div>
 
             <!-- 3. STONE PORCH & STEPS -->
-            <div class="w-[340px] sm:w-[510px] flex flex-col items-center relative z-10">
+            <div class="w-[300px] sm:w-[410px] flex flex-col items-center relative z-10">
                 <!-- Step 1 -->
                 <div class="w-full h-4 bg-[#374151] border-t border-slate-500 rounded-xs shadow-md"></div>
                 <!-- Step 2 -->
